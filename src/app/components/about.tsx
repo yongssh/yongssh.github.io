@@ -35,11 +35,6 @@ const AboutSection = () => {
            </span>
           </p>
         </div>
-
-        <footer>
-          
-     
-</footer>
       </section>
     );
   };

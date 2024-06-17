@@ -12,7 +12,7 @@
 # next.js
 /.next/
 /out/
-#added#
+#added#g
 /dist/ 
 
 # production
