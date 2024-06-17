@@ -18,7 +18,7 @@ const Honors =() => {
         <p className={'p-1'}> <span>Helen G. Scott Prize for Best First-Year Paper, Northwestern University Department of English </span><span className="text-xs">(2023)</span></p>   
         <p className={'p-1'}> <span>William Faricy Poetry Award, Northwestern University Department of English </span><span className="text-xs">(2023)</span></p>   
         <p className={'p-1'}> <span>Semifinalist, Gregory Djanikian Scholars </span><span className="text-xs">(2023)</span></p>
-        <p className={'p-1'}> <span>Semifinalist, The Adroit Prizes </span><span className="text-xs">(2023)</span></p>
+        <p className={'p-1'}> <span>Semifinalist, The Adroit Prizes </span> <span className="text-xs">(2023)</span></p>
         <p className={'p-1'}> <span>Finalist, <em>Narrative Magazine</em> “Tell Me a Story” High School Contest, judged by Jericho Brown  </span><span className="text-xs">(2022)</span></p>
         <p className={'p-1'}> <span>Finalist, Hippocrates Young Poets Prize for Poetry and Medicine </span><span className="text-xs">(2022)</span></p>
         <p className={'p-1'}> <span>Finalist, Arthur Flowers Short Fiction Prize </span><span className="text-xs">(2021)</span></p>
