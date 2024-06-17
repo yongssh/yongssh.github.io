@@ -12,7 +12,7 @@ const GalleryPage = () => {
     return (
       <div className="bg-white text-black">
         <NavBar />
-        <h2 className={`bg-white text-black ${garamond.className} p-8`}>I'm also interested in documenting stories through photography.</h2>
+        <h2 className={`bg-white text-black ${garamond.className} p-8`}>I&apos;m also interested in documenting stories through photography.</h2>
         <PhotoGallery />
       </div>
     );
