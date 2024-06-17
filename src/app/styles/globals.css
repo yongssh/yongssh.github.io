@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    font-family: garamond;
+    background-color: white;
+  }
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+
+}
+.p{
+  font-family: garamond;
+}
+.bio{
+  padding-top: 20px;
+  flex: auto;
+  align-items: center;
+  padding-left: 20px;
+  padding-left: 20px;
+
+}
+.hover {
+  text-decoration: underline;
+}
+
+.hover-poetry:hover, body:has(.hover-poetry:hover) .poetry {
+  background-color: #caffaf;
+}
+
+.hover-prose:hover, body:has(.hover-prose:hover) .prose {
+  background-color: #89f9e3;
+}
+
+.poetry{
+  text-decoration: underline
+}
+.prose{
+  text-decoration: underline
+}
+
+.journ{
+  text-decoration: underline
+}
+
+
+.hover-journ:hover, body:has(.hover-journ:hover) .journ {
+  background-color: #e4b4f2;
+}
+/*
+a:hover {
+  background-color: yellow;
+  text-decoration: none;
+}
+*/
+.contact{
+  font-family: garamond;
+}
+
+
+.font-xs {
+  font-size: 0.8rem; /* Adjust the font size as needed */
+}
+
