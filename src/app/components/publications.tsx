@@ -11,7 +11,7 @@ const Publications =() => {
     return(
         <section className={`bg-white text-black ${garamond.className} ${styles.WritingSection}}`}>
 
-      <p className="text-xl p-4 ml-5 mt-5"> Selected Publications</p>
+      <p className="text-xl p-4 ml-5 mt-5 font-bold"> Selected Publications</p>
       <p className="bio ml-4">
         <span className="hover hover-poetry">Poetry</span>, <span className="hover hover-prose">fiction</span>, and  <span className="hover hover-journ">journalism</span> can be found below.</p>
       <br></br>

@@ -11,7 +11,7 @@ const Honors =() => {
     return(
         <section className={`bg-white text-black ${garamond.className} ${styles.WritingSection}}`}>
 
-      <p className="text-xl p-4 mt-5 ml-5">
+      <p className="text-xl p-4 mt-5 ml-5 font-bold">
         Selected Honors </p>
       <br></br>
       <div className={`ml-8`}>
@@ -28,7 +28,7 @@ const Honors =() => {
         <p className={'p-1'}> <span>Finalist in Fiction, Columbia College Chicago&apos;s Young Authors Writing Competition </span><span className="text-xs">(2021)</span></p>
         <p className={'p-1'}> <span>Honorable Mention, Princeton University Leonard L. Milberg Poetry Prize </span><span className="text-xs">(2021)</span></p>
         <p className={'p-1'}> <span>Honorable Mention, <em>The Kenyon Review</em>&apos;s Patricia Grodd Poetry Prize </span><span className="text-xs">(2021)</span></p>
-        <p className={'p-1'}> <span>SHortlist, <em>Sine Theta</em> Summer Writing Contest, judged by RF Kuang </span><span className="text-xs">(2021)</span></p>
+        <p className={'p-1'}> <span>Shortlist, <em>Sine Theta</em> Summer Writing Contest, judged by RF Kuang </span><span className="text-xs">(2021)</span></p>
 
         </div>
     </section>
