@@ -17,7 +17,7 @@ const NavBar = () => {
           <div className="container mx-auto px-4 h-full">
             <div className="flex justify-between items-center h-full">
               <div>
-                <p className="text-white">Yong-Yu Huang</p>
+                <p className="text-white m-0">Yong-Yu Huang</p>
               </div>
               <div>
                 <ul className="hidden md:flex gap-x-6 text-white">
