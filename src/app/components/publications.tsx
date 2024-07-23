@@ -33,7 +33,8 @@ const Publications =() => {
             <p className={'p-1'}> <a className="prose" href="http://www.cheappoplit.com/home/yong-yu-huang">Reflecting Pool</a> <span className="text-xs p-2"> in <em>Cheap Pop Lit</em>, reprinted in <em>Best Microfictions</em> </span> <span className="text-xs">(September 2021)</span></p>
             <p className={'p-1'}> <a className="prose" href=" https://sinetheta.net/20.html">Aperture </a> <span className="text-xs p-2"> in <em>Sine Theta Magazine</em> </span><span className="text-xs">(August 2021)</span></p>
             <p className={'p-1'}> <a className="prose" href="https://counterclock.org/yong-yu-huang">Butterfly Kingdom</a>, <a className="poetry" href="https://counterclock.org/roadside-memorabilia">Roadside Memorabilia</a> <span className="text-xs p-2"> in <em>Counterclock Journal</em></span><span className="text-xs">(June 2021)</span></p>
-            <p className={'p-1'}><a className="prose" href="http://www.interlochenreview.org/vestigial-structures"> Vestigial Structures</a><span className="text-xs p-2"> in <em>The Interlochen Review</em></span><span className="text-xs">(May 2021)</span></p>
+            <p className={'p-1'}><a className="prose" href="http://www.interlochenreview.org/vestigial-structures"> Vestigial Structures</a>, <a className="poetry" href="https://www.interlochenreview.org/radiumgirls"> Radium Girls</a> <span className="text-xs p-2"> in <em>The Interlochen Review</em></span><span className="text-xs">(May 2021)</span></p>
+   
                 </div>
                 <br></br>
     </section>
