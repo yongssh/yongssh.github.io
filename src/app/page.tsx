@@ -20,8 +20,12 @@ export default function Home() {
   return (
 
     <div className={`wrapper bg-white text-black ${garamond.className}`}>
+              <main className="flex-grow">
+
     <NavBar />
     <AboutSection />
+    </main>
+
     <Footer />
     
      
