@@ -1,6 +1,5 @@
 import React from "react";
 import { EB_Garamond } from 'next/font/google';
-import styles from '../styles/Introduction.module.css';
 
 const garamond = EB_Garamond({ 
   subsets: ['latin'],
