@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { EB_Garamond } from 'next/font/google';
 import { HiMenu, HiX } from 'react-icons/hi';
-import styles from '../styles/Introduction.module.css';
 
 const garamond = EB_Garamond({ 
   subsets: ['latin'],
