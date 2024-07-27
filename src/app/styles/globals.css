@@ -116,7 +116,7 @@ a:hover {
   min-height: 100vh;
   position: relative;
 }
-
+/*
 .footer {
   background-color:rgb(8,47,73);
   color: rgb(255, 255, 255);
@@ -131,4 +131,28 @@ a:hover {
 .footer-text{
   align-items: center;
   font-size: 15px;
+}
+  */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* This will push the footer to the bottom of the page */
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer-text {
+  margin: 0;
 }
