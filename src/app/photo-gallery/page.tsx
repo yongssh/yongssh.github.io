@@ -13,8 +13,10 @@ const GalleryPage = () => {
     return (
       <div className="wrapper bg-white text-black">
         <NavBar />
+        <main className="flex-grow">
         <h2 className={`bg-white text-black ${garamond.className} p-8`}>I&apos;m also interested in documenting stories through photography.</h2>
         <PhotoGallery />
+        </main>
         <Footer />
       </div>
     );

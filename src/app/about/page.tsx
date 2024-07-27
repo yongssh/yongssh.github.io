@@ -5,13 +5,17 @@ import Footer from '../components/footer';
 
 const WritingPage = () => {
   return (
-
+    
     <div className="wrapper bg-white text-black">
+            <main className="flex-grow">
+
       <NavBar />
       <AboutSection />
+      </main>
       <Footer />
 
     </div>
+    
   );
 };
 
