@@ -23,7 +23,7 @@ const AboutSection = () => {
         </div>
         <p className="md:col-span-2 text-center md:text-left mt-4 md:mt-0">
           <span>
-            Yong-Yu Huang studies English literature and computer science at Northwestern University. She has been a Kaplan Scholar and a Leopold Fellow, and she has won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
+            Yong-Yu Huang studies English literature and computer science at Northwestern University. She has been a Kaplan Scholar and a Leopold Fellow, and she has won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. She is the Managing Editor for <em>Helicon</em> and Features Editor for <em>North By Northwestern</em>.
             Outside of school, her work appears in <em>Waxwing</em>, <em>The Adroit Journal</em>, <em>The Offing</em>, <em>The Penn Review</em>, and elsewhere. She is the recipient of the 2021 Elinor Benedict Poetry Prize and has been recognized by the Poetry Society of the UK, Best Small Fictions, the Hippocrates Society, and the Gregory Djanikian Scholars Program, among others.
             In her free time, she can be found doing crosswords, listening to Lorde, or going for a walk.
           </span>
