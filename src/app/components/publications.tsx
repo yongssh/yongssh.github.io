@@ -16,6 +16,7 @@ const Publications =() => {
         <span className="hover hover-poetry">Poetry</span>, <span className="hover hover-prose">fiction</span>, and  <span className="hover hover-journ">journalism</span> can be found below.</p>
       <br></br>
       <div className={`ml-8`}> 
+            <p className={'p-1'}><a className="journ" href="https://www.britannica.com/event/White-Terror-Taiwan">White Terror</a> <span className="text-xs p-2">in <em>Encyclopædia Britannica</em> </span> <span className="text-xs">(September 2024)</span></p>
             <p className={'p-1'}><a className="poetry" href="https://sixthfinch.com/huang1.html">Hard Work</a> <span className="text-xs p-2">in <em>Sixth Finch</em> </span> <span className="text-xs">(July 2024)</span></p>
             <p className={'p-1'}><a className="journ" href="https://northbynorthwestern.com/a-just-look-at-jennifer-lackey/"> A Just Look at Jennifer Lackey</a> <span className="text-xs p-2">in <em>North By Northwestern</em> </span> <span className="text-xs">(May 2024)</span></p>
             <p className={'p-1'}><a className="journ" href="https://dailynorthwestern.com/2024/05/16/campus/center-for-native-american-and-indigenous-research-hosts-6th-annual-symposium-on-indigenous-futures/"> Indigenous Futures Research Symposium </a> <span className="text-xs p-2">in <em>The Daily Northwestern</em> </span> <span className="text-xs">(May 2024)</span></p>

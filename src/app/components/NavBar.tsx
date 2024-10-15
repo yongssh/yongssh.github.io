@@ -12,61 +12,49 @@ const garamond = EB_Garamond({
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen((prev) => !prev);
+
+  const menuItems = [
+    { href: "/about", label: "About" },
+    { href: "/writing", label: "Writing" },
+    { href: "/photo-gallery", label: "Photography" },
+  ];
+
+  if (isOpen) {
+    return (
+      <div className={`md:hidden bg-sky-950 text-white w-full ${garamond.className}`}>
+        <ul className="flex flex-col items-center py-4">
+          {menuItems.map(({ href, label }) => (
+            <li key={href} className="py-2">
+              <Link href={href} onClick={toggleMenu}>
+                <p className="hover:underline">{label}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
 
   return (
     <div className={`w-full bg-sky-950 sticky top-0 z-50 ${garamond.className}`}>
       <div className="flex flex-col md:flex-row items-center justify-between px-4 py-2 md:py-4 mx-auto">
         <p className="text-white text-lg md:text-xl">Yong-Yu Huang</p>
         
-        <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-white">
-            {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}
-          </button>
-        </div>
+        <button onClick={toggleMenu} className="text-white md:hidden">
+          <HiMenu size={30} />
+        </button>
 
         <ul className="hidden md:flex gap-x-6 text-white">
-          <li>
-            <Link href="/about">
-              <p className="hover:underline">About</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/writing">
-              <p className="hover:underline">Writing</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/photo-gallery">
-              <p className="hover:underline">Photography</p>
-            </Link>
-          </li>
+          {menuItems.map(({ href, label }) => (
+            <li key={href}>
+              <Link href={href}>
+                <p className="hover:underline">{label}</p>
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
-
-      {isOpen && (
-        <div className="md:hidden bg-sky-950 text-white w-full">
-          <ul className="flex flex-col items-center py-4">
-            <li className="py-2">
-              <Link href="/about" onClick={toggleMenu}>
-                <p className="hover:underline">About</p>
-              </Link>
-            </li>
-            <li className="py-2">
-              <Link href="/writing" onClick={toggleMenu}>
-                <p className="hover:underline">Writing</p>
-              </Link>
-            </li>
-            <li className="py-2">
-              <Link href="/photo-gallery" onClick={toggleMenu}>
-                <p className="hover:underline">Photography</p>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
     </div>
   );
 };

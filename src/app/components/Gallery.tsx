@@ -28,13 +28,16 @@ const photos = [
   { src: '/deeringgarden.JPG', width: 3000, height: 2000 },
   { src: '/ntu.jpg',  width: 1080, height: 1920},
   { src: '/pikeplacejapanesestore.JPG',  width: 1080, height: 1620 },
-  { src: '/eclipse.JPG', width: 1200, height: 900  },
+  { src: '/eclipse.JPG', width: 1400, height: 900  },
   { src: '/soccer.JPG',  width: 1080, height: 1920},
 
   { src: '/greengoose.JPG', width: 3000, height: 2000 },
   { src: '/gtownchambers.jpeg',  width: 2827, height: 4242},
+  { src: '/beach.JPG', width: 4000, height: 6000},
   { src: '/hike.JPG', width: 3648, height: 2432 },
+
   { src: '/strokes.JPG', width: 1920, height: 1080 },
+
 
 ];
 
@@ -56,62 +59,3 @@ export default function PhotoGallery() {
     );
   
 }
-
-/*
-
-const images = [
-  '/aquarium.JPG',
-  '/uwcherryblossoms.JPG',
-  '/geesefamily.JPG',
-  '/gumwall.JPG',
-  '/kellogg.JPG',
-  '/soccerdance.JPG',
-  '/northerntrust.JPG',
-  '/motelbreakfast.JPG',
-  '/chicagoriver.JPG',
-  '/deeringgarden.JPG',
-  '/ntu.jpg',
-  '/pikeplacejapanesestore.JPG',
-  '/eclipse.JPG',
-  '/soccer.JPG',
-  '/greengoose.JPG',
-  '/gtownchambers.jpeg',
-  '/strokes.JPG',
-  '/hike.JPG',
-]
-const PhotoGallery = () => {
-
-    
-  const breakpointColumnsObj = {
-    default: 3,
-    1100: 2,
-    700: 1
-  };
-
-  return (
-    <div>
-      <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className={`${styles.myMasonryGrid} p-8`}
-        columnClassName={styles.myMasonryGridColumn}>
-        
-        {images.map((image, index) => (
-          <div key={index} className={styles.imageWrapper}>
-            <img
-              src={image}
-              alt={`${image}`}
-              className={styles.image}
-            />
-          </div>
-        ))}
-      </Masonry>
-    </div>
-  );
-};
-
-export default PhotoGallery;
-
-
-
-
-*/
