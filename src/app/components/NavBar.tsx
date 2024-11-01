@@ -1,4 +1,4 @@
-"use client"; // Add this directive at the top
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import { EB_Garamond } from 'next/font/google';
