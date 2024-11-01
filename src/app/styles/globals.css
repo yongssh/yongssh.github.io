@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Responsive wrapper */
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -107,7 +106,7 @@ a:hover {
 
 
 .font-xs {
-  font-size: 0.8rem; /* Adjust the font size as needed */
+  font-size: 0.8rem;
 }
 
 
@@ -145,7 +144,7 @@ body {
 }
 
 main {
-  flex: 1; /* This will push the footer to the bottom of the page */
+  flex: 1; 
 }
 
 .footer {
@@ -154,4 +153,61 @@ main {
 
 .footer-text {
   margin: 0;
+}
+
+/* ABOUT PAGE CSS*/
+.about-section-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7fafc; 
+}
+
+.about-section {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Garamond', serif;
+}
+
+.about-section .grid-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .about-section .grid-container {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.about-section .portrait-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .about-section .portrait-container {
+    justify-content: flex-start;
+  }
+}
+
+.about-section .bio-text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .about-section .bio-text {
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+.bio-text a {
+  text-decoration: underline;
 }
