@@ -162,6 +162,11 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+.about-section {
+  font-family: 'Garamond', serif;
+}
+
 .about-section .grid-container {
   display: grid;
   gap: 1rem;
