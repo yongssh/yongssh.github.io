@@ -11,7 +11,6 @@ const garamond = EB_Garamond({
 const AboutSection = () => {
   return (
     <div className="about-section-container">
-      <section className="about-section">
         <div className="grid-container">
           <div className="portrait-container">
             <Image 
@@ -37,7 +36,6 @@ const AboutSection = () => {
             </span>
           </p>
         </div>
-      </section>
     </div>
   );
 };
