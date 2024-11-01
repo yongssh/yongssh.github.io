@@ -154,54 +154,43 @@ main {
 .footer-text {
   margin: 0;
 }
+.about-section {
+  padding: 2rem;
+  font-family: var(--font-garamond);
+  color: black;
+}
 
-/* ABOUT PAGE CSS*/
-.about-section-container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
   align-items: center;
 }
 
-.about-section {
-  font-family: 'Garamond', serif;
-}
-
-.about-section .grid-container {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
-}
-
-@media (min-width: 768px) {
-  .about-section .grid-container {
-    grid-template-columns: 1fr 2fr;
-  }
-}
-
-.about-section .portrait-container {
+.portrait-container {
   display: flex;
   justify-content: center;
 }
 
-@media (min-width: 768px) {
-  .about-section .portrait-container {
-    justify-content: flex-start;
-  }
+.portrait-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
-.about-section .bio-text {
+.bio-text {
   text-align: center;
-  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
+/* larger screen layout */
 @media (min-width: 768px) {
-  .about-section .bio-text {
-    text-align: left;
-    margin-top: 0;
+  .grid-container {
+    grid-template-columns: 1fr 2fr;
   }
-}
 
-.bio-text a {
-  text-decoration: underline;
+  .bio-text {
+    text-align: left;
+  }
 }
