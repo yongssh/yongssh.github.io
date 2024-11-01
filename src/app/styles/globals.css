@@ -158,6 +158,8 @@ main {
   padding: 2rem;
   font-family: var(--font-garamond);
   color: black;
+  display: flex;
+  height:100vh;
 }
 
 .grid-container {
