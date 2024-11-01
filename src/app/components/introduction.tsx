@@ -1,6 +1,6 @@
 import React from "react";
 import { EB_Garamond } from 'next/font/google';
-import styles from '../styles/Introduction.module.css'; // Import CSS module
+import styles from '../styles/Introduction.module.css';
 import Image from "next/image";
 
 
@@ -17,7 +17,7 @@ const IntroSection = () => {
             </p>
             <div className="col-span-5">
                 <Image 
-                    src="/hike.png" // Corrected path
+                    src="/hike.png"
                     alt="hike image"
                     width={200}
                     height={150}
