@@ -45,7 +45,7 @@ const AboutSection = () => {
             <span>Hello! I&apos;m Yong-Yu, <br></br>and I study </span><br></br>
             <span className="typed-text">{currentField}</span>
           
-          <Divider className="divider" variant="middle" />
+          {/* <Divider className="divider" variant="middle" /> */}
           </div>
         </div>
         <p className="bio-text">
