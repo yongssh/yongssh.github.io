@@ -1,37 +1,62 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { EB_Garamond } from 'next/font/google';
-//import globals from '../styles/globals.css';
 import Image from "next/image";
+import Divider from "@mui/material/Divider";
+
 
 const garamond = EB_Garamond({ 
   subsets: ['latin'],
   variable: '--font-garamond'
 });
 
+const fields: string[] = ["Computer Science", "English Literature"];
+
 const AboutSection = () => {
+  const [currentField, setCurrentField] = useState(fields[0]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentField((prevField) => {
+        const nextIndex = (fields.indexOf(prevField) + 1) % fields.length;
+        return fields[nextIndex];
+      });
+    }, 4000);
+
+    return () => clearInterval(intervalId);  
+  }, []);
+
   return (
     <section className={`${garamond.variable} about-section`}>
-      <div className="grid-container">
+      <div className="about-container">
         <div className="portrait-container">
           <Image 
             src="/portrait.JPG" 
-            alt="portrait image"
-            width={300}
-            height={400}
-            className="portrait-image"
+            width={300} 
+            height={400} 
+            alt="portrait image" 
+            className="intro-picture" 
+            style={{ borderRadius: '100px', padding: '2rem'}} 
           />
         </div>
+        <div>
+          <div className="header">
+            <span>Hello! I&apos;m Yong-Yu, <br></br>and I study </span><br></br>
+            <span className="typed-text">{currentField}</span>
+          
+          <Divider className="divider" variant="middle" />
+          </div>
+        </div>
         <p className="bio-text">
-          <span>
-            Yong-Yu Huang studies English literature and computer science at Northwestern University. She has been a Kaplan Humanities Scholar and a Leopold Fellow, and she has won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. She is the Managing Editor for <em>Helicon</em> and Features Editor for <em>North By Northwestern</em>.
-            Outside of school, her work appears in <em>Waxwing</em>, <em>The Adroit Journal</em>, <em>The Offing</em>, <em>Sixth Finch</em>, and elsewhere. She is the recipient of the 2021 Elinor Benedict Poetry Prize and has been recognized by the Poetry Society of the UK, Best Small Fictions, the Hippocrates Society, and the Gregory Djanikian Scholars Program, among others.
-            In her free time, she can be found doing crosswords, listening to Lorde, or going for a walk.
-          </span>
+          I study computer science and English literature at Northwestern University. I've been a Kaplan Humanities Scholar and a Leopold Fellow, and I've won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. Currently, I'm the Managing Editor for <em>Helicon</em> and the Features Editor for <em>North By Northwestern</em>.
+          Outside of school, my work appears in <em>Waxwing</em>, <em>The Adroit Journal</em>, <em>The Offing</em>, <em>Sixth Finch</em>, and elsewhere. I've been the recipient of the 2021 Elinor Benedict Poetry Prize and have been recognized by the Poetry Society of the UK, Best Small Fictions, the Hippocrates Society, and the Gregory Djanikian Scholars Program, among others.
+          In my free time, I can be found doing crosswords, listening to Lorde, or going for a walk.
           <br /><br />
           <span>
-            <a href="mailto:yongyu.yy.huang@gmail.com">Email</a>, 
-            <a href="https://www.twitter.com/yong_yuhuang"> Twitter</a>, or read more on 
-            <a href="https://yongyuhuang.substack.com/"> Substack</a>.
+            <a href="mailto:yongyu.yy.huang@gmail.com"><u>Email</u></a>, 
+            <a href="https://www.twitter.com/yong_yuhuang"> <u>Twitter</u></a>, or read more on 
+            <a href="https://yongyuhuang.substack.com/"> <u>Substack</u></a>.
           </span>
         </p>
       </div>

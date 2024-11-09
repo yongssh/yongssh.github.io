@@ -8,10 +8,8 @@ const garamond = EB_Garamond({
 
 const Footer = () => {
     return (
-        <footer className={`bg-gray-800 text-white py-4 text-center ${garamond.className}`}>
-            <div className="container mx-auto px-4">
-                <p className="text-sm">Made with ❤ by Yong-Yu Huang</p>
-            </div>
+        <footer className={"footer"}>
+                <p className="footer-text">Made with ❤ by Yong-Yu Huang</p>
         </footer>
     );
 };
