@@ -59,8 +59,9 @@ const AboutSection = () => {
             <a href="https://yongyuhuang.substack.com/"> <u>Substack</u></a>.
           </span>
         </p>
+        <Footer />
       </div>
-      <Footer />
+
     </section>
   );
 };
