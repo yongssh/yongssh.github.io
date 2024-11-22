@@ -13,7 +13,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 const photos = [
-  { src: '/aquarium.JPG', width: 1080, height: 1920}, 
+  { src: '/aquarium.JPG', width: 1080, height: 1720}, 
   { src: '/uwcherryblossoms.JPG', width: 1920, height: 1080 },
   { src: '/geesefamily.JPG', width: 3996, height: 5994 },
   { src: '/gumwall.JPG', width: 5910, height: 3940},
