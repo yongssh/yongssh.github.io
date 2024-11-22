@@ -6,7 +6,7 @@ import Footer from '../components/footer';
 
 const WritingPage = () => {
   return (
-    <div>
+    <div  className="wrapper bg-white text-black">
       <NavBar />
       <main className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

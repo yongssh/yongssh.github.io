@@ -6,7 +6,7 @@ import Footer from '../components/footer';
 const WritingPage = () => {
   return (
     
-    <div>
+    <div className="wrapper bg-white text-black">
             <main className="flex-grow">
 
       <NavBar />
