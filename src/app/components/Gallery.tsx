@@ -55,7 +55,6 @@ export default function PhotoGallery() {
       
       plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]} />
     </>
-    <Footer />
     </section>
 
     );

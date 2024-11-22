@@ -11,7 +11,8 @@ const WritingPage = () => {
 
       <NavBar />
       <AboutSection />
-     
+      <Footer />
+
       </main>
 
 
