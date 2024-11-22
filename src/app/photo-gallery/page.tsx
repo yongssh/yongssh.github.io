@@ -11,7 +11,7 @@ const garamond = EB_Garamond({
 
 const GalleryPage = () => {
     return (
-      <div className="wrapper bg-white text-black">
+      <div>
         <NavBar />
         <main className="flex-grow">
         <h2 className={`bg-white text-black ${garamond.className} p-8`}>I&apos;m also interested in documenting stories through photography. Click to expand.</h2>
