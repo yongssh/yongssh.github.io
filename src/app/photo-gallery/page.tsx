@@ -18,8 +18,9 @@ const GalleryPage = () => {
         <div className="m-2">
         <PhotoGallery />
         </div>
-        </main>
         <Footer />
+        </main>
+    
       </div>
     );
   };

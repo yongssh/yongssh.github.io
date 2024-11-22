@@ -13,9 +13,10 @@ const WritingPage = () => {
           <Publications />
           <Honors />
         </div>
+        <Footer />
       </main>
-      <Footer />
     </div>
+    
   );
 };
 
