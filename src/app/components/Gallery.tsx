@@ -15,7 +15,8 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 const photos = [
   { src: '/aquarium.JPG', width: 1080, height: 1720}, 
   { src: '/uwcherryblossoms.JPG', width: 1920, height: 1080 },
-  { src: '/geesefamily.JPG', width: 3996, height: 5994 },
+  { src: '/beach.JPG', width: 4000, height: 6000},
+
   { src: '/gumwall.JPG', width: 5910, height: 3940},
   { src: '/kellogg.JPG', width: 1080, height: 1920 },
   { src: '/soccerdance.JPG', width: 3000, height: 2000},
@@ -31,7 +32,7 @@ const photos = [
 
   { src: '/greengoose.JPG', width: 3000, height: 2000 },
   { src: '/gtownchambers.jpeg',  width: 2827, height: 4242},
-  { src: '/beach.JPG', width: 4000, height: 6000},
+  { src: '/geesefamily.JPG', width: 3996, height: 5994 },
   { src: '/hike.JPG', width: 3648, height: 2432 },
 
   { src: '/strokes.JPG', width: 1920, height: 1080 },
