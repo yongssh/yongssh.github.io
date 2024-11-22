@@ -27,8 +27,7 @@
   overflow: hidden;
   white-space: nowrap;
   width: fit-content;
-  width: fit-content; /* Only occupies necessary width */
-  max-width: 16ch; /* Constrains max width based on expected text length */
+  max-width: 100%;
   border-right: 3px solid #007acc;
   animation: typing 3s steps(20, end), blink .5s step-end infinite alternate;
 }
@@ -65,9 +64,11 @@
   color: #FAFAFA;
   width: 100vw;
   text-align: center;
+  /* height: 30px; */
   bottom: 0;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .footer-text {
@@ -182,7 +183,7 @@ a:hover {
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 100vh;
 }
 
 body {
@@ -199,7 +200,7 @@ main {
   font-family: var(--font-garamond);
   color: black;
   display: flex;
-  height:100vh;
+  /* height:100vh; */
 }
 
 .intro-picture{
@@ -232,9 +233,10 @@ main {
 .bio-text {
   text-align: center;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
+ 
 }
 
 /* larger screen layout */

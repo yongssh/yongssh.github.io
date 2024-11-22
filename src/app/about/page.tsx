@@ -11,13 +11,10 @@ const WritingPage = () => {
 
       <NavBar />
       <AboutSection />
-      <Footer />
-
       </main>
-
-
+      <Footer />
     </div>
-    
+
   );
 };
 

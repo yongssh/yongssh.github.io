@@ -58,6 +58,7 @@ const AboutSection = () => {
             <a href="https://www.twitter.com/yong_yuhuang"> <u>Twitter</u></a>, or read more on 
             <a href="https://yongyuhuang.substack.com/"> <u>Substack</u></a>.
           </span>
+          <br /><br />
         </p>
       </div>
 
