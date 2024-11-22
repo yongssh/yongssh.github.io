@@ -66,7 +66,7 @@
   width: 100vw;
   text-align: center;
   bottom: 0;
-  position: fixed;
+  position: absolute;
   margin-top: 1rem;
 
 }
