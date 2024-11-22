@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { EB_Garamond } from 'next/font/google';
 import Image from "next/image";
 import Divider from "@mui/material/Divider";
-
+import Footer from "./footer";
 
 const garamond = EB_Garamond({ 
   subsets: ['latin'],
@@ -60,6 +60,7 @@ const AboutSection = () => {
           </span>
         </p>
       </div>
+      <Footer />
     </section>
   );
 };

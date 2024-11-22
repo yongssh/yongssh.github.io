@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-// import Masonry from 'react-masonry-css';
-
+import Footer from './footer';
 import { MasonryPhotoAlbum } from "react-photo-album";
 import "react-photo-album/masonry.css";
 
@@ -44,6 +43,7 @@ const photos = [
 export default function PhotoGallery() {
   const [index, setIndex] = useState(-1);
   return (
+    <section>
     <>
       <MasonryPhotoAlbum photos={photos} columns={3} onClick={({ index }) => setIndex(index)}/>
       
@@ -55,6 +55,9 @@ export default function PhotoGallery() {
       
       plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]} />
     </>
+    <Footer />
+    </section>
+
     );
   
 }

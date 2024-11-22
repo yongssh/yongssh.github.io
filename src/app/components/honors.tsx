@@ -1,7 +1,7 @@
 import React from "react";
 import { EB_Garamond } from 'next/font/google'
 import styles from '../styles/Introduction.module.css';  // Import CSS module
-
+import Footer from "./footer";
 const garamond = EB_Garamond({ 
   subsets: ['latin'],
   variable: '--font-garamond'
@@ -31,6 +31,8 @@ const Honors =() => {
         <p className={'p-1'}> <span>Shortlist, <em>Sine Theta</em> Summer Writing Contest, judged by RF Kuang </span><span className="text-xs">(2021)</span></p>
 
         </div>
+        <Footer />
+
     </section>
     );
 };
