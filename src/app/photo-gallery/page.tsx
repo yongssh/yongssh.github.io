@@ -17,8 +17,10 @@ const GalleryPage = () => {
         <h2 className={`bg-white text-black ${garamond.className} p-8`}>I&apos;m also interested in documenting stories through photography. Click to expand.</h2>
         <div className="m-2">
         <PhotoGallery />
-        </div>
         <Footer />
+
+        </div>
+        
         </main>
     
       </div>
