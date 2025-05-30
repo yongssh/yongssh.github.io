@@ -16,6 +16,8 @@ const Publications =() => {
         <span className="hover hover-poetry">Poetry</span>, <span className="hover hover-prose">fiction</span>, and  <span className="hover hover-journ">journalism</span> can be found below.</p>
       <br></br>
       <div className={`ml-8`}> 
+            <p className={'p-1'}><a className="poetry" href="https://www.muzzlemagazine.com/yong-yu-huang.html">Notes on Beachgrass</a> <span className="text-xs p-2">in <em>Muzzle Magazine</em> </span> <span className="text-xs">(April 2025)</span></p>
+            <p className={'p-1'}><a className="poetry" href="https://poetrysociety.org.uk/poems/living-as-my-mother/">Living as My Mother</a> <span className="text-xs p-2">in <em>The Poetry Society</em> </span> <span className="text-xs">(March 2025)</span></p>
             <p className={'p-1'}><a className="journ" href="https://www.britannica.com/biography/Min-Jin-Lee">Min Jin Lee</a> <span className="text-xs p-2">in <em>Encyclopædia Britannica</em> </span> <span className="text-xs">(November 2024)</span></p>
             <p className={'p-1'}><a className="journ" href="https://www.britannica.com/event/White-Terror-Taiwan">White Terror</a> <span className="text-xs p-2">in <em>Encyclopædia Britannica</em> </span> <span className="text-xs">(September 2024)</span></p>
             <p className={'p-1'}><a className="poetry" href="https://sixthfinch.com/huang1.html">Hard Work</a> <span className="text-xs p-2">in <em>Sixth Finch</em> </span> <span className="text-xs">(July 2024)</span></p>
