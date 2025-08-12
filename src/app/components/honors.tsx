@@ -16,8 +16,8 @@ const Honors =() => {
       <br></br>
       <div className={`ml-8`}>
         <p className={'p-1'}> <span>Outstanding Junior in Literature, Northwestern University Department of English </span><span className="text-xs">(2025)</span></p>   
-        <p className={'p-1'}> <span> <a href="https://poetrysociety.org.uk/competitions/national-poetry-competition/" target="_blank" rel="noopener noreferrer">
-      Commended Poet, National Poetry Competition </a> </span><span className="text-xs">(2024)</span></p>   
+        <p className={'p-1'}> <span> <u><a href="https://poetrysociety.org.uk/competitions/national-poetry-competition/" target="_blank" rel="noopener noreferrer">
+      Commended Poet, National Poetry Competition </a></u> </span><span className="text-xs">(2024)</span></p>   
         <p className={'p-1'}> <span>Helen G. Scott Prize for Best First-Year Paper, Northwestern University Department of English </span><span className="text-xs">(2023)</span></p>   
         <p className={'p-1'}> <span>William Faricy Poetry Award, Northwestern University Department of English </span><span className="text-xs">(2023)</span></p>   
         <p className={'p-1'}> <span>Semifinalist, Gregory Djanikian Scholars </span><span className="text-xs">(2023)</span></p>
