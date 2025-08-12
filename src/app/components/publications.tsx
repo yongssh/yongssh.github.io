@@ -16,7 +16,7 @@ const Publications =() => {
         <span className="hover hover-poetry">Poetry</span>, <span className="hover hover-prose">fiction</span>, and  <span className="hover hover-journ">journalism</span> can be found below.</p>
       <br></br>
       <div className={`ml-8`}> 
-            <p className={'p-1'}><a className="poetry">Clark Street Beach in April</a> <span className="text-xs p-2">in <em>The Shore</em> </span> <span className="text-xs">(September 2025)</span></p>
+        
             <p className={'p-1'}><a className="poetry" href="https://www.muzzlemagazine.com/yong-yu-huang.html">Notes on Beachgrass</a> <span className="text-xs p-2">in <em>Muzzle Magazine</em> </span> <span className="text-xs">(April 2025), <em>The Slowdown</em></span><span className="text-xs"> (Forthcoming, Fall 2025)</span></p>
             <p className={'p-1'}><a className="journ" href="https://dailynorthwestern.com/2025/07/07/top-stories/a-shift-going-on-fulbright-scholars-at-nu-and-abroad-discuss-impact-programs-future-amid-political-uncertainty/">‘A shift going on’: Fulbright scholars at NU and abroad discuss impact, program’s future amid political uncertainty</a> <span className="text-xs p-2">in <em>The Daily Northwestern</em> </span> <span className="text-xs">(July 2024)</span></p>
             <p className={'p-1'}><a className="poetry" href="https://poetrysociety.org.uk/poems/living-as-my-mother/">Living as My Mother</a> <span className="text-xs p-2">in <em>The Poetry Society</em> </span> <span className="text-xs">(March 2025)</span></p>
