@@ -7,7 +7,7 @@ const projects = [
   {
     title: "EPL Story with Tax Calculator",
     description: "Reported and built a tax calculator widget with interactive data visualizations with D3.js for the Evanston Public Library debate.",
-    image: "/epl.png",
+    image: "/epl.jpeg",
     url: "https://dailynorthwestern.com/2025/10/01/top-stories/not-just-a-place-of-books-evanston-public-library-debates-potential-split-from-city/"
   },
   {
@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Daily Northwestern Elections Page",
     description: "Designed and developed interactive election map with D3.js for election coverage, using WaPo's React component library.",
-    image: "/schapiroschill.png", 
+    image: "/elections2024.png", 
     url: "#" 
   },
   {
@@ -37,7 +37,7 @@ const projects = [
   {
     title: "Northwestern University Executives in Numbers",
     description: "Developed interactive data visualizations to support reporting on university executive compensation with Flourish.",
-    image: "/schapiroschill.png.png",
+    image: "/presidentspay.png",
     url: "https://dailynorthwestern.com/2025/09/15/campus/outgoing-university-president-michael-schill-earned-nearly-1-7-million-in-first-full-year-tax-filings-show/"
   },
 ];
