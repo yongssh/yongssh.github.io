@@ -44,10 +44,10 @@ const projects = [
 
 const ProjectsPage = () => {
   return (
-    <div className="wrapper bg-white text-black min-h-screen flex flex-col">
+    <div className="wrapper bg-white text-black min-h-screen flex flex-col font-family: garamond" >
       <NavBar />
       <main className="container mx-auto px-4 py-12 flex-grow">
-        <h1 className="text-3xl font-bold mb-8 text-center">My Projects</h1>
+        <h1 className="text-3xl font-bold mb-8 text-center font-family: garamond">My Projects</h1>
         
         {/* Grid: 1 col on mobile, 2 on tablets, 3 on desktops */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -69,7 +69,7 @@ const ProjectsPage = () => {
                 <Link 
                   href={project.url} 
                   target="_blank"
-                  className="mt-4 inline-block text-indigo-600 font-medium hover:underline"
+                  className="mt-4 inline-block text-indigo-600 font-medium hover:underline "
                 >
                   View Project →
                 </Link>
