@@ -30,7 +30,7 @@ const projects = [
   },
   {
     title: "Chicago Heatwave Project",
-    description: "Created data visualizations and reported during the 1995 heatwave event screening.",
+    description: "Created data visualizations and reported during the 1995 heatwave event screening with D3.js.",
     image: "/johnson.jpg", 
     url: "https://dailynorthwestern.com/2025/07/16/city/chicago-mayor-brandon-johnson-buffett-researchers-host-screening-and-discussion-on-1995-heat-wave/"
   },
