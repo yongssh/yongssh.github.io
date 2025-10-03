@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'garamond': ["var(--font-garamond)"], // Note the closing parenthesis was missing
+        'garamond': ["var(--font-garamond)"], 
+        
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

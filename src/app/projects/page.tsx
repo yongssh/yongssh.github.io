@@ -20,7 +20,7 @@ const projects = [
     title: "Daily Northwestern Elections Page",
     description: "Designed and developed interactive election map with D3.js for election coverage, using WaPo's React component library.",
     image: "/elections2024.png", 
-    url: "#" 
+    url: "https://apps.dailynorthwestern.com/election2024/" 
   },
   {
     title: "Whiting Awards Analysis",
@@ -42,37 +42,44 @@ const projects = [
   },
 ];
 
-const ProjectsPage = () => {
+const ProjectsPage: React.FC = () => {
   return (
-    <div className="wrapper bg-white text-black min-h-screen flex flex-col font-family: garamond" >
+    <div className="wrapper bg-white text-black min-h-screen flex flex-col font-righteous">
       <NavBar />
-      <main className="container mx-auto px-4 py-12 flex-grow">
-        <h1 className="text-3xl font-bold mb-8 text-center font-family: garamond">My Projects</h1>
-        
-        {/* Grid: 1 col on mobile, 2 on tablets, 3 on desktops */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <main className="container mx-auto px-4 py-16 flex-grow">
+        <h1 className="text-4xl font-bold mb-12 text-center font-righteous tracking-tight">
+          My Projects
+        </h1>
+
+        {/* Grid: 1 col mobile, 2 tablet, 3 desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, idx) => (
-            <div 
-              key={idx} 
-              className="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden flex flex-col"
+            <div
+              key={idx}
+              className="group bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden flex flex-col"
             >
-              <Link href={project.url} target="_blank">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="w-full h-48 object-cover"
+              <Link href={project.url} target="_blank" className="overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-52 object-cover transform group-hover:scale-105 transition duration-300"
                 />
               </Link>
-              <div className="p-4 flex flex-col flex-grow">
-                <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-                <p className="text-sm text-gray-600 flex-grow">{project.description}</p>
-                <Link 
-                  href={project.url} 
-                  target="_blank"
-                  className="mt-4 inline-block text-indigo-600 font-medium hover:underline "
-                >
-                  View Project →
-                </Link>
+              <div className="p-6 flex flex-col flex-grow">
+                <h2 className="text-xl font-semibold mb-3">{project.title}</h2>
+                <p className="text-sm text-gray-600 flex-grow leading-relaxed">
+                  {project.description}
+                </p>
+            <Link
+              href={project.url}
+              target="_blank"
+              className="mt-5 inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md 
+                        text-white bg-[rgb(8,47,73)] shadow-sm transition-colors duration-200
+                        hover:bg-blue-200 hover:text-[rgb(8,47,73)]"
+            >
+              <span>View Project</span>
+              <span aria-hidden="true">→</span>
+            </Link>
               </div>
             </div>
           ))}
