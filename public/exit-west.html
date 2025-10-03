@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Exit West — A Scrollytelling Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<style>
+  /* --- Color Palette --- */
+  :root {
+    --indigo: #2E2A4F;      
+    --sand: #D6A77A;        
+    --rose: #C76D7E;         
+    --azure: #3C7BA5;       
+    --emerald: #4BAF82;    
+    --amber: #E2B65D;    
+    --gray: #E5E5E5;      
+    --charcoal: #1C1C1C;   
+  }
+  html, body {
+    margin:0; padding:0; height:100%;
+    font-family: "Georgia", serif; background: var(--charcoal); color: var(--charcoal);
+  }
+  #map {
+    position: fixed; top:0; left:0; width:100%; height:100%; z-index:0;
+  }
+  .overlay {
+    position: relative; z-index: 1;
+    max-width: 680px; margin: 0 auto; padding: 0 16px;
+  }
+  /* Splash Screen */
+  .splash {
+    position: fixed; top:0; left:0; width:100%; height:100vh;
+    background: var(--indigo);
+    display:flex; flex-direction:column; justify-content:center; align-items:center;
+    text-align:center; color: var(--gray);
+    z-index: 9999;
+    transition: opacity 1s ease, visibility 1s ease;
+  }
+  .splash h1 {
+    font-size: 2.8rem; margin-bottom: 0.6rem; color: var(--sand);
+  }
+  .splash p {
+    font-size: 1.2rem; max-width: 600px; margin: 0 auto 1.5rem;
+    line-height:1.6; color: var(--gray);
+  }
+  .splash button {
+    background: var(--amber); color: var(--charcoal);
+    border:none; padding:14px 28px; font-size:1rem;
+    border-radius:6px; cursor:pointer;
+    font-family: "Georgia", serif; font-weight:bold;
+    transition: background 0.3s ease;
+  }
+  .splash button:hover {
+    background: var(--emerald); color: #fff;
+  }
+  .splash.hidden {
+    opacity:0; visibility:hidden;
+  }
+  /* Steps */
+  .step {
+    position: relative;
+    max-width: 420px;
+    background: rgba(255,255,255,0.92);
+    margin: 70vh auto 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.3);
+    opacity: 0.1; transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .step h2 {
+    font-size: 1.6rem; margin-top:0; margin-bottom:0.6rem; color: var(--indigo);
+  }
+  .step p {
+    font-size: 1.05rem; line-height: 1.6; margin:0 0 1rem 0; color: var(--charcoal);
+  }
+  .step.active { opacity:1; transform:translateY(0); }
+  .step.left { margin-left: 5%; margin-right:auto; }
+  .step.right { margin-right: 5%; margin-left:auto; }
+  footer {
+    color:#ccc; font-size:0.9rem; text-align:center; padding:40px 20px;
+  }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- Splash screen -->
+<section class="splash" id="splash">
+  <h1><em>Exit West</em> — Journeys of Signal and Prayer</h1>
+  <p>This project follows the migrations in Mohsin Hamid’s <em>Exit West</em>.  
+     It traces how Nadia and Saeed’s journey—from Lahore through Mykonos, London, and Marin—  
+     illuminates the entwined forces of migration, digital surveillance, and spiritual devotion.</p>
+  <button onclick="startStory()">Follow Saeed and Nadia</button>
+</section>
+
+<div class="overlay">
+  <!-- Steps -->
+  <section class="step left" data-key="lahore">
+    <h2>Lahore, Pakistan</h2>
+    <p>Cell signals inherently demand a connection to a broader selection of people, an entire diasporic network at one’s fingertips. Meanwhile, prayer serves as a conduit between the individual and the divine. In <em>Exit West</em>, Hamid explores signals and prayer as divergent ways for the two protagonists to remain connected to the country and people they have parted from.</p>
+    <p>Saeed only ever receives news of misfortune or loss in his use of technology, marring his perception of digital connection more than Nadia’s. For instance: “When they woke Saeed tried to call his father but an automated message informed him that his call could not be completed, and Nadia tried to connect with people via chat applications and social media, and an acquaintance who had made it to Auckland and another who had reached Madrid replied right away.” (108)</p>
+  </section>
+
+  <section class="step right" data-key="mykonos">
+    <h2>Mykonos, Greece</h2>
+    <p>In Mykonos, migrants live in a liminal state, suspended between departure and arrival. Technology offers no certainty, and its fragility weighs heavily on Nadia. “Knowing from experience that a mobile phone could be a fickle connection, its signal thought in normal circumstances to be like the sunlight or the moonlight, but in actuality capable of an instant and endless eclipse...” (140)</p>
+    <p>This moment marks the beginning of Nadia’s disillusionment with the digital diaspora. The device that once tethered her to faraway acquaintances now underscores how unstable and surveilled communication can be under authoritarian conditions.</p>
+  </section>
+
+  <section class="step left" data-key="london">
+    <h2>London, United Kingdom</h2>
+    <p>London becomes a contested site where surveillance and state power can abruptly sever lines of connection. “That night, the electricity went out, cut off by the authorities, and Kensington and Chelsea descended into darkness. A sharp fear descended also, and the call to prayer they had often heard in the distance from the park was silenced.” (141)</p>
+    <p>Digital connection provides a binary certainty—either a message is delivered or it is lost—but in this landscape, both technology and prayer are subject to control. Migrants discover that even the most fundamental forms of communication can be curtailed by political will.</p>
+  </section>
+
+  <section class="step right" data-key="marin">
+    <h2>Marin County, California</h2>
+    <p>By the time Saeed and Nadia reach California, their paths diverge sharply. Saeed leans ever more deeply into prayer as his most reliable mode of connection. “Now, though, in Marin, Saeed prayed even more, several times a day, and he prayed fundamentally as a gesture of love for what had gone and would go and could be loved in no other way.” (202)</p>
+    <p>Nadia, on the other hand, grows less attached to technology as she builds networks within migrant communities. She shifts from the digital diaspora to interpersonal roles, while Saeed finds solace in spiritual continuity. Their different approaches underscore how migration produces not just physical displacement but also divergent strategies for meaning-making.</p>
+  </section>
+
+  <section class="step left" data-key="coda">
+    <h2>Global Doors</h2>
+    <p>At the novel’s close, migration and connection are planetary, reframing the human condition itself. It is dangerous for communication in the diaspora to be mediated by technology, reliant as it is on the unstable nature of man-made systems. Hamid’s magical doors, fantastical though they seem, emerge as the most stable form of passage—beyond surveillance, beyond electricity, beyond fragile infrastructures.</p>
+    <p>In this world of perpetual displacement, the doors remind us that connection can exist outside of wires and signals. They open a cosmopolitan vision where belonging is redefined not by rootedness, but by the act of moving together.</p>
+  </section>
+
+  <footer>Built with Leaflet.js</footer>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// Waypoints
+const WAYPOINTS = {
+  "lahore": { coords:[31.5497,74.3436], zoom:11 },
+  "mykonos": { coords:[37.4467,25.3289], zoom:11 },
+  "london": { coords:[51.5074,-0.1278], zoom:11 },
+  "marin": { coords:[38.097,-122.86], zoom:10 },
+  "coda": { coords:[30,-25], zoom:3 }
+};
+
+// Init map (all interactions disabled so that we can scroll through the story without moving the map)
+const map = L.map('map', {
+  zoomControl:false,
+  scrollWheelZoom:false,
+  dragging:false,
+  doubleClickZoom:false,
+  touchZoom:false,
+  boxZoom:false,
+  keyboard:false,
+  inertia:false
+}).setView([20,0],2);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution:'&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+// Markers (non-interactive)
+Object.entries(WAYPOINTS).forEach(([k,v])=>{
+  L.circleMarker(v.coords,{
+    radius:6, color:"#fff", fillColor:"#E2B65D", fillOpacity:0.9, interactive:false
+  }).addTo(map);
+});
+
+const steps = document.querySelectorAll('.step');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      steps.forEach(s=>s.classList.remove("active"));
+      entry.target.classList.add("active");
+      const key = entry.target.getAttribute("data-key");
+      const w = WAYPOINTS[key];
+      if(w) map.flyTo(w.coords, w.zoom, { duration: 2 });
+    }
+  });
+},{ threshold: 0.6 });
+
+steps.forEach(s=>io.observe(s));
+
+// Splash logic
+function startStory(){
+  document.getElementById("splash").classList.add("hidden");
+}
+</script>
+
+</body>
+</html>
