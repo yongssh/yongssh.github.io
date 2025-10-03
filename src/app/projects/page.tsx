@@ -25,7 +25,7 @@ const projects = [
   {
     title: "Whiting Awards Analysis",
     description: "Exploratory data analysis and visualization of Whiting Award winners, built with D3.js.",
-    image: "/whiting-awards.png", 
+    image: "/whiting.png", 
     url: "https://yongssh.github.io/whiting-awards/"
   },
   {
