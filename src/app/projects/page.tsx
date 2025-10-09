@@ -28,6 +28,12 @@ const projects = [
     image: "/whiting.png", 
     url: "https://yongssh.github.io/whiting-awards/"
   },
+   {
+    title: "World Energy Mix Visualizer ",
+    description: "Built an interactive tool with D3.js to visualize how each country sources energy, drawing on World Bank data and following the book D3.js: Start to Finish as a learning guide. ",
+    image: "/d3.png", 
+    url: "https://stately-frangollo-b9a02e.netlify.app"
+  },
   {
     title: "Chicago Heatwave Project",
     description: "Created data visualizations and reported during the 1995 heatwave event screening with D3.js.",
