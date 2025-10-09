@@ -16,12 +16,12 @@ const projects = [
     image:"/lahore-map.png",
     url:"https://yongssh.github.io/exit-west.html"
   },
-  {
-    title: "Daily Northwestern Elections Page",
-    description: "Designed and developed interactive election map with D3.js for election coverage, using WaPo's React component library.",
-    image: "/elections2024.png", 
-    url: "https://apps.dailynorthwestern.com/election2024/" 
-  },
+  // {
+  //   title: "Daily Northwestern Elections Page",
+  //   description: "Designed and developed interactive election map with D3.js for election coverage, using WaPo's React component library.",
+  //   image: "/elections2024.png", 
+  //   url: "https://apps.dailynorthwestern.com/election2024/" 
+  // },
   {
     title: "Whiting Awards Analysis",
     description: "Exploratory data analysis and visualization of Whiting Award winners, built with D3.js.",
