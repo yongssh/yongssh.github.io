@@ -40,7 +40,32 @@ const projects = [
     image: "/presidentspay.png",
     url: "https://dailynorthwestern.com/2025/09/15/campus/outgoing-university-president-michael-schill-earned-nearly-1-7-million-in-first-full-year-tax-filings-show/"
   },
-];
+  {
+    title: "Fulbright Funding Impact",
+    description: "Investigated potential federal cuts to the Fulbright Scholarship program by interviewing Northwestern scholars who studied abroad and foreign students studying in the U.S.",
+    image: "/Fulbright_Seal_RGB-scaled-1.jpg",
+    url: "https://dailynorthwestern.com/2025/07/07/top-stories/a-shift-going-on-fulbright-scholars-at-nu-and-abroad-discuss-impact-programs-future-amid-political-uncertainty/",
+
+  },
+  {
+    title: "Trouble in Paradise",
+    description:"Reported and wrote a longform feature on tensions between tourism and local communities in Hawai‘i and Guam for nuAZN.",
+    image: "/nuazntourism.png",
+    url:"https://drive.google.com/file/d/1vK4wTHjW8tW71FnGgFgAMq6RO7ak7VQg/view?usp=share_link"
+},
+{
+    title: "Taiwan’s White Terror",
+    description:"Pitched, researched, and wrote an article on Taiwan’s White Terror period, when martial law was used to suppress dissent for decades, for Encyclopaedia Britannica.",
+    image: "/whiteterror.png",
+    url:"https://www.britannica.com/event/White-Terror-Taiwan"
+},
+{
+    title: "Min Jin Lee",
+    description:"Pitched, interviewed, and researched for a Encylopaedia Britannica's entry on novelist Min Jin Lee.",
+    image: "/minjinlee.png",
+    url:"https://www.britannica.com/biography/Min-Jin-Lee"
+}
+  ];
 
 const ProjectsPage: React.FC = () => {
   return (
