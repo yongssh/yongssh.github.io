@@ -13,7 +13,7 @@ const zenMincho = Zen_Old_Mincho({
 const Honors =() => {
     return(
         <section className={`background-color: var(--page-bg, #f3f3f3);
- text-black ${zenMincho.className} ${styles.WritingSection}}`}>
+ text-black font-micho ${styles.WritingSection}}`}>
 
       <p className="text-xl p-4 mt-5 ml-5 font-bold">
         Selected Honors </p>

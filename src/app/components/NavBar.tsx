@@ -19,7 +19,7 @@ const CATEGORIES = [
 export default function NavBar() {
   return (
     <nav
-      className={`nav fixed top-0 w-full z-50 bg-white border-b border-gray-200 ${zenMincho.className}`}
+      className={`nav fixed top-0 w-full z-50 bg-white border-b border-gray-200 font-micho`}
     >
       <ul className="navList flex justify-center flex-wrap gap-3 md:gap-4 px-6 py-3 m-0 list-none">
         {CATEGORIES.map((c) => (

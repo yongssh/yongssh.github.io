@@ -15,7 +15,7 @@ const zenMincho = Zen_Old_Mincho({
 
 const IntroSection = () => {
     return (
-        <section className={`bg-white text-black ${zenMincho.className} ${styles.IntroSection}`}>
+        <section className={`bg-white text-black font-micho} ${styles.IntroSection}`}>
             <p className="bio">
                 I study English literature and computer science at Northwestern University. In my free time, you can find me doing a crossword or going for a walk.
             </p>

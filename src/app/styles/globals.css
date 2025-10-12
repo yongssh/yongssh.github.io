@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;700&display=swap');
 
 /* --- Font Utilities --- */
 .font-righteous {
@@ -15,6 +16,9 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 
+.font-zen-old-micho {
+  font-family: 'Zen Old Mincho', serif;
+}
 :root {
   --font-poppins: 'Poppins', sans-serif;
   --brand-accent: #c47a88;

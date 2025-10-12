@@ -21,7 +21,7 @@ const zenMincho = Zen_Old_Mincho({
 
 export default function Home() {
   return (
-    <div className={`wrapper bg-white text-black min-h-screen flex flex-col ${zenMincho.className}`}>
+    <div className={`wrapper bg-white text-black min-h-screen flex flex-col font-micho`}>
       
       <header>
         <NavBar />

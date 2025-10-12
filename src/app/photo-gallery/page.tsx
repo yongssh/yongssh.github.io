@@ -27,7 +27,7 @@ export default function GalleryPage() {
         >
           <h1
             id="gallery-heading"
-            className={`${styles.heading} ${zenMincho.className}`}
+            className={`${styles.heading}font-micho`}
           >
             I tell stories — sometimes with words, sometimes with light.
           </h1>

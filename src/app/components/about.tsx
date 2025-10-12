@@ -1,17 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { EB_Garamond } from 'next/font/google';
 import Image from "next/image";
 import Divider from "@mui/material/Divider";
 import Footer from "./footer";
-import { Zen_Old_Mincho } from "next/font/google";
-
-const zenMincho = Zen_Old_Mincho({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-zen-mincho",
-});
 
 // const fields: string[] = ["Computer Science", "English Literature"];
 
@@ -30,7 +22,7 @@ const AboutSection = () => {
   // }, []);
 
   return (
-<section className={`${zenMincho.className} about-section`}>
+<section className={`font-micho about-section`}>
       <div className="about-container">
         <div className="portrait-container">
           <Image 

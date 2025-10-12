@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function WritingPage() {
   return (
-    <div className={`${styles.wrapper} ${zenMincho.className}`}>
+    <div className={`${styles.wrapper} font-micho`}>
       {/* --- Header / Navigation --- */}
       <header className={styles.header}>
         <NavBar />
