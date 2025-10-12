@@ -10,18 +10,10 @@ export const metadata = {
   title: "Yong-Yu Huang",
   description: "Yong-Yu Huang's Portfolio",
 };
-import { Zen_Old_Mincho } from "next/font/google";
-
-const zenMincho = Zen_Old_Mincho({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-zen-mincho",
-});
-
 
 export default function Home() {
   return (
-    <div className={`wrapper bg-white text-black min-h-screen flex flex-col font-micho`}>
+    <div className={`wrapper bg-white text-black min-h-screen flex flex-col font-zen-old-micho`}>
       
       <header>
         <NavBar />

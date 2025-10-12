@@ -2,18 +2,10 @@ import React from "react";
 import { EB_Garamond } from 'next/font/google'
 import styles from '../styles/Introduction.module.css';  // Import CSS module
 
-import { Zen_Old_Mincho } from "next/font/google";
-
-const zenMincho = Zen_Old_Mincho({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-zen-mincho",
-});
-
 const Publications =() => {
     return(
         <section className={`background-color: var(--page-bg, #f3f3f3);
- text-black font-micho ${styles.WritingSection}}`}>
+ text-black font-zen-old-micho ${styles.WritingSection}}`}>
 
       <p className="text-xl p-4 ml-5 mt-5 font-bold"> Selected Publications</p>
       <p className="bio ml-4">

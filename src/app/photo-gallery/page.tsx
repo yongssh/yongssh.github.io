@@ -4,13 +4,7 @@ import PhotoGallery from "../components/Gallery";
 import Footer from "../components/footer";
 import styles from "./photo-gallery-page.module.css";
 
-import {Zen_Old_Mincho } from "next/font/google";
 
-const zenMincho = Zen_Old_Mincho({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-zen-mincho",
-});
 export default function GalleryPage() {
   return (
     <div className={styles.wrapper}>
@@ -27,13 +21,11 @@ export default function GalleryPage() {
         >
           <h1
             id="gallery-heading"
-            className={`${styles.heading}font-micho`}
+            className={`${styles.heading} font-zen-old-micho`}
           >
-            I tell stories — sometimes with words, sometimes with light.
+            Sometimes, I take pictures.
           </h1>
-          <p className={styles.subtext}>
-            A small selection of my photography work. Click to expand.
-          </p>
+        
 
           <div className={styles.galleryContainer}>
             <PhotoGallery />

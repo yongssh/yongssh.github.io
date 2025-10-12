@@ -1,13 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { Zen_Old_Mincho } from "next/font/google";
 
-const zenMincho = Zen_Old_Mincho({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-zen-mincho",
-});
 
 
 const CATEGORIES = [
@@ -19,7 +13,7 @@ const CATEGORIES = [
 export default function NavBar() {
   return (
     <nav
-      className={`nav fixed top-0 w-full z-50 bg-white border-b border-gray-200 font-micho`}
+      className={`nav fixed top-0 w-full z-50 bg-white border-b border-gray-200 font-zen-old-micho`}
     >
       <ul className="navList flex justify-center flex-wrap gap-3 md:gap-4 px-6 py-3 m-0 list-none">
         {CATEGORIES.map((c) => (

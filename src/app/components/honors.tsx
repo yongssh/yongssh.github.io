@@ -2,18 +2,11 @@ import React from "react";
 import { EB_Garamond } from 'next/font/google'
 import styles from '../styles/Introduction.module.css';  // Import CSS module
 import Footer from "./footer";
-import { Inter, Zen_Old_Mincho } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
-const zenMincho = Zen_Old_Mincho({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-zen-mincho",
-});
 const Honors =() => {
     return(
         <section className={`background-color: var(--page-bg, #f3f3f3);
- text-black font-micho ${styles.WritingSection}}`}>
+ text-black font-zen-old-micho ${styles.WritingSection}}`}>
 
       <p className="text-xl p-4 mt-5 ml-5 font-bold">
         Selected Honors </p>
