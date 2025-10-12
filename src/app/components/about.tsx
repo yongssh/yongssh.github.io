@@ -44,7 +44,7 @@ const AboutSection = () => {
           </div>
         </div>
         <p className="bio-text">
-          I study computer science and English literature at Northwestern University, where I'm a Franke Undergraduate Fellow. 
+          I study computer science and English literature at Northwestern University, where I&apos;m a Franke Undergraduate Fellow. 
           I edit <em>Helicon</em> and work on web projects for <em>The Daily Northwestern</em>. Previously, I was the Features Editor for <em>North By Northwestern</em>.
           I&apos;ve been a Kaplan Humanities Scholar and a Leopold Fellow, and I&apos;ve won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
          </p>

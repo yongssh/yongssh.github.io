@@ -8,12 +8,10 @@ import styles from "./photo-gallery-page.module.css";
 export default function GalleryPage() {
   return (
     <div className={styles.wrapper}>
-      {/* --- Site Header --- */}
       <header className={styles.header}>
         <NavBar />
       </header>
 
-      {/* --- Main Content --- */}
       <main role="main" className={styles.main}>
         <section
           aria-labelledby="gallery-heading"
