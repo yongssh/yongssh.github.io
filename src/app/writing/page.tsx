@@ -14,12 +14,10 @@ export const metadata = {
 export default function WritingPage() {
   return (
     <div className={`${styles.wrapper} font-zen-old-micho`}>
-      {/* --- Header / Navigation --- */}
       <header className={styles.header}>
         <NavBar />
       </header>
 
-      {/* --- Main Content --- */}
       <main id="main-content" role="main" className={styles.main}>
         <section aria-labelledby="writing-heading" className={styles.section}>
           <header className={styles.sectionHeader}>
@@ -49,7 +47,6 @@ export default function WritingPage() {
         </section>
       </main>
 
-      {/* --- Footer --- */}
       <footer className={styles.footer}>
         <Footer />
       </footer>
