@@ -5,6 +5,8 @@ export default function Honors() {
   const honors = [
     { title: "Longlist, Queen Mary Wasafiri New Writing Prize", year: 2025 },
     { title: "Finalist, Narrative Magazine 17th Annual Poetry Contest", year: 2025 },
+    { title: "Outstanding Junior in Literature, Northwestern University Department of English", year: 2025 },
+
     {
       title: (
         <>
@@ -19,6 +21,8 @@ export default function Honors() {
       ),
       year: 2024,
     },
+    { title: "William Faricy Poetry Award, Northwestern University Department of English", year: 2024 },
+
     { title: "Helen G. Scott Prize for Best First-Year Paper, Northwestern University Department of English", year: 2023 },
     { title: "William Faricy Poetry Award, Northwestern University Department of English", year: 2023 },
     { title: "Semifinalist, Gregory Djanikian Scholars", year: 2023 },
