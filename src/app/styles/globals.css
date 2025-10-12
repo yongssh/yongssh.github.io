@@ -193,10 +193,11 @@ body:has(.hover-journ:hover) .journ {
 
 .bio-text {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.8rem;
-  margin: 1rem auto;
+  margin: auto 2rem;
   color: var(--text-dark);
+  padding: 1rem;
 }
 
 /* --- Headline Underline --- */
