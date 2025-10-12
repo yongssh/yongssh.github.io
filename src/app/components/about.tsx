@@ -24,7 +24,7 @@ const AboutSection = () => {
   return (
 <section className={`font-micho about-section`}>
       <div className="about-container">
-        <div className="portrait-container">
+        {/* <div className="portrait-container">
           <Image 
             src="/portrait.JPG" 
             width={300} 
@@ -33,7 +33,7 @@ const AboutSection = () => {
             className="intro-picture" 
             style={{ borderRadius: '100px', padding: '2rem'}} 
           />
-        </div>
+        </div> */}
         <div>
           <div className="header">
             {/* <span>Hello! I&apos;m Yong-Yu, <br></br>and I study </span><br></br> */}
