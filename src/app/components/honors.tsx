@@ -6,7 +6,6 @@ export default function Honors() {
     { title: "Longlist, Queen Mary Wasafiri New Writing Prize", year: 2025 },
     { title: "Finalist, Narrative Magazine 17th Annual Poetry Contest", year: 2025 },
     { title: "Outstanding Junior in Literature, Northwestern University Department of English", year: 2025 },
-
     {
       title: (
         <>
