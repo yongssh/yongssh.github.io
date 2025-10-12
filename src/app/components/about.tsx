@@ -46,7 +46,7 @@ const AboutSection = () => {
         <p className="bio-text">
           I study computer science and English literature at Northwestern University. 
           I&apos;ve been a Kaplan Humanities Scholar and a Leopold Fellow, and I&apos;ve won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
-          Currently, I am a Franke Undergraduate Fellow, the Editor-in-Chief of <em>Helicon</em>, and the Web Developer for The Daily Northwestern. Previously, I was the Features Editor for <em>North By Northwestern</em>.
+          Currently, I am a Franke Undergraduate Fellow, the Editor-in-Chief of <em>Helicon</em>, and the Web Developer for <em>The Daily Northwestern</em>. Previously, I was the Features Editor for <em>North By Northwestern</em>.
          </p>
          <p className="bio-text">
           Outside of school, my work appears in <em>Waxwing</em>, <em>The Adroit Journal</em>, <em>The Offing</em>, <em>Sixth Finch</em>, and elsewhere. 
