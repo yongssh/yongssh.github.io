@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Publications from "../components/publications";
-import Honors from "../components/honors";
+import Honors from "../components/Honors";
 import Footer from "../components/footer";
 import styles from "./writing-page.module.css";
 

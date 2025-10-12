@@ -1,42 +1,70 @@
+/* --- NavBar --- */
+.navHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f3f3f3;
+  z-index: 100;
+  border-bottom: 1px solid #ddd;
+}
+
 .nav {
-  backdrop-filter: blur(6px);
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark, #111);
+  font-family: var(--font-family-zen-old-micho);
+}
+
+.brandLink {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navList {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  overflow-x: auto;
-  padding: 0.5rem 1rem;
-  margin: 0;
   list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .navItem {
-  flex: 0 0 auto;
+  font-size: 1rem;
 }
 
-.navButton {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.3rem;
-  border: 1px solid #501e4c;
-  border-radius: 9999px;
-  padding: 0.35rem 0.9rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #111827;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+.navLink {
+  text-decoration: none;
+  color: var(--text-dark, #111);
+  font-family: var(--font-family-zen-old-micho);
+  position: relative;
+  transition: color 0.2s ease-in-out;
 }
 
-.navButton:hover {
-  border-color: #501e4c;
-  color: #501e4c;
-  background-color: #b6acd1;
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #c47a88;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover {
+  color: #c47a88;
+}
+
+.navLink:hover::after {
+  width: 100%;
 }

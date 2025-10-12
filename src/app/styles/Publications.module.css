@@ -1,0 +1,144 @@
+.publicationsSection {
+  background-color: var(--page-bg, #f3f3f3);
+  color: var(--text-dark, #111);
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  font-family: var(--font-zen-mincho, "Zen Old Mincho", serif);
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark, #111);
+}
+
+.intro {
+  font-size: 1rem;
+  color: var(--text-muted, #555);
+}
+
+.category {
+  font-weight: 500;
+}
+
+.category:hover {
+  text-decoration: underline;
+  color: var(--brand-accent, #c47a88);
+}
+
+.pubList {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+}
+
+.pubItem {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.pubTitle {
+  font-weight: 500;
+  color: var(--text-dark, #111);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.pubTitle:hover {
+  color: var(--brand-accent, #c47a88);
+  text-decoration: underline;
+}
+
+.pubMeta {
+  font-size: 0.875rem;
+  color: var(--text-muted, #555);
+  margin-left: 0.5rem;
+}
+
+.poetry {
+  font-style: italic;
+}
+
+.fiction {
+  font-weight: 600;
+}
+
+.journalism {
+  text-transform: none;
+}
+
+.publicationsSection {
+  background-color: var(--page-bg, #f3f3f3);
+  color: var(--text-dark, #111);
+  padding: 2rem 1.5rem;
+  font-family: var(--font-zen-mincho, "Zen Old Mincho", serif);
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  font-size: 1rem;
+  color: var(--text-muted, #555);
+}
+
+.list {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.list p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--text-dark, #111);
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- Genre Link Styles --- */
+.poetry {
+  text-decoration: underline;
+}
+
+.prose {
+  text-decoration: underline;
+}
+
+.journ {
+  text-decoration: underline;
+}
+
+/* --- Hover Color Blocks --- */
+.hoverPoetry:hover,
+body:has(.hoverPoetry:hover) .poetry {
+  background-color: #caffaf;
+}
+
+.hoverProse:hover,
+body:has(.hoverProse:hover) .prose {
+  background-color: #89f9e3;
+}
+
+.hoverJourn:hover,
+body:has(.hoverJourn:hover) .journ {
+  background-color: #e4b4f2;
+}

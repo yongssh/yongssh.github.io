@@ -1,0 +1,49 @@
+.honorsSection {
+  background-color: var(--page-bg, #f3f3f3);
+  color: var(--text-dark, #111);
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  font-family: var(--font-zen-mincho, "Zen Old Mincho", serif);
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark, #111);
+  margin-bottom: 0.5rem;
+}
+
+.honorList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.honorItem {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.honorTitle {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.honorYear {
+  font-size: 0.875rem;
+  color: var(--text-muted, #555);
+}
+
+.honorItem a {
+  color: var(--text-dark, #111);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.honorItem a:hover {
+  color: var(--brand-accent, #c47a88);
+}

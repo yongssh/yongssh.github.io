@@ -13,7 +13,7 @@ const Publications =() => {
       <br></br>
       <div className={`ml-8`}> 
             <p className={'p-1'}><a className="poetry">Sweeter</a> <span className="text-xs p-2">in <em>Narrative Magazine</em> </span> <span className="text-xs">(Forthcoming)</span></p>
-            <p className={'p-1'}><a className="poetry" href="https://www.slowdownshow.org/episode/2025/09/30/1363-notes-on-beachgrass-by-yongyu-huang">Notes on Beachgrass</a> <span className="text-xs p-2">on <em>The Slowdown</em> </span> <span className="text-xs">(October 2025)</span></p>
+            <p className={'p-1'}><a className="poetry" href="https://www.slowdownshow.org/episode/2025/09/30/1363-notes-on-beachgrass-by-yongyu-huang">Notes on Beachgrass</a> <span className="text-xs p-2">on <em>The Slowdown</em> </span> <span className="text-xs">(Oct 2025)</span></p>
             <p className={'p-1'}><a className="poetry" href="https://www.theshorepoetry.org/yongyu-huang-clark-street-beach-in-april">Clark Street Beach in April</a> <span className="text-xs p-2">in <em>The Shore</em> </span> <span className="text-xs">(September 2025)</span></p>
             <p className={'p-1'}><a className="poetry" href="https://www.muzzlemagazine.com/yong-yu-huang.html">Notes on Beachgrass</a> <span className="text-xs p-2">in <em>Muzzle Magazine</em> </span> <span className="text-xs">(April 2025)</span></p>
             <p className={'p-1'}><a className="poetry" href="https://poetrysociety.org.uk/poems/living-as-my-mother/">Living as My Mother</a> <span className="text-xs p-2">in <em>The Poetry Society</em> </span> <span className="text-xs">(March 2025)</span></p>
