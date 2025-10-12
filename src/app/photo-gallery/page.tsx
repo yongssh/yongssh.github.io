@@ -19,7 +19,7 @@ export default function GalleryPage() {
         >
           <h1
             id="gallery-heading"
-            className={`${styles.subtext} font-zen-old-micho`}
+            className={`${styles.subtext} font-zen-old-mincho`}
           >
             Click to expand.          
           </h1>

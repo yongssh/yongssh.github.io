@@ -1,67 +1,87 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import Divider from "@mui/material/Divider";
-import Footer from "./footer";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import styles from "../styles/About.module.css";
 
-// const fields: string[] = ["Computer Science", "English Literature"];
+export default function About() {
+  const [visibleIndex, setVisibleIndex] = useState(0);
 
-const AboutSection = () => {
-  // const [currentField, setCurrentField] = useState(fields[0]);
-
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setCurrentField((prevField) => {
-  //       const nextIndex = (fields.indexOf(prevField) + 1) % fields.length;
-  //       return fields[nextIndex];
-  //     });
-  //   }, 4000);
-
-  //   return () => clearInterval(intervalId);  
-  // }, []);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setVisibleIndex((prev) => (prev < 2 ? prev + 1 : prev));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
-<section className={`font-micho about-section`}>
-      <div className="about-container">
-        {/* <div className="portrait-container">
-          <Image 
-            src="/portrait.JPG" 
-            width={300} 
-            height={400} 
-            alt="portrait image" 
-            className="intro-picture" 
-            style={{ borderRadius: '100px', padding: '2rem'}} 
-          />
-        </div> */}
-        <div>
-          <div className="header">
-            {/* <span>Hello! I&apos;m Yong-Yu, <br></br>and I study </span><br></br> */}
-            <p className="hed">Yong-Yu Huang</p>
-            {/* <span className="typed-text">{currentField}</span> */}
-          
-          {/* <Divider className="divider" variant="middle" /> */}
-          </div>
-        </div>
-        <p className="bio-text">
-          I study computer science and English literature at Northwestern University, where I&apos;m a Franke Undergraduate Fellow. 
-          I edit <em>Helicon</em> and work on web projects for <em>The Daily Northwestern</em>. Previously, I was the Features Editor for <em>North By Northwestern</em>.
-          I&apos;ve been a Kaplan Humanities Scholar and a Leopold Fellow, and I&apos;ve won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
-         </p>
-         <p className="bio-text">
-          Outside of school, my work appears in <em>Waxwing</em>, <em>The Adroit Journal</em>, <em>The Offing</em>, <em>Sixth Finch</em>, and elsewhere. 
-          I was the recipient of the 2021 Elinor Benedict Poetry Prize and have been recognized by the Poetry Society of the UK, Best Small Fictions, the Hippocrates Society, and the Gregory Djanikian Scholars Program, among others.
-          In my free time, I can be found doing crosswords, listening to Lorde, or going for a walk. 
-          </p>
-            <p className="bio-text">
-            <a href="mailto:yongyu.yy.huang@gmail.com"><u>Email</u></a>, 
-            <a href="https://www.twitter.com/yong_yuhuang"> <u>Twitter</u></a>, or read more on 
-            <a href="https://yongyuhuang.substack.com/"> <u>Substack</u></a>.
-        </p>
-      </div>
+    <section className={styles.aboutSection} aria-labelledby="about-heading">
+      <header className={styles.header}>
+        <h1 id="about-heading" className={styles.name}>
+          Yong-Yu Huang
+        </h1>
 
+        <div className={styles.iconRow}>
+          <a
+            href="https://www.linkedin.com/in/yong-yuhuang/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/yongssh"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <FaGithub />
+          </a>
+        </div>
+      </header>
+
+      <article className={styles.bioContainer}>
+        <p
+          className={`${styles.bioText} ${
+            visibleIndex >= 0 ? styles.visible : ""
+          }`}
+        >
+          I study computer science and English literature at Northwestern University, where I&apos;m a Franke Undergraduate Fellow. 
+          I edit <em>Helicon</em> and work on web projects and report for <em>The Daily Northwestern</em>. 
+          In the past, I&apos;ve interned for <em>Encyclopædia Britannica</em> and edited features for <em>North By Northwestern</em>. 
+          I&apos;ve been a Kaplan Humanities Scholar and a Leopold Fellow, and I&apos;ve won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
+        </p>
+
+        <p
+          className={`${styles.bioText} ${
+            visibleIndex >= 1 ? styles.visible : ""
+          }`}
+        >
+          Outside of school, my work appears in <em>Waxwing</em>, <em>The Adroit Journal</em>, <em>The Offing</em>, <em>Sixth Finch</em>, and elsewhere. 
+          I was the recipient of the 2021 Elinor Benedict Poetry Prize and have been recognized by the Poetry Society of the UK, Best Small Fictions, the Hippocrates Society, and the Gregory Djanikian Scholars Program, among others. 
+          In my free time, I can be found doing crosswords, listening to Lorde, or going for a walk. 
+        </p>
+
+        <p
+          className={`${styles.bioText} ${
+            visibleIndex >= 2 ? styles.visible : ""
+          }`}
+        >
+          <a href="mailto:yongyu.yy.huang@gmail.com">
+            <u>Email</u>
+          </a>
+          ,{" "}
+          <a href="https://www.twitter.com/yong_yuhuang">
+            <u>Twitter</u>
+          </a>
+          , or read more on{" "}
+          <a href="https://yongyuhuang.substack.com/">
+            <u>Substack</u>
+          </a>
+          .
+        </p>
+      </article>
     </section>
   );
-};
-
-export default AboutSection;
+}

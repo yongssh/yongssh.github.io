@@ -5,7 +5,7 @@ import styles from '../styles/Introduction.module.css';  // Import CSS module
 const Publications =() => {
     return(
         <section className={`background-color: var(--page-bg, #f3f3f3);
- text-black font-zen-old-micho ${styles.WritingSection}}`}>
+ text-black font-zen-old-mincho ${styles.WritingSection}}`}>
 
       <p className="text-xl p-4 ml-5 mt-5 font-bold"> Selected Publications</p>
       <p className="bio ml-4">

@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className={`wrapper bg-white text-black min-h-screen flex flex-col font-zen-old-micho`}>
+    <div className={`wrapper bg-white text-black min-h-screen flex flex-col font-zen-old-mincho`}>
       
       <header>
         <NavBar />

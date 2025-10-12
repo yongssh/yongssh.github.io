@@ -22,7 +22,7 @@
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--text-dark, #111);
-  font-family: var(--font-family-zen-old-micho);
+  font-family: var(--font-family-zen-old-mincho);
 }
 
 .brandLink {
@@ -45,7 +45,7 @@
 .navLink {
   text-decoration: none;
   color: var(--text-dark, #111);
-  font-family: var(--font-family-zen-old-micho);
+  font-family: var(--font-family-zen-old-mincho);
   position: relative;
   transition: color 0.2s ease-in-out;
 }

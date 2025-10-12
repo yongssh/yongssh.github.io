@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function WritingPage() {
   return (
-    <div className={`${styles.wrapper} font-zen-old-micho`}>
+    <div className={`${styles.wrapper} font-zen-old-mincho`}>
       <header className={styles.header}>
         <NavBar />
       </header>
