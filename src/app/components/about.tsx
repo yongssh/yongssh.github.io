@@ -51,7 +51,7 @@ const AboutSection = () => {
          <p className="bio-text">
           Outside of school, my work appears in <em>Waxwing</em>, <em>The Adroit Journal</em>, <em>The Offing</em>, <em>Sixth Finch</em>, and elsewhere. 
           I was the recipient of the 2021 Elinor Benedict Poetry Prize and have been recognized by the Poetry Society of the UK, Best Small Fictions, the Hippocrates Society, and the Gregory Djanikian Scholars Program, among others.
-          In my free time, I can be found doing crosswords, listening to Lorde, or going for a walk.
+          In my free time, I can be found doing crosswords, listening to Lorde, or going for a walk. 
           <span>
             <a href="mailto:yongyu.yy.huang@gmail.com"><u>Email</u></a>, 
             <a href="https://www.twitter.com/yong_yuhuang"> <u>Twitter</u></a>, or read more on 
