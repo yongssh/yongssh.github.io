@@ -28,9 +28,9 @@ export default function Home() {
       </header>
 
       <main id="main-content" className="flex-grow">
-        <section id="intro" aria-labelledby="intro-heading">
+        {/* <section id="intro" aria-labelledby="intro-heading">
           <IntroSection />
-        </section>
+        </section> */}
 
         <section id="about" aria-labelledby="about-heading">
           <AboutSection />
