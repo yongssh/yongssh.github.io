@@ -5,13 +5,6 @@ import Honors from "../components/honors";
 import Footer from "../components/footer";
 import styles from "./writing-page.module.css";
 
-import {Zen_Old_Mincho } from "next/font/google";
-const zenMincho = Zen_Old_Mincho({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-zen-mincho",
-});
-
 export const metadata = {
   title: "Writing | Yong-Yu Huang",
   description:
@@ -20,7 +13,7 @@ export const metadata = {
 
 export default function WritingPage() {
   return (
-    <div className={`${styles.wrapper} font-micho`}>
+    <div className={`${styles.wrapper} font-zen-old-micho`}>
       {/* --- Header / Navigation --- */}
       <header className={styles.header}>
         <NavBar />
