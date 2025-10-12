@@ -1,124 +1,215 @@
-import React from 'react';
-import NavBar from '../components/NavBar';
-import Footer from '../components/footer';
+import React from "react";
+import NavBar from "../components/NavBar";
+import Footer from "../components/footer";
 import Link from "next/link";
+import { describe } from "node:test";
+import styles from "./Projects.module.css";
+
+import {Zen_Old_Mincho } from "next/font/google";
+const zenMincho = Zen_Old_Mincho({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-zen-mincho",
+});
 
 const projects = [
+  // --- NEWSROOM WORK ---
   {
-    title: "EPL Story with Tax Calculator",
-    description: "Reported and built a tax calculator widget with interactive data visualizations with D3.js for the Evanston Public Library debate.",
+    title: "Evanston Public Library considers split from city",
+    outlet: "The Daily Northwestern",
+    description:
+      "Reported on local politics debate and built an interactive tax calculator with D3.js to visualize proposed funding changes.",
     image: "/epl.jpeg",
-    url: "https://dailynorthwestern.com/2025/10/01/top-stories/not-just-a-place-of-books-evanston-public-library-debates-potential-split-from-city/"
+    url: "https://dailynorthwestern.com/2025/10/01/top-stories/not-just-a-place-of-books-evanston-public-library-debates-potential-split-from-city/",
+    tags: ["Local Politics", "Data Visualization", "D3.js", "Interactive Design"],
   },
   {
-    title: "Migration in Mohsin Hamid's Exit West",
-    description: "Created interactive scrolly-telling page to track Hamid's characters as they travel across the world, using Leaflet.js",
-    image:"/lahore-map.png",
-    url:"https://yongssh.github.io/exit-west.html"
-  },
-  // {
-  //   title: "Daily Northwestern Elections Page",
-  //   description: "Designed and developed interactive election map with D3.js for election coverage, using WaPo's React component library.",
-  //   image: "/elections2024.png", 
-  //   url: "https://apps.dailynorthwestern.com/election2024/" 
-  // },
-  {
-    title: "Whiting Awards Analysis",
-    description: "Exploratory data analysis and visualization of Whiting Award winners, built with D3.js.",
-    image: "/whiting.png", 
-    url: "https://yongssh.github.io/whiting-awards/"
-  },
-   {
-    title: "World Energy Mix Visualizer ",
-    description: "Built an interactive tool with D3.js to visualize how each country sources energy, drawing on World Bank data and following the book D3.js: Start to Finish as a learning guide. ",
-    image: "/d3.png", 
-    url: "https://stately-frangollo-b9a02e.netlify.app"
+    title: "Daily Northwestern 2024 Elections",
+    outlet: "The Daily Northwestern",
+    description:
+      "Built and designed an interactive election results landing page using The Washington Post’s React component library and D3.js.",
+    image: "/2024elections.png",
+    url: "https://apps.dailynorthwestern.com/election2024/",
+    tags: ["Elections", "React", "D3.js", "Design Systems"],
   },
   {
     title: "Chicago Heatwave Project",
-    description: "Created data visualizations and reported during the 1995 heatwave event screening with D3.js.",
-    image: "/johnson.jpg", 
-    url: "https://dailynorthwestern.com/2025/07/16/city/chicago-mayor-brandon-johnson-buffett-researchers-host-screening-and-discussion-on-1995-heat-wave/"
+    outlet: "The Daily Northwestern",
+    description:
+      "Created data visualizations and reported on a 1995 heatwave retrospective screening hosted by city officials and researchers.",
+    image: "/johnson.jpg",
+    url: "https://dailynorthwestern.com/2025/07/16/city/chicago-mayor-brandon-johnson-buffett-researchers-host-screening-and-discussion-on-1995-heat-wave/",
+    tags: ["Data Journalism", "Climate", "Chicago", "D3.js"],
   },
   {
-    title: "Northwestern University Executives in Numbers",
-    description: "Developed interactive data visualizations to support reporting on university executive compensation with Flourish.",
+    title: "Northwestern Executives in Numbers",
+    outlet: "The Daily Northwestern",
+    description:
+      "Built supporting data visuals with Flourish for executive compensation coverage.",
     image: "/presidentspay.png",
-    url: "https://dailynorthwestern.com/2025/09/15/campus/outgoing-university-president-michael-schill-earned-nearly-1-7-million-in-first-full-year-tax-filings-show/"
+    url: "https://dailynorthwestern.com/2025/09/15/campus/outgoing-university-president-michael-schill-earned-nearly-1-7-million-in-first-full-year-tax-filings-show/",
+    tags: ["Higher Education", "Flourish", "Data Visualization"],
   },
   {
     title: "Fulbright Funding Impact",
-    description: "Investigated potential federal cuts to the Fulbright Scholarship program by interviewing Northwestern scholars who studied abroad and foreign students studying in the U.S.",
+    outlet: "The Daily Northwestern",
+    description:
+      "Interviewed Northwestern-affiliated Fulbright scholars to assess how federal funding changes could affect the program’s future.",
     image: "/Fulbright_Seal_RGB-scaled-1.jpg",
     url: "https://dailynorthwestern.com/2025/07/07/top-stories/a-shift-going-on-fulbright-scholars-at-nu-and-abroad-discuss-impact-programs-future-amid-political-uncertainty/",
+    tags: ["Education", "Policy", "Interviewing", "Feature Writing"],
+  },
 
+  {
+    title: "H-1B or Bust",
+    outlet: "nuAZN",
+    description:
+    "Led reporting on an enterprise feature exploring how international students navigate visa uncertainty and shifting U.S. immigration policy. Conducted interviews with students and the Center for Immigration Studies' spokesperson.",
+    image: "/h1b.png",
+    url: "https://drive.google.com/file/d/1bd3aXz4QDAbdQL8dBzSYJSPl_kP0usYb/view?usp=sharing", 
+    tags: [
+      "Immigration Policy",
+      "Higher Education",
+      "Feature Writing",
+  ]
+  },
+
+  // --- PERSONAL / INDEPENDENT PROJECTS ---
+  {
+    title: "Migration in Mohsin Hamid’s Exit West",
+    outlet: "Personal Project",
+
+    description:
+      "Created an interactive scrollytelling piece mapping the journeys of Hamid’s characters with Leaflet.js and custom storytelling layout.",
+    image: "/lahore-map.png",
+    url: "https://yongssh.github.io/exit-west.html",
+    tags: ["Scrollytelling", "Leaflet.js", "Literature", "Interactive Design"],
+  },
+  {
+    title: "Whiting Awards Analysis",
+    outlet: "Personal Project",
+    date: "2024",
+    role: "Data Journalist",
+    type: "Personal",
+    description:
+      "Analyzed more than three decades of Whiting Award winners to identify demographic and literary trends, visualized with D3.js.",
+    image: "/whiting.png",
+    url: "https://yongssh.github.io/whiting-awards/",
+    tags: ["Data Analysis", "Literature", "D3.js", "Data Visualization"],
+  },
+  {
+    title: "World Energy Mix Visualizer",
+    outlet: "Personal Project",
+    date: "2024",
+    role: "Developer",
+    type: "Personal",
+    description:
+      "Built an interactive visualization showing how countries source their energy, using World Bank data and D3.js.",
+    image: "/d3.png",
+    url: "https://stately-frangollo-b9a02e.netlify.app",
+    tags: ["Energy", "D3.js", "Open Data", "Web Development"],
   },
   {
     title: "Trouble in Paradise",
-    description:"Reported and wrote a longform feature on tensions between tourism and local communities in Hawai‘i and Guam for nuAZN.",
+    outlet: "nuAZN Magazine",
+    description:
+      "Reported and wrote a longform feature on tensions between tourism and local communities in Hawai‘i and Guam.",
     image: "/nuazntourism.png",
-    url:"https://drive.google.com/file/d/1vK4wTHjW8tW71FnGgFgAMq6RO7ak7VQg/view?usp=share_link"
-},
-{
+    url: "https://drive.google.com/file/d/1vK4wTHjW8tW71FnGgFgAMq6RO7ak7VQg/view?usp=share_link",
+    tags: ["Culture", "Feature Writing", "Travel", "Editing"],
+  },
+  {
     title: "Taiwan’s White Terror",
-    description:"Pitched, researched, and wrote an article on Taiwan’s White Terror period, when martial law was used to suppress dissent for decades, for Encyclopaedia Britannica.",
+    outlet: "Encyclopaedia Britannica",
+    description:
+      "Wrote and researched an entry on Taiwan’s White Terror period, covering decades of martial law and suppression of dissent.",
     image: "/whiteterror.png",
-    url:"https://www.britannica.com/event/White-Terror-Taiwan"
-},
-{
+    url: "https://www.britannica.com/event/White-Terror-Taiwan",
+    tags: ["History", "Research", "Editing", "Feature Writing"],
+  },
+  {
     title: "Min Jin Lee",
-    description:"Pitched, interviewed, and researched for a Encylopaedia Britannica's entry on novelist Min Jin Lee.",
+    outlet: "Encyclopaedia Britannica",
+    description:
+      "Researched and interviewed for a biographical entry on novelist Min Jin Lee, exploring her literary career and themes.",
     image: "/minjinlee.png",
-    url:"https://www.britannica.com/biography/Min-Jin-Lee"
-}
-  ];
-
-const ProjectsPage: React.FC = () => {
+    url: "https://www.britannica.com/biography/Min-Jin-Lee",
+    tags: ["Profile Writing", "Interviewing", "Research", "Editing"],
+  },
+];
+export default function ProjectsPage() {
   return (
-    <div className="wrapper bg-white text-black min-h-screen flex flex-col font-righteous">
-      <NavBar />
-      <main className="container mx-auto px-4 py-16 flex-grow">
-        <h1 className="text-4xl font-bold mb-12 text-center font-righteous tracking-tight">
-          My Projects
-        </h1>
+    <div className={styles.wrapper}>
+      <header>
+        <NavBar />
+      </header>
 
-        {/* Grid: 1 col mobile, 2 tablet, 3 desktop */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <main id="projects" className="container mx-auto px-4 py-16 flex-grow">
+        <header className={styles.header}>
+          <h1 className={styles.title}>My Projects</h1>
+          <p className={styles.subtitle}>
+            A selection of newsroom and independent projects that combine
+            reporting, design, and data storytelling.
+          </p>
+        </header>
+
+        <section aria-labelledby="projects-heading" className={styles.grid}>
+          <h2 id="projects-heading" className="sr-only">
+            Project Gallery
+          </h2>
+
           {projects.map((project, idx) => (
-            <div
-              key={idx}
-              className="group bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden flex flex-col"
-            >
-              <Link href={project.url} target="_blank" className="overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-52 object-cover transform group-hover:scale-105 transition duration-300"
-                />
-              </Link>
-              <div className="p-6 flex flex-col flex-grow">
-                <h2 className="text-xl font-semibold mb-3">{project.title}</h2>
-                <p className="text-sm text-gray-600 flex-grow leading-relaxed">
-                  {project.description}
-                </p>
-            <Link
-              href={project.url}
-              target="_blank"
-              className="mt-5 inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md 
-                        text-white bg-[rgb(8,47,73)] shadow-sm transition-colors duration-200
-                        hover:bg-blue-200 hover:text-[rgb(8,47,73)]"
-            >
-              <span>View Project</span>
-              <span aria-hidden="true">→</span>
-            </Link>
+            <article key={idx} className={styles.card}>
+              <figure className={styles.figure}>
+                <Link href={project.url} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={project.image}
+                    alt={`Thumbnail for ${project.title}`}
+                  />
+                </Link>
+              </figure>
+
+              <div className={styles.cardBody}>
+                <header>
+                  <h3 className={styles.cardTitle}>{project.title}</h3>
+                  <p className={styles.cardOutlet}>
+                    {project.outlet}
+                    {project.type === "Personal" && (
+                      <span className={styles.personalTag}>Personal Project</span>
+                    )}
+                  </p>
+                </header>
+
+                <p className={styles.cardDescription}>{project.description}</p>
+
+                <ul className={styles.tags} aria-label="Tags">
+                  {project.tags.map((tag, tIdx) => (
+                    <li key={tIdx} className={styles.tag}>
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+
+                <footer>
+                  <Link
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.button}
+                  >
+                    <span>See more</span>
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                </footer>
               </div>
-            </div>
+            </article>
           ))}
-        </div>
+        </section>
       </main>
-      <Footer />
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
-};
-
-export default ProjectsPage;
+}

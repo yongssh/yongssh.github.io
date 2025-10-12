@@ -1,0 +1,79 @@
+/* --- Layout --- */
+.wrapper {
+  background-color: var(--page-bg, #f3f3f3);
+  color: var(--text-dark, #111);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Header --- */
+.header {
+  position: relative;
+  width: 100%;
+  z-index: 50;
+}
+
+/* --- Main --- */
+.main {
+  flex-grow: 1;
+  padding-top: 8rem; /* offset for fixed NavBar */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+}
+
+.section {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionHeader {
+  margin-bottom: 2.5rem;
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 2.25rem;
+  }
+}
+
+.subtext {
+  color: var(--text-muted, #555);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* --- Grid Layout --- */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.column {
+  text-align: left;
+}
+
+/* --- Footer --- */
+.footer {
+  margin-top: auto;
+  background: var(--brand-accent, #c47a88);
+  color: #fafafa;
+  text-align: center;
+  padding: 1rem 0;
+}

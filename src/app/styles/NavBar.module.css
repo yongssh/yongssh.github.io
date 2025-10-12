@@ -1,0 +1,42 @@
+.nav {
+  backdrop-filter: blur(6px);
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  list-style: none;
+}
+
+.navItem {
+  flex: 0 0 auto;
+}
+
+.navButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  border: 1px solid #501e4c;
+  border-radius: 9999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #111827;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.navButton:hover {
+  border-color: #501e4c;
+  color: #501e4c;
+  background-color: #b6acd1;
+}

@@ -1,62 +1,37 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { EB_Garamond } from 'next/font/google';
-import { HiMenu, HiX } from 'react-icons/hi';
+import { Zen_Old_Mincho } from "next/font/google";
 
-const garamond = EB_Garamond({ 
-  subsets: ['latin'],
-  variable: '--font-garamond'
+const zenMincho = Zen_Old_Mincho({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-zen-mincho",
 });
 
-const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen((prev) => !prev);
+const CATEGORIES = [
+  { key: "about", label: "About", href: "/about" },
+  { key: "writing", label: "Writing", href: "/writing" },
+  { key: "photo-gallery", label: "Photography", href: "/photo-gallery" },
+];
 
-  const menuItems = [
-    { href: "/about", label: "About" },
-    { href: "/writing", label: "Writing" },
-    { href: "/photo-gallery", label: "Photography" },
-  ];
-
-  if (isOpen) {
-    return (
-      <div className={`md:hidden bg-sky-950 text-white w-full ${garamond.className}`}>
-        <ul className="flex flex-col items-center py-4">
-          {menuItems.map(({ href, label }) => (
-            <li key={href} className="py-2">
-              <Link href={href} onClick={toggleMenu}>
-                <p className="hover:underline">{label}</p>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
-
+export default function NavBar() {
   return (
-    <div className={`w-full bg-sky-950 sticky top-0 z-50 ${garamond.className}`}>
-      <div className="flex flex-col md:flex-row items-center justify-between px-4 py-2 md:py-4 mx-auto">
-        <p className="text-white text-lg md:text-xl">Yong-Yu Huang</p>
-        
-        <button onClick={toggleMenu} className="text-white md:hidden">
-          <HiMenu size={30} />
-        </button>
-
-        <ul className="hidden md:flex gap-x-6 text-white">
-          {menuItems.map(({ href, label }) => (
-            <li key={href}>
-              <Link href={href}>
-                <p className="hover:underline">{label}</p>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+    <nav
+      className={`nav fixed top-0 w-full z-50 bg-white border-b border-gray-200 ${zenMincho.className}`}
+    >
+      <ul className="navList flex justify-center flex-wrap gap-3 md:gap-4 px-6 py-3 m-0 list-none">
+        {CATEGORIES.map((c) => (
+          <li key={c.key} className="navItem flex-none">
+            <Link href={c.href}>
+              <p className="navButton text-[15px] font-medium tracking-wide text-[#c47a88] hover:text-[#a25e6b] transition-colors duration-200">
+                {c.label}
+              </p>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
-};
-
-export default NavBar;
+}

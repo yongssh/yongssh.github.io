@@ -4,14 +4,18 @@ import styles from '../styles/Introduction.module.css';
 import Image from "next/image";
 
 
-const garamond = EB_Garamond({ 
-  subsets: ['latin'],
-  variable: '--font-garamond'
+import { Zen_Old_Mincho } from "next/font/google";
+
+const zenMincho = Zen_Old_Mincho({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-zen-mincho",
 });
+
 
 const IntroSection = () => {
     return (
-        <section className={`bg-white text-black ${garamond.className} ${styles.IntroSection}`}>
+        <section className={`bg-white text-black ${zenMincho.className} ${styles.IntroSection}`}>
             <p className="bio">
                 I study English literature and computer science at Northwestern University. In my free time, you can find me doing a crossword or going for a walk.
             </p>
