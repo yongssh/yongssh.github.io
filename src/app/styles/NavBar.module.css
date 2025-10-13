@@ -13,7 +13,8 @@
   max-width: 80rem;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
   align-items: center;
   padding: 1rem 2rem;
 }
@@ -21,7 +22,7 @@
 .brand {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text-dark, #111);
+  color: #c47a88;
   font-family: var(--font-family-zen-old-mincho);
 }
 
@@ -44,7 +45,7 @@
 
 .navLink {
   text-decoration: none;
-  color: var(--text-dark, #111);
+  color: #c47a88;
   font-family: var(--font-family-zen-old-mincho);
   position: relative;
   transition: color 0.2s ease-in-out;
@@ -62,7 +63,7 @@
 }
 
 .navLink:hover {
-  color: #c47a88;
+  color: var(--text-dark, #111);
 }
 
 .navLink:hover::after {

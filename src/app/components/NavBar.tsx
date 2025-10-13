@@ -14,11 +14,11 @@ export default function NavBar() {
   return (
     <header className={styles.navHeader}>
       <nav aria-label="Main navigation" className={styles.nav}>
-        <div className={styles.brand}>
+        {/* <div className={styles.brand}>
           <Link href="/" className={styles.brandLink}>
             Yong-Yu Huang
           </Link>
-        </div>
+        </div> */}
 
         <ul className={styles.navList}>
           {NAV_ITEMS.map((item) => (

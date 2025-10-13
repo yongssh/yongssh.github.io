@@ -2,15 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/footer";
 import Link from "next/link";
-import { describe } from "node:test";
 import styles from "./Projects.module.css";
-
-import {Zen_Old_Mincho } from "next/font/google";
-const zenMincho = Zen_Old_Mincho({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-zen-mincho",
-});
 
 const projects = [
   // --- NEWSROOM WORK ---
