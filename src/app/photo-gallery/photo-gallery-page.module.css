@@ -24,11 +24,18 @@
 /* --- Main --- */
 .main {
   flex-grow: 1;
-  padding-top: 9rem; /* offset fixed navbar */
+  padding-top: 9rem;
   padding-left: 1rem;
   padding-right: 1rem;
   transition: padding-top 0.3s ease;
 }
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: #c47a88;
+}
+
 
 .section {
   max-width: 80rem;
@@ -54,8 +61,8 @@
 }
 
 .subtext {
-  color: var(--text-muted);
-  font-size: 2rem;
+  color: #c47a88;
+  font-size: 1rem;
   font-family: var(--font-family-zen-old-mincho);
 
   margin-bottom: 2.5rem;

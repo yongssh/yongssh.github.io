@@ -9,7 +9,7 @@ const projects = [
     title: "Evanston Public Library considers split from city",
     outlet: "The Daily Northwestern",
     description:
-      "Reported on local politics debate and built an interactive tax calculator with D3.js to visualize proposed funding changes.",
+      "Reported on local politics debate and built an interactive tax calculator and visualizations to communicate proposed funding changes.",
     image: "/epl.jpeg",
     url: "https://dailynorthwestern.com/2025/10/01/top-stories/not-just-a-place-of-books-evanston-public-library-debates-potential-split-from-city/",
     tags: ["Local Politics", "Data Visualization", "D3.js", "Interactive Design"],
@@ -17,7 +17,7 @@ const projects = [
     { title: "Grievances in Chicago Emergency Shelters",
     outlet: "Personal Project",
     description:
-      "Built a scrollytelling story about migrant shelters in Chicago, using city data from 2024 and D3.js.",
+      "Built a scrollytelling story about migrant shelters in Chicago, using city data from 2024.",
     image: "/migrantshelters.png",
     url: "https://yongssh.github.io/chicago-migrant-shelters",
     tags: ["Scrollytelling", "D3.js", "Open Data", "Public Policy"],
@@ -26,7 +26,7 @@ const projects = [
     title: "Fulbright Funding Impact",
     outlet: "The Daily Northwestern",
     description:
-      "Interviewed Northwestern-affiliated Fulbright scholars to assess how federal funding changes could affect the program’s future.",
+      "Reported on how federal policy has affected Northwestern-affiliated Fulbright scholars and the program’s future.",
     image: "/Fulbright_Seal_RGB-scaled-1.jpg",
     url: "https://dailynorthwestern.com/2025/07/07/top-stories/a-shift-going-on-fulbright-scholars-at-nu-and-abroad-discuss-impact-programs-future-amid-political-uncertainty/",
     tags: ["Education", "Policy", "Interviewing", "Feature Writing"],
@@ -43,7 +43,6 @@ const projects = [
     {
     title: "Migration in Mohsin Hamid’s Exit West",
     outlet: "Personal Project",
-    type: "Personal",
     description:
       "Created an interactive scrollytelling piece mapping the journeys of Hamid’s characters with Leaflet.js and custom storytelling layout.",
     image: "/lahore-map.png",
@@ -53,9 +52,8 @@ const projects = [
   {
     title: "Whiting Awards Analysis",
     outlet: "Personal Project",
-    type: "Personal",
     description:
-      "Analyzed more than three decades of Whiting Award winners to identify demographic and literary trends, visualized with D3.js.",
+      "Analyzed more than three decades of Whiting Award winners to identify demographic and literary trends.",
     image: "/whiting.png",
     url: "https://yongssh.github.io/whiting-awards/",
     tags: ["Data Analysis", "Literature", "D3.js", "Data Visualization"],
@@ -64,7 +62,7 @@ const projects = [
     title: "Taiwan’s White Terror",
     outlet: "Encyclopaedia Britannica",
     description:
-      "Wrote and researched an entry on Taiwan’s White Terror period, covering decades of martial law and suppression of dissent.",
+      "Wrote political history article on Taiwan’s White Terror period, covering decades of martial law and suppression of free speech.",
     image: "/whiteterror.png",
     url: "https://www.britannica.com/event/White-Terror-Taiwan",
     tags: ["History", "Research", "Editing", "Feature Writing"],
@@ -73,7 +71,7 @@ const projects = [
     title: "Chicago Heatwave Project",
     outlet: "The Daily Northwestern",
     description:
-      "Created data visualizations and reported on a 1995 heatwave retrospective screening hosted by city officials and researchers.",
+      "Reported on a 1995 heatwave memorial event hosted by city officials and researchers.",
     image: "/johnson.jpg",
     url: "https://dailynorthwestern.com/2025/07/16/city/chicago-mayor-brandon-johnson-buffett-researchers-host-screening-and-discussion-on-1995-heat-wave/",
     tags: ["Data Journalism", "Climate", "Chicago", "D3.js"],
@@ -106,9 +104,8 @@ const projects = [
   {
     title: "World Energy Mix Visualizer",
     outlet: "Personal Project",
-    type: "Personal",
     description:
-      "Built an interactive visualization showing how countries source their energy, using World Bank data and D3.js.",
+      "Built an interactive visualization showing how countries source their energy, using World Bank data and D3.js. Followed D3 Start to Finish tutorial.",
     image: "/d3.png",
     url: "https://stately-frangollo-b9a02e.netlify.app",
     tags: ["Energy", "D3.js", "Open Data", "Web Development"],
@@ -117,7 +114,7 @@ const projects = [
     title: "Trouble in Paradise",
     outlet: "nuAZN Magazine",
     description:
-      "Reported and wrote a longform feature on tensions between tourism and local communities in Hawai‘i and Guam.",
+      "Reported a longform feature on tensions between tourism and local communities in Hawai'i and Guam.",
     image: "/nuazntourism.png",
     url: "https://drive.google.com/file/d/1vK4wTHjW8tW71FnGgFgAMq6RO7ak7VQg/view?usp=share_link",
     tags: ["Culture", "Feature Writing", "Travel", "Editing"],
@@ -127,7 +124,7 @@ const projects = [
     title: "Min Jin Lee",
     outlet: "Encyclopaedia Britannica",
     description:
-      "Researched and interviewed for a biographical entry on novelist Min Jin Lee, exploring her literary career and themes.",
+      "Wrote a feature-style biography on novelist Min Jin Lee, exploring her literary career and themes.",
     image: "/minjinlee.png",
     url: "https://www.britannica.com/biography/Min-Jin-Lee",
     tags: ["Profile Writing", "Interviewing", "Research", "Editing"],
@@ -144,8 +141,8 @@ export default function ProjectsPage() {
         <header className={styles.header}>
           <h1 className={styles.title}>My Projects</h1>
           <p className={styles.subtitle}>
-            A selection of newsroom and independent projects that combine
-            reporting, design, and data storytelling.
+            Selected projects featuring
+            reporting, design, analysis, and development.
           </p>
         </header>
 
@@ -170,9 +167,7 @@ export default function ProjectsPage() {
                   <h3 className={styles.cardTitle}>{project.title}</h3>
                   <p className={styles.cardOutlet}>
                     {project.outlet}
-                    {project.type === "Personal" && (
-                      <span className={styles.personalTag}>Personal Project</span>
-                    )}
+                    
                   </p>
                 </header>
 

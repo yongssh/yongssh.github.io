@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { key: "about", label: "About", href: "/about" },
   { key: "writing", label: "Writing", href: "/writing" },
   { key: "photo-gallery", label: "Photography", href: "/photo-gallery" },
+  { key: "projects", label: "Projects", href: "/projects"}
 ];
 
 export default function NavBar() {

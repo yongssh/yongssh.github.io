@@ -17,12 +17,12 @@ export default function GalleryPage() {
           aria-labelledby="gallery-heading"
           className={styles.section}
         >
-          <h1
+          <p
             id="gallery-heading"
             className={`${styles.subtext} font-zen-old-mincho`}
           >
             Click to expand.          
-          </h1>
+          </p>
         
 
           <div className={styles.galleryContainer}>
