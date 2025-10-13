@@ -5,7 +5,6 @@ import Link from "next/link";
 import styles from "./Projects.module.css";
 
 const projects = [
-  // --- NEWSROOM WORK ---
   {
     title: "Evanston Public Library considers split from city",
     outlet: "The Daily Northwestern",
@@ -15,6 +14,24 @@ const projects = [
     url: "https://dailynorthwestern.com/2025/10/01/top-stories/not-just-a-place-of-books-evanston-public-library-debates-potential-split-from-city/",
     tags: ["Local Politics", "Data Visualization", "D3.js", "Interactive Design"],
   },
+    { title: "Grievances in Chicago Emergency Shelters",
+    outlet: "Personal Project",
+    type: "Personal",
+    description:
+      "Built a scrollytelling story about migrant shelters in Chicago, using city data from 2024 and D3.js.",
+    image: "/migrantshelters.png",
+    url: "https://yongssh.github.io/chicago-migrant-shelters",
+    tags: ["Scrollytelling", "D3.js", "Open Data", "Public Policy"],
+  },
+  {
+    title: "Fulbright Funding Impact",
+    outlet: "The Daily Northwestern",
+    description:
+      "Interviewed Northwestern-affiliated Fulbright scholars to assess how federal funding changes could affect the program’s future.",
+    image: "/Fulbright_Seal_RGB-scaled-1.jpg",
+    url: "https://dailynorthwestern.com/2025/07/07/top-stories/a-shift-going-on-fulbright-scholars-at-nu-and-abroad-discuss-impact-programs-future-amid-political-uncertainty/",
+    tags: ["Education", "Policy", "Interviewing", "Feature Writing"],
+  },
   {
     title: "Daily Northwestern 2024 Elections",
     outlet: "The Daily Northwestern",
@@ -23,6 +40,35 @@ const projects = [
     image: "/2024elections.png",
     url: "https://apps.dailynorthwestern.com/election2024/",
     tags: ["Elections", "React", "D3.js", "Design Systems"],
+  },
+    {
+    title: "Migration in Mohsin Hamid’s Exit West",
+    outlet: "Personal Project",
+    type: "Personal",
+    description:
+      "Created an interactive scrollytelling piece mapping the journeys of Hamid’s characters with Leaflet.js and custom storytelling layout.",
+    image: "/lahore-map.png",
+    url: "https://yongssh.github.io/exit-west.html",
+    tags: ["Scrollytelling", "Leaflet.js", "Literature", "Interactive Design"],
+  },
+  {
+    title: "Whiting Awards Analysis",
+    outlet: "Personal Project",
+    type: "Personal",
+    description:
+      "Analyzed more than three decades of Whiting Award winners to identify demographic and literary trends, visualized with D3.js.",
+    image: "/whiting.png",
+    url: "https://yongssh.github.io/whiting-awards/",
+    tags: ["Data Analysis", "Literature", "D3.js", "Data Visualization"],
+  },
+    {
+    title: "Taiwan’s White Terror",
+    outlet: "Encyclopaedia Britannica",
+    description:
+      "Wrote and researched an entry on Taiwan’s White Terror period, covering decades of martial law and suppression of dissent.",
+    image: "/whiteterror.png",
+    url: "https://www.britannica.com/event/White-Terror-Taiwan",
+    tags: ["History", "Research", "Editing", "Feature Writing"],
   },
   {
     title: "Chicago Heatwave Project",
@@ -42,15 +88,7 @@ const projects = [
     url: "https://dailynorthwestern.com/2025/09/15/campus/outgoing-university-president-michael-schill-earned-nearly-1-7-million-in-first-full-year-tax-filings-show/",
     tags: ["Higher Education", "Flourish", "Data Visualization"],
   },
-  {
-    title: "Fulbright Funding Impact",
-    outlet: "The Daily Northwestern",
-    description:
-      "Interviewed Northwestern-affiliated Fulbright scholars to assess how federal funding changes could affect the program’s future.",
-    image: "/Fulbright_Seal_RGB-scaled-1.jpg",
-    url: "https://dailynorthwestern.com/2025/07/07/top-stories/a-shift-going-on-fulbright-scholars-at-nu-and-abroad-discuss-impact-programs-future-amid-political-uncertainty/",
-    tags: ["Education", "Policy", "Interviewing", "Feature Writing"],
-  },
+  
 
   {
     title: "H-1B or Bust",
@@ -66,34 +104,9 @@ const projects = [
   ]
   },
 
-  // --- PERSONAL / INDEPENDENT PROJECTS ---
-  {
-    title: "Migration in Mohsin Hamid’s Exit West",
-    outlet: "Personal Project",
-
-    description:
-      "Created an interactive scrollytelling piece mapping the journeys of Hamid’s characters with Leaflet.js and custom storytelling layout.",
-    image: "/lahore-map.png",
-    url: "https://yongssh.github.io/exit-west.html",
-    tags: ["Scrollytelling", "Leaflet.js", "Literature", "Interactive Design"],
-  },
-  {
-    title: "Whiting Awards Analysis",
-    outlet: "Personal Project",
-    date: "2024",
-    role: "Data Journalist",
-    type: "Personal",
-    description:
-      "Analyzed more than three decades of Whiting Award winners to identify demographic and literary trends, visualized with D3.js.",
-    image: "/whiting.png",
-    url: "https://yongssh.github.io/whiting-awards/",
-    tags: ["Data Analysis", "Literature", "D3.js", "Data Visualization"],
-  },
   {
     title: "World Energy Mix Visualizer",
     outlet: "Personal Project",
-    date: "2024",
-    role: "Developer",
     type: "Personal",
     description:
       "Built an interactive visualization showing how countries source their energy, using World Bank data and D3.js.",
@@ -110,15 +123,7 @@ const projects = [
     url: "https://drive.google.com/file/d/1vK4wTHjW8tW71FnGgFgAMq6RO7ak7VQg/view?usp=share_link",
     tags: ["Culture", "Feature Writing", "Travel", "Editing"],
   },
-  {
-    title: "Taiwan’s White Terror",
-    outlet: "Encyclopaedia Britannica",
-    description:
-      "Wrote and researched an entry on Taiwan’s White Terror period, covering decades of martial law and suppression of dissent.",
-    image: "/whiteterror.png",
-    url: "https://www.britannica.com/event/White-Terror-Taiwan",
-    tags: ["History", "Research", "Editing", "Feature Writing"],
-  },
+
   {
     title: "Min Jin Lee",
     outlet: "Encyclopaedia Britannica",
