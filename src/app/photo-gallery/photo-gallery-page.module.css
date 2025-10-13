@@ -55,6 +55,8 @@
 .subtext {
   color: var(--text-muted);
   font-size: 2rem;
+  font-family: var(--font-family-zen-old-mincho);
+
   margin-bottom: 2.5rem;
   max-width: 45rem;
   margin-left: auto;
