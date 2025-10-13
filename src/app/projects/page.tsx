@@ -58,6 +58,34 @@ const projects = [
     url: "https://yongssh.github.io/whiting-awards/",
     tags: ["Data Analysis", "Literature", "D3.js", "Data Visualization"],
   },
+
+  {
+    title: "Evanston creative Junko Yokota",
+    outlet: "The Daily Northwestern",
+    description:
+    "Profile of Junko Yokota, an Evanston-based academic and photographer whose visual storytelling spans continents.",
+    image: "/yokota.png",
+    url: "https://dailynorthwestern.com/2025/02/13/features/evanston-photographer-and-academic-junko-yokota-wanders-near-and-far/", 
+    tags: [
+      "Feature Writing",
+      "Higher Education",
+      "Feature Writing",
+  ]
+  },
+
+  {
+    title: "H-1B or Bust",
+    outlet: "nuAZN",
+    description:
+    "Led reporting on an enterprise feature exploring how international students navigate visa uncertainty and shifting U.S. immigration policy. Conducted interviews with students and the Center for Immigration Studies' spokesperson.",
+    image: "/h1b.png",
+    url: "https://drive.google.com/file/d/1bd3aXz4QDAbdQL8dBzSYJSPl_kP0usYb/view?usp=sharing", 
+    tags: [
+      "Immigration Policy",
+      "Higher Education",
+      "Feature Writing",
+  ]
+  },
     {
     title: "Taiwan’s White Terror",
     outlet: "Encyclopaedia Britannica",
@@ -88,20 +116,6 @@ const projects = [
   
 
   {
-    title: "H-1B or Bust",
-    outlet: "nuAZN",
-    description:
-    "Led reporting on an enterprise feature exploring how international students navigate visa uncertainty and shifting U.S. immigration policy. Conducted interviews with students and the Center for Immigration Studies' spokesperson.",
-    image: "/h1b.png",
-    url: "https://drive.google.com/file/d/1bd3aXz4QDAbdQL8dBzSYJSPl_kP0usYb/view?usp=sharing", 
-    tags: [
-      "Immigration Policy",
-      "Higher Education",
-      "Feature Writing",
-  ]
-  },
-
-  {
     title: "World Energy Mix Visualizer",
     outlet: "Personal Project",
     description:
@@ -117,7 +131,7 @@ const projects = [
       "Reported a longform feature on tensions between tourism and local communities in Hawai'i and Guam.",
     image: "/nuazntourism.png",
     url: "https://drive.google.com/file/d/1vK4wTHjW8tW71FnGgFgAMq6RO7ak7VQg/view?usp=share_link",
-    tags: ["Culture", "Feature Writing", "Travel", "Editing"],
+    tags: ["Arts", "Photography", "Profile", "Evanston", "Education", "Feature writing"],
   },
 
   {
