@@ -17,9 +17,9 @@ const projects = [
     { title: "Grievances in Chicago Emergency Shelters",
     outlet: "Personal Project",
     description:
-      "Built a scrollytelling story about migrant shelters in Chicago, using city data from 2024.",
+      "Built a scrollytelling story about emergency migrant shelters in Chicago, using city data from 2024.",
     image: "/migrantshelters.png",
-    url: "https://yongssh.github.io/chicago-migrant-shelters",
+    url: "https://yongssh.github.io/chicago-emergency-shelters",
     tags: ["Scrollytelling", "D3.js", "Open Data", "Public Policy"],
   },
   {
