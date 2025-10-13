@@ -16,7 +16,6 @@ const projects = [
   },
     { title: "Grievances in Chicago Emergency Shelters",
     outlet: "Personal Project",
-    type: "Personal",
     description:
       "Built a scrollytelling story about migrant shelters in Chicago, using city data from 2024 and D3.js.",
     image: "/migrantshelters.png",
