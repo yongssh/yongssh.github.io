@@ -150,10 +150,15 @@ const projects = [
   },
 ];
 
-const groupedProjects = projects.reduce((acc, project) => {
-  (acc[project.type] = acc[project.type] || []).push(project);
-  return acc;
-}, {});
+const groupedProjects: Record<string, typeof projects[number][]> = {};
+
+for (const project of projects) {
+  if (!groupedProjects[project.type]) {
+    groupedProjects[project.type] = [];
+  }
+  groupedProjects[project.type].push(project);
+}
+
 
 export default function ProjectsPage() {
   const typeOrder = ["Web & Data", "Reporting & Writing"];
