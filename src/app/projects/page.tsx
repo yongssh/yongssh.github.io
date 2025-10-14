@@ -5,32 +5,7 @@ import Link from "next/link";
 import styles from "./Projects.module.css";
 
 const projects = [
-  {
-    title: "Evanston Public Library considers split from city",
-    outlet: "The Daily Northwestern",
-    description:
-      "Reported on local politics debate and built an interactive tax calculator and visualizations to communicate proposed funding changes.",
-    image: "/epl.jpeg",
-    url: "https://dailynorthwestern.com/2025/10/01/top-stories/not-just-a-place-of-books-evanston-public-library-debates-potential-split-from-city/",
-    tags: ["Local Politics", "Data Visualization", "D3.js", "Interactive Design"],
-  },
-    { title: "Grievances in Chicago Emergency Shelters",
-    outlet: "Personal Project",
-    description:
-      "Built a scrollytelling story about emergency migrant shelters in Chicago, using city data from 2024.",
-    image: "/migrantshelters.png",
-    url: "https://yongssh.github.io/chicago-emergency-shelters",
-    tags: ["Scrollytelling", "D3.js", "Open Data", "Public Policy"],
-  },
-  {
-    title: "Fulbright Funding Impact",
-    outlet: "The Daily Northwestern",
-    description:
-      "Reported on how federal policy has affected Northwestern-affiliated Fulbright scholars and the program’s future.",
-    image: "/Fulbright_Seal_RGB-scaled-1.jpg",
-    url: "https://dailynorthwestern.com/2025/07/07/top-stories/a-shift-going-on-fulbright-scholars-at-nu-and-abroad-discuss-impact-programs-future-amid-political-uncertainty/",
-    tags: ["Education", "Policy", "Interviewing", "Feature Writing"],
-  },
+  // ===== WEB & DATA PROJECTS =====
   {
     title: "Daily Northwestern 2024 Elections",
     outlet: "The Daily Northwestern",
@@ -39,15 +14,27 @@ const projects = [
     image: "/2024elections.png",
     url: "https://apps.dailynorthwestern.com/election2024/",
     tags: ["Elections", "React", "D3.js", "Design Systems"],
+    type: "Web & Data",
   },
-    {
-    title: "Migration in Mohsin Hamid’s Exit West",
+  {
+    title: "Evanston Public Library considers split from city",
+    outlet: "The Daily Northwestern",
+    description:
+      "Reported on local politics debate and built an interactive tax calculator and visualizations to communicate proposed funding changes.",
+    image: "/epl.jpeg",
+    url: "https://dailynorthwestern.com/2025/10/01/top-stories/not-just-a-place-of-books-evanston-public-library-debates-potential-split-from-city/",
+    tags: ["Local Politics", "Data Visualization", "D3.js", "Interactive Design"],
+    type: "Reporting & Writing",
+  },
+  {
+    title: "Grievances in Chicago Emergency Shelters",
     outlet: "Personal Project",
     description:
-      "Created an interactive scrollytelling piece mapping the journeys of Hamid’s characters with Leaflet.js and custom storytelling layout.",
-    image: "/lahore-map.png",
-    url: "https://yongssh.github.io/exit-west.html",
-    tags: ["Scrollytelling", "Leaflet.js", "Literature", "Interactive Design"],
+      "Built a scrollytelling story about emergency migrant shelters in Chicago, using city data from 2024.",
+    image: "/migrantshelters.png",
+    url: "https://yongssh.github.io/chicago-emergency-shelters",
+    tags: ["Scrollytelling", "D3.js", "Open Data", "Public Policy"],
+    type: "Web & Data",
   },
   {
     title: "Whiting Awards Analysis",
@@ -57,52 +44,27 @@ const projects = [
     image: "/whiting.png",
     url: "https://yongssh.github.io/whiting-awards/",
     tags: ["Data Analysis", "Literature", "D3.js", "Data Visualization"],
-  },
-
-  {
-    title: "Evanston creative Junko Yokota",
-    outlet: "The Daily Northwestern",
-    description:
-    "Profile of Junko Yokota, an Evanston-based academic and photographer whose visual storytelling spans continents.",
-    image: "/yokota.png",
-    url: "https://dailynorthwestern.com/2025/02/13/features/evanston-photographer-and-academic-junko-yokota-wanders-near-and-far/", 
-    tags: [
-      "Feature Writing",
-      "Higher Education",
-      "Feature Writing",
-  ]
-  },
-
-  {
-    title: "H-1B or Bust",
-    outlet: "nuAZN",
-    description:
-    "Led reporting on an enterprise feature exploring how international students navigate visa uncertainty and shifting U.S. immigration policy. Conducted interviews with students and the Center for Immigration Studies' spokesperson.",
-    image: "/h1b.png",
-    url: "https://drive.google.com/file/d/1bd3aXz4QDAbdQL8dBzSYJSPl_kP0usYb/view?usp=sharing", 
-    tags: [
-      "Immigration Policy",
-      "Higher Education",
-      "Feature Writing",
-  ]
-  },
-    {
-    title: "Taiwan’s White Terror",
-    outlet: "Encyclopaedia Britannica",
-    description:
-      "Wrote political history article on Taiwan’s White Terror period, covering decades of martial law and suppression of free speech.",
-    image: "/whiteterror.png",
-    url: "https://www.britannica.com/event/White-Terror-Taiwan",
-    tags: ["History", "Research", "Editing", "Feature Writing"],
+    type: "Web & Data",
   },
   {
-    title: "Chicago Heatwave Project",
-    outlet: "The Daily Northwestern",
+    title: "World Energy Mix Visualizer",
+    outlet: "Personal Project",
     description:
-      "Reported on a 1995 heatwave memorial event hosted by city officials and researchers.",
-    image: "/johnson.jpg",
-    url: "https://dailynorthwestern.com/2025/07/16/city/chicago-mayor-brandon-johnson-buffett-researchers-host-screening-and-discussion-on-1995-heat-wave/",
-    tags: ["Data Journalism", "Climate", "Chicago", "D3.js"],
+      "Built an interactive visualization showing how countries source their energy, using World Bank data and D3.js.",
+    image: "/d3.png",
+    url: "https://stately-frangollo-b9a02e.netlify.app",
+    tags: ["Energy", "D3.js", "Open Data", "Web Development"],
+    type: "Web & Data",
+  },
+  {
+    title: "Migration in Mohsin Hamid’s Exit West",
+    outlet: "Personal Project",
+    description:
+      "Created an interactive scrollytelling piece mapping the journeys of Hamid’s characters with Leaflet.js and custom storytelling layout.",
+    image: "/lahore-map.png",
+    url: "https://yongssh.github.io/exit-west.html",
+    tags: ["Scrollytelling", "Leaflet.js", "Literature", "Interactive Design"],
+    type: "Web & Data",
   },
   {
     title: "Northwestern Executives in Numbers",
@@ -112,17 +74,69 @@ const projects = [
     image: "/presidentspay.png",
     url: "https://dailynorthwestern.com/2025/09/15/campus/outgoing-university-president-michael-schill-earned-nearly-1-7-million-in-first-full-year-tax-filings-show/",
     tags: ["Higher Education", "Flourish", "Data Visualization"],
+    type: "Web & Data",
   },
-  
-
   {
-    title: "World Energy Mix Visualizer",
-    outlet: "Personal Project",
+    title: "Chicago Heatwave Project",
+    outlet: "The Daily Northwestern",
     description:
-      "Built an interactive visualization showing how countries source their energy, using World Bank data and D3.js. Followed D3 Start to Finish tutorial.",
-    image: "/d3.png",
-    url: "https://stately-frangollo-b9a02e.netlify.app",
-    tags: ["Energy", "D3.js", "Open Data", "Web Development"],
+      "Reported on a 1995 heatwave memorial event hosted by city officials and researchers, with supporting data visualization.",
+    image: "/johnson.jpg",
+    url: "https://dailynorthwestern.com/2025/07/16/city/chicago-mayor-brandon-johnson-buffett-researchers-host-screening-and-discussion-on-1995-heat-wave/",
+    tags: ["Data Journalism", "Climate", "Chicago", "D3.js"],
+    type: "Reporting & Writing",
+  },
+
+  // ===== REPORTING & WRITING =====
+  {
+    title: "Evanston creative Junko Yokota",
+    outlet: "The Daily Northwestern",
+    description:
+      "Profile of Junko Yokota, an Evanston-based academic and photographer whose visual storytelling spans continents.",
+    image: "/yokota.png",
+    url: "https://dailynorthwestern.com/2025/02/13/features/evanston-photographer-and-academic-junko-yokota-wanders-near-and-far/",
+    tags: ["Feature Writing", "Higher Education", "Arts"],
+    type: "Reporting & Writing",
+  },
+  {
+    title: "Fulbright Funding Impact",
+    outlet: "The Daily Northwestern",
+    description:
+      "Reported on how federal policy has affected Northwestern-affiliated Fulbright scholars and the program’s future.",
+    image: "/Fulbright_Seal_RGB-scaled-1.jpg",
+    url: "https://dailynorthwestern.com/2025/07/07/top-stories/a-shift-going-on-fulbright-scholars-at-nu-and-abroad-discuss-impact-programs-future-amid-political-uncertainty/",
+    tags: ["Education", "Policy", "Interviewing"],
+    type: "Reporting & Writing",
+  },
+  {
+    title: "H-1B or Bust",
+    outlet: "nuAZN",
+    description:
+      "Led reporting on an enterprise feature exploring how international students navigate visa uncertainty and shifting U.S. immigration policy.",
+    image: "/h1b.png",
+    url: "https://drive.google.com/file/d/1bd3aXz4QDAbdQL8dBzSYJSPl_kP0usYb/view?usp=sharing",
+    tags: ["Immigration Policy", "Higher Education", "Feature Writing"],
+    type: "Reporting & Writing",
+  },
+  {
+    title: "Taiwan’s White Terror",
+    outlet: "Encyclopaedia Britannica",
+    description:
+      "Wrote political history article on Taiwan’s White Terror period, covering decades of martial law and suppression of free speech.",
+    image: "/whiteterror.png",
+    url: "https://www.britannica.com/event/White-Terror-Taiwan",
+    tags: ["History", "Research", "Editing"],
+    type: "Reporting & Writing",
+  },
+  {
+    title: "Min Jin Lee",
+    outlet: "Encyclopaedia Britannica",
+    description:
+      "Wrote a feature-style biography on novelist Min Jin Lee, exploring her literary career and themes.",
+    image: "/minjinlee.png",
+    url: "https://www.britannica.com/biography/Min-Jin-Lee",
+    tags: ["Profile Writing", "Interviewing", "Research"],
+    type: "Reporting & Writing",
   },
   {
     title: "Trouble in Paradise",
@@ -131,20 +145,19 @@ const projects = [
       "Reported a longform feature on tensions between tourism and local communities in Hawai'i and Guam.",
     image: "/nuazntourism.png",
     url: "https://drive.google.com/file/d/1vK4wTHjW8tW71FnGgFgAMq6RO7ak7VQg/view?usp=share_link",
-    tags: ["Arts", "Photography", "Profile", "Evanston", "Education", "Feature writing"],
-  },
-
-  {
-    title: "Min Jin Lee",
-    outlet: "Encyclopaedia Britannica",
-    description:
-      "Wrote a feature-style biography on novelist Min Jin Lee, exploring her literary career and themes.",
-    image: "/minjinlee.png",
-    url: "https://www.britannica.com/biography/Min-Jin-Lee",
-    tags: ["Profile Writing", "Interviewing", "Research", "Editing"],
+    tags: ["Arts", "Tourism", "Feature Writing"],
+    type: "Reporting & Writing",
   },
 ];
+
+const groupedProjects = projects.reduce((acc, project) => {
+  (acc[project.type] = acc[project.type] || []).push(project);
+  return acc;
+}, {});
+
 export default function ProjectsPage() {
+  const typeOrder = ["Web & Data", "Reporting & Writing"];
+
   return (
     <div className={styles.wrapper}>
       <header>
@@ -155,61 +168,58 @@ export default function ProjectsPage() {
         <header className={styles.header}>
           <h1 className={styles.title}>My Projects</h1>
           <p className={styles.subtitle}>
-            Selected projects featuring
-            reporting, design, analysis, and development.
+            Selected work featuring data visualization, web development, reporting, and longform writing.
           </p>
         </header>
 
-        <section aria-labelledby="projects-heading" className={styles.grid}>
-          <h2 id="projects-heading" className="sr-only">
-            Project Gallery
-          </h2>
+        {typeOrder.map((type) => (
+          <section key={type} className="mb-16">
+            <h2 className="text-2xl font-semibold mb-6 border-b pb-2">{type}</h2>
+            <div className={styles.grid}>
+              {groupedProjects[type]?.map((project, idx) => (
+                <article key={idx} className={styles.card}>
+                  <figure className={styles.figure}>
+                    <Link href={project.url} target="_blank" rel="noopener noreferrer">
+                      <img
+                        src={project.image}
+                        alt={`Thumbnail for ${project.title}`}
+                      />
+                    </Link>
+                  </figure>
 
-          {projects.map((project, idx) => (
-            <article key={idx} className={styles.card}>
-              <figure className={styles.figure}>
-                <Link href={project.url} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={project.image}
-                    alt={`Thumbnail for ${project.title}`}
-                  />
-                </Link>
-              </figure>
+                  <div className={styles.cardBody}>
+                    <header>
+                      <h3 className={styles.cardTitle}>{project.title}</h3>
+                      <p className={styles.cardOutlet}>{project.outlet}</p>
+                    </header>
 
-              <div className={styles.cardBody}>
-                <header>
-                  <h3 className={styles.cardTitle}>{project.title}</h3>
-                  <p className={styles.cardOutlet}>
-                    {project.outlet}
-                    
-                  </p>
-                </header>
+                    <p className={styles.cardDescription}>{project.description}</p>
 
-                <p className={styles.cardDescription}>{project.description}</p>
+                    <ul className={styles.tags} aria-label="Tags">
+                      {project.tags.map((tag, tIdx) => (
+                        <li key={tIdx} className={styles.tag}>
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
 
-                <ul className={styles.tags} aria-label="Tags">
-                  {project.tags.map((tag, tIdx) => (
-                    <li key={tIdx} className={styles.tag}>
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-
-                <footer>
-                  <Link
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.button}
-                  >
-                    <span>See more</span>
-                    <span aria-hidden="true">→</span>
-                  </Link>
-                </footer>
-              </div>
-            </article>
-          ))}
-        </section>
+                    <footer>
+                      <Link
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.button}
+                      >
+                        <span>See more</span>
+                        <span aria-hidden="true">→</span>
+                      </Link>
+                    </footer>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        ))}
       </main>
 
       <footer>

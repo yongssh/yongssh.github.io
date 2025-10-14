@@ -1,7 +1,7 @@
 .honorsSection {
   background-color: var(--page-bg, #f3f3f3);
   color: var(--text-dark, #111);
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   border-radius: 8px;
   font-family: var(--font-zen-mincho, "Zen Old Mincho", serif);
 }

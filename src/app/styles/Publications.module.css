@@ -1,8 +1,9 @@
 .publicationsSection {
   background-color: var(--page-bg, #f3f3f3);
   color: var(--text-dark, #111);
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   border-radius: 8px;
+  margin-left: 0.5rem;
   font-family: var(--font-zen-mincho, "Zen Old Mincho", serif);
 }
 
@@ -24,12 +25,12 @@
 
 .category {
   font-weight: 500;
+  color: var(--brand-accent, #c47a88);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
-.category:hover {
-  text-decoration: underline;
-  color: var(--brand-accent, #c47a88);
-}
 
 .pubList {
   list-style: none;
@@ -75,7 +76,7 @@
 .publicationsSection {
   background-color: var(--page-bg, #f3f3f3);
   color: var(--text-dark, #111);
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.0rem;
   font-family: var(--font-zen-mincho, "Zen Old Mincho", serif);
 }
 
@@ -96,7 +97,6 @@
 
 .list {
   margin-top: 1.5rem;
-  margin-left: 1rem;
 }
 
 .list p {
@@ -104,13 +104,13 @@
   line-height: 1.7;
 }
 
-a {
+.a {
   color: var(--text-dark, #111);
   text-decoration: none;
   transition: all 0.15s ease-in-out;
 }
 
-a:hover {
+.a:hover {
   text-decoration: underline;
 }
 
@@ -142,3 +142,4 @@ body:has(.hoverProse:hover) .prose {
 body:has(.hoverJourn:hover) .journ {
   background-color: #e4b4f2;
 }
+
