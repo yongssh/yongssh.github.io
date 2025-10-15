@@ -50,7 +50,7 @@ const projects = [
     title: "World Energy Mix Visualizer",
     outlet: "Personal Project",
     description:
-      "Built an interactive visualization showing how countries source their energy, using World Bank data and D3.js.",
+      "Built an interactive visualization showing how countries source their energy, using World Bank data and D3.js, following a tutorial from D3: From Start to Finish.",
     image: "/d3.png",
     url: "https://stately-frangollo-b9a02e.netlify.app",
     tags: ["Energy", "D3.js", "Open Data", "Web Development"],
