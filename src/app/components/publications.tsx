@@ -17,9 +17,20 @@ const Publications = () => {
         <p>
           <a
             className={styles.pubTitle}
+            href="https://dailynorthwestern.com/2025/10/21/campus/fueled-by-curiosity-nobel-laureate-joel-mokyr-fashions-a-life-long-case-for-human-progress/"
+          >
+           Fueled by curiosity, Nobel laureate Joel Mokyr fashions a life-long case for human progress
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Daily Northwestern</em> (Oct 2025)
+          </span>
+        </p>
+        <p>
+          <a
+            className={styles.pubTitle}
             href="https://dailynorthwestern.com/2025/10/01/top-stories/not-just-a-place-of-books-evanston-public-library-debates-potential-split-from-city/"
           >
-            Not Just a Place of Books: Evanston Public Library Debates Potential Split from City
+            'Not just a place of books': Evanston Public Library debates potential split from city
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Oct 2025)
@@ -31,7 +42,7 @@ const Publications = () => {
             className={styles.pubTitle}
             href="https://dailynorthwestern.com/2025/07/07/top-stories/a-shift-going-on-fulbright-scholars-at-nu-and-abroad-discuss-impact-programs-future-amid-political-uncertainty/"
           >
-            “A Shift Going On”: Fulbright Scholars at NU and Abroad Discuss Impact, Program’s Future amid Political Uncertainty
+            'A shift going on': Fulbright scholars at NU and abroad discuss impact, program’s future amid political uncertainty
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Jul 2025)
@@ -43,7 +54,7 @@ const Publications = () => {
             className={styles.pubTitle}
             href="https://dailynorthwestern.com/2025/02/13/features/evanston-photographer-and-academic-junko-yokota-wanders-near-and-far/"
           >
-            Evanston Photographer and Academic Junko Yokota Wanders Near and Far
+            Evanston photographer and academic Junko Yokota wanders near and far
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Feb 2025)
@@ -75,7 +86,6 @@ const Publications = () => {
            <a href="https://drive.google.com/file/d/1bd3aXz4QDAbdQL8dBzSYJSPl_kP0usYb/view?usp=sharing"> (PDF)</a>
         </p>
 
-        {/* EXISTING NONFICTION ENTRIES */}
         <p>
           <a
             className={styles.pubTitle}
