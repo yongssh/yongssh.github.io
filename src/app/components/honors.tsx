@@ -4,7 +4,7 @@ import styles from "../styles/Honors.module.css";
 export default function Honors() {
   const honors = [
     { title: "Longlist, Queen Mary Wasafiri New Writing Prize", year: 2025 },
-    { title: <><em>Narrative Magazine</em> 17th Annual Poetry Contest, </>, year: 2025 },
+    { title: "Finalist, <em>Narrative Magazine</em> 17th Annual Poetry Contest," ,year: 2025 },
     { title: "Outstanding Junior in Literature, Northwestern University Department of English", year: 2025 },
     {
       title: "Commended Poet, The Poetry Society of the UK's National Poetry Competition",
