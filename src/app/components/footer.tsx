@@ -1,10 +1,4 @@
 import React from "react";
-import { EB_Garamond } from 'next/font/google';
-
-const garamond = EB_Garamond({ 
-  subsets: ['latin'],
-  variable: '--font-garamond'
-});
 
 const Footer = () => {
     return (

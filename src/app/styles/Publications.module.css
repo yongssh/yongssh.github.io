@@ -32,21 +32,12 @@
 }
 
 
-.pubList {
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0 0 0;
-}
-
-.pubItem {
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
-}
-
 .pubTitle {
   font-weight: 500;
   color: var(--text-dark, #111);
   text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+
   transition: color 0.2s ease-in-out;
 }
 
@@ -57,6 +48,8 @@
 
 .pubMeta {
   font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+
   color: var(--text-muted, #555);
   margin-left: 0.5rem;
 }
@@ -97,6 +90,7 @@
 
 .list {
   margin-top: 1.5rem;
+  
 }
 
 .list p {

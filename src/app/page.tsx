@@ -28,11 +28,7 @@ export default function Home() {
           <AboutSection />
         </section>
       </main>
-
-      {/* Footer */}
-      <footer>
         <Footer />
-      </footer>
     </div>
   );
 }

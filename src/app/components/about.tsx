@@ -48,7 +48,7 @@ export default function About() {
           }`}
         >
           I study computer science and English literature at Northwestern University, where I&apos;m a Franke Undergraduate Fellow. 
-          I edit <em>Helicon</em>, and I also work on web projects and write for <em>The Daily Northwestern</em>. 
+          I edit <em>Helicon</em>, and I also work on web projects and report for <em>The Daily Northwestern</em>. 
           In the past, I&apos;ve interned for <em>Encyclopædia Britannica</em> and edited features for <em>North By Northwestern</em>. 
           I&apos;ve been a Kaplan Humanities Scholar and a Leopold Fellow, and I&apos;ve won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
         </p>
@@ -58,9 +58,9 @@ export default function About() {
             visibleIndex >= 1 ? styles.visible : ""
           }`}
         >
-          Outside of school, my work appears in <em>Waxwing</em>, <em>The Adroit Journal</em>, <em>The Offing</em>, <em>Sixth Finch</em>, and elsewhere. 
-          I was the recipient of the 2021 Elinor Benedict Poetry Prize and have been recognized by the Poetry Society of the UK, Best Small Fictions, the Hippocrates Society, and the Gregory Djanikian Scholars Program, among others. 
-          In my free time, I can be found doing crosswords, listening to Lorde, or going for a walk. 
+          My creative work appears in <em>Waxwing</em>, <em>The Adroit Journal</em>, <em>The Offing</em>, <em>Sixth Finch</em>, and elsewhere. 
+          I was a commended poet in the Poetry Society of the UK's 2024 National Poetry Competition and the recipient of the 2021 Elinor Benedict Poetry Prize. My work has recognized by Best Small Fictions, the Hippocrates Society, and the Gregory Djanikian Scholars Program, among others. 
+          In my free time, I can be found taking pictures of my friends, listening to Lorde, or going on a walk. 
         </p>
 
         <p

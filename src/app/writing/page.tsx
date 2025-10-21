@@ -47,9 +47,7 @@ export default function WritingPage() {
         </section>
       </main>
 
-      <footer className={styles.footer}>
         <Footer />
-      </footer>
     </div>
   );
 }

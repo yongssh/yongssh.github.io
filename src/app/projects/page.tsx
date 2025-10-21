@@ -226,10 +226,7 @@ export default function ProjectsPage() {
           </section>
         ))}
       </main>
-
-      <footer>
         <Footer />
-      </footer>
     </div>
   );
 }

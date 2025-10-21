@@ -31,10 +31,7 @@ export default function GalleryPage() {
         </section>
       </main>
 
-      {/* --- Site Footer --- */}
-      <footer className={styles.footer}>
         <Footer />
-      </footer>
     </div>
   );
 }
