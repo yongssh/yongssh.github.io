@@ -36,7 +36,7 @@
   font-weight: 500;
   color: var(--text-dark, #111);
   text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+  font-family: var(--font-zen-mincho, "Zen Old Mincho", serif);
 
   transition: color 0.2s ease-in-out;
 }
@@ -48,7 +48,7 @@
 
 .pubMeta {
   font-size: 0.875rem;
-    font-family: "Montserrat", sans-serif;
+  font-family: var(--font-zen-mincho, "Zen Old Mincho", serif);
 
   color: var(--text-muted, #555);
   margin-left: 0.5rem;
