@@ -59,7 +59,7 @@ export default function About() {
           }`}
         >
           My creative work appears in <em>Waxwing</em>, <em>The Adroit Journal</em>, <em>The Offing</em>, <em>Sixth Finch</em>, and elsewhere. 
-          I was a commended poet in the Poetry Society of the UK's 2024 National Poetry Competition and the recipient of the 2021 Elinor Benedict Poetry Prize. My work has recognized by Best Small Fictions, the Hippocrates Society, and the Gregory Djanikian Scholars Program, among others. 
+          I was a commended poet in the Poetry Society of the UK&apos;s 2024 National Poetry Competition and the recipient of the 2021 Elinor Benedict Poetry Prize. My work has recognized by Best Small Fictions, the Hippocrates Society, and the Gregory Djanikian Scholars Program, among others. 
           In my free time, I can be found taking pictures of my friends, listening to Lorde, or going on a walk. 
         </p>
 
