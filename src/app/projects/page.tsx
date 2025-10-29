@@ -46,6 +46,17 @@ const projects = [
     tags: ["Data Analysis", "Literature", "D3.js", "Data Visualization"],
     type: "Web & Data",
   },
+
+  {
+    title: "Nobel Prizes by Country and Category",
+    outlet: "Personal Project",
+    description:
+      "A visual storytelling piece created in Adobe Illustrator, illustrating Nobels won by country and category.",
+    image: "/NobelByCountry.pdf",
+    url: "/NobelByCountry.pdf",
+    tags: ["Design", "Adobe Illustrator", "Data Analaysis"],
+    type: "Web & Data",
+  },
   {
     title: "World Energy Mix Visualizer",
     outlet: "Personal Project",
@@ -226,7 +237,7 @@ export default function ProjectsPage() {
           </section>
         ))}
       </main>
-        <Footer />
+      <Footer />
     </div>
   );
 }
