@@ -30,7 +30,7 @@ const Publications = () => {
             className={styles.pubTitle}
             href="https://dailynorthwestern.com/2025/10/01/top-stories/not-just-a-place-of-books-evanston-public-library-debates-potential-split-from-city/"
           >
-            'Not just a place of books': Evanston Public Library debates potential split from city
+            &apos;Not just a place of books&apos;: Evanston Public Library debates potential split from city
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Oct 2025)
@@ -42,7 +42,7 @@ const Publications = () => {
             className={styles.pubTitle}
             href="https://dailynorthwestern.com/2025/07/07/top-stories/a-shift-going-on-fulbright-scholars-at-nu-and-abroad-discuss-impact-programs-future-amid-political-uncertainty/"
           >
-            'A shift going on': Fulbright scholars at NU and abroad discuss impact, program’s future amid political uncertainty
+            &apos;A shift going on&apos;: Fulbright scholars at NU and abroad discuss impact, program’s future amid political uncertainty
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Jul 2025)
