@@ -54,7 +54,7 @@ const projects = [
       "A visual storytelling piece created in Adobe Illustrator, illustrating Nobels won by country and category.",
     image: "/NobelByCountry.pdf",
     url: "/NobelByCountry.pdf",
-    tags: ["Design", "Adobe Illustrator", "Data Analaysis"],
+    tags: ["Design", "Adobe Illustrator", "Data Analysis"],
     type: "Web & Data",
   },
   {
