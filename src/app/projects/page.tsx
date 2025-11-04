@@ -7,13 +7,33 @@ import styles from "./Projects.module.css";
 const projects = [
   // ===== WEB & DATA PROJECTS =====
   {
-    title: "Daily Northwestern 2024 Elections",
+    title: "Spring 2025 Poll",
+    outlet: "The Daily Northwestern",
+    description:
+      "Built and designed special issue for the Spring 2025 undergraduate poll.",
+    image: "/SpringCampusPoll-2.jpg",
+    url: "https://apps.dailynorthwestern.com/s25poll/",
+    tags: ["Polling", "Scrollytelling", "React"],
+    type: "Web & Data",
+  },
+  {
+    title: "2024 Elections",
     outlet: "The Daily Northwestern",
     description:
       "Built and designed an interactive election results landing page using The Washington Post’s React component library and D3.js.",
     image: "/2024elections.png",
     url: "https://apps.dailynorthwestern.com/election2024/",
     tags: ["Elections", "React", "D3.js", "Design Systems"],
+    type: "Web & Data",
+  },
+    {
+    title: "Know Your Rights",
+    outlet: "The Daily Northwestern",
+    description:
+      "Developed special issue for The Daily's coverage of ICE activity in Evanston.",
+    image: "/2024elections.png",
+    url: "https://apps.dailynorthwestern.com/know-your-rights/",
+    tags: ["Immigration", "React"],
     type: "Web & Data",
   },
   {

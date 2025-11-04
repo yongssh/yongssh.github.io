@@ -6,14 +6,23 @@ const Publications = () => {
     <section className={styles.publicationsSection}>
       <header className={styles.header}>
         <h2 className={styles.title}>Selected Publications</h2>
-        {/* <p className={styles.intro}>
-          Journalism-adjacent work, poetry, and fiction can be found below.
-        </p> */}
+
       </header>
 
       {/* ---------- NONFICTION ---------- */}
       <div className={styles.list}>
         <h3 className={`${styles.category}`}>Journalism & Nonfiction</h3>
+         <p>
+          <a
+            className={styles.pubTitle}
+            href="https://dailynorthwestern.com/2025/10/21/campus/fueled-by-curiosity-nobel-laureate-joel-mokyr-fashions-a-life-long-case-for-human-progress/"
+          >
+           Fueled by curiosity, Nobel laureate Joel Mokyr fashions a life-long case for human progress
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Daily Northwestern</em> (Oct 2025)
+          </span>
+        </p>
         <p>
           <a
             className={styles.pubTitle}
