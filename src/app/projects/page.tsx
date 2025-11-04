@@ -31,7 +31,7 @@ const projects = [
     outlet: "The Daily Northwestern",
     description:
       "Developed special issue for The Daily's coverage of ICE activity in Evanston.",
-    image: "/2024elections.png",
+    image: "/KnowYourRights.png",
     url: "https://apps.dailynorthwestern.com/know-your-rights/",
     tags: ["Immigration", "React"],
     type: "Web & Data",
