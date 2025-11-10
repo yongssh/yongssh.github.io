@@ -15,12 +15,12 @@ const Publications = () => {
          <p>
           <a
             className={styles.pubTitle}
-            href="https://dailynorthwestern.com/2025/10/21/campus/fueled-by-curiosity-nobel-laureate-joel-mokyr-fashions-a-life-long-case-for-human-progress/"
+            href="https://dailynorthwestern.com/2025/11/05/city/we-cannot-be-silent-evanston-businesses-stand-up-to-ice-amid-escalated-enforcement/"
           >
-           Fueled by curiosity, Nobel laureate Joel Mokyr fashions a life-long case for human progress
+           ‘We cannot be silent’: Evanston businesses stand up to ICE amid escalated enforcement
           </a>
           <span className={styles.pubMeta}>
-            in <em>The Daily Northwestern</em> (Oct 2025)
+            in <em>The Daily Northwestern</em> (Nov 2025)
           </span>
         </p>
         <p>

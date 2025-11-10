@@ -31,7 +31,7 @@ const projects = [
     outlet: "The Daily Northwestern",
     description:
       "Developed special issue for The Daily's coverage of ICE activity in Evanston.",
-    image: "/KnowYourRights.png",
+    image: "/KYR.png",
     url: "https://apps.dailynorthwestern.com/know-your-rights/",
     tags: ["Immigration", "React"],
     type: "Web & Data",
@@ -120,12 +120,21 @@ const projects = [
 
   // ===== REPORTING & WRITING =====
   {
+    title: "Evanston businesses stand up to ICE amid escalated enforcement",
+    outlet: "The Daily Northwestern",
+    description:
+      "Reported on local businesses' reaction to increased ICE activity.",
+    image: "/yokota.png",
+    url: "https://dailynorthwestern.com/2025/11/05/city/we-cannot-be-silent-evanston-businesses-stand-up-to-ice-amid-escalated-enforcement/",
+    tags: ["Immigration", "Community"],
+    type: "Reporting & Writing",
+  },{
     title: "Evanston creative Junko Yokota",
     outlet: "The Daily Northwestern",
     description:
       "Profile of Junko Yokota, an Evanston-based academic and photographer whose visual storytelling spans continents.",
     image: "/yokota.png",
-    url: "https://dailynorthwestern.com/2025/02/13/features/evanston-photographer-and-academic-junko-yokota-wanders-near-and-far/",
+    url: "https://dailynorthwestern.com/2025/10/28/city/this-rent-is-bananas-quadrel-evanston-tenants-union-protests-rent-hikes-mismanagement/",
     tags: ["Feature Writing", "Higher Education", "Arts"],
     type: "Reporting & Writing",
   },
@@ -136,7 +145,7 @@ const projects = [
       "Reported on how federal policy has affected Northwestern-affiliated Fulbright scholars and the program’s future.",
     image: "/Fulbright_Seal_RGB-scaled-1.jpg",
     url: "https://dailynorthwestern.com/2025/07/07/top-stories/a-shift-going-on-fulbright-scholars-at-nu-and-abroad-discuss-impact-programs-future-amid-political-uncertainty/",
-    tags: ["Education", "Policy", "Interviewing"],
+    tags: ["Education", "Policy"],
     type: "Reporting & Writing",
   },
   {
@@ -146,7 +155,7 @@ const projects = [
       "Led reporting on an enterprise feature exploring how international students navigate visa uncertainty and shifting U.S. immigration policy.",
     image: "/h1b.png",
     url: "https://drive.google.com/file/d/1bd3aXz4QDAbdQL8dBzSYJSPl_kP0usYb/view?usp=sharing",
-    tags: ["Immigration Policy", "Higher Education", "Feature Writing"],
+    tags: ["Immigration", "Higher Education", "Feature Writing"],
     type: "Reporting & Writing",
   },
   {
