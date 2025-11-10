@@ -107,6 +107,8 @@ const projects = [
     tags: ["Higher Education", "Flourish", "Data Visualization"],
     type: "Web & Data",
   },
+    // ===== REPORTING & WRITING =====
+
   {
     title: "Chicago Heatwave Project",
     outlet: "The Daily Northwestern",
@@ -118,7 +120,6 @@ const projects = [
     type: "Reporting & Writing",
   },
 
-  // ===== REPORTING & WRITING =====
   {
     title: "Evanston businesses stand up to ICE amid escalated enforcement",
     outlet: "The Daily Northwestern",
