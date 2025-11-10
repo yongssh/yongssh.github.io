@@ -15,7 +15,6 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 const photos = [
   { src: '/aquarium.JPG', width: 1080, height: 1720}, 
   { src: '/londoncrowd.jpeg', width: 1080, height: 1720}, 
-      {src: '/quadreltenantsunion.jpeg', width: 1920, height: 1080},
   { src: '/uwcherryblossoms.JPG', width: 1920, height: 1080 },
     { src: '/londonstreet.JPG', width: 1920, height: 1080 },
 
@@ -33,6 +32,8 @@ const photos = [
 
   { src: '/chicagoriver.JPG',  width: 1017, height: 1811 },
   { src: '/deeringgarden.JPG', width: 3000, height: 2000 },
+        {src: '/quadreltenantsunion.jpeg', width: 1920, height: 1080},
+
   { src: '/ntu.jpg',  width: 1080, height: 1920},
   { src: '/pikeplacejapanesestore.JPG',  width: 1080, height: 1620 },
   { src: '/eclipse.JPG', width: 1400, height: 900  },
