@@ -124,7 +124,7 @@ const projects = [
     outlet: "The Daily Northwestern",
     description:
       "Reported on local businesses' reaction to increased ICE activity.",
-    image: "/yokota.png",
+    image: "/noice.jpeg",
     url: "https://dailynorthwestern.com/2025/11/05/city/we-cannot-be-silent-evanston-businesses-stand-up-to-ice-amid-escalated-enforcement/",
     tags: ["Immigration", "Community"],
     type: "Reporting & Writing",
