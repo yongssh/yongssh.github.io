@@ -6,6 +6,16 @@ import styles from "./Projects.module.css";
 
 const projects = [
   // ===== WEB & DATA PROJECTS =====
+    {
+    title: "Fall 2025 Poll",
+    outlet: "The Daily Northwestern",
+    description:
+      "Designed and built website for the Fall 2025 undergraduate poll. Conducted data analysis for and wrote article on national politics' effect on students",
+    image: "/F25poll.png",
+    url: "https://apps.dailynorthwestern.com/f25poll/",
+    tags: ["Polling", "Scrollytelling", "React", "Next.js"],
+    type: "Web & Data",
+  },
   {
     title: "Spring 2025 Poll",
     outlet: "The Daily Northwestern",
@@ -108,18 +118,7 @@ const projects = [
     type: "Web & Data",
   },
     // ===== REPORTING & WRITING =====
-
-  {
-    title: "Chicago Heatwave Project",
-    outlet: "The Daily Northwestern",
-    description:
-      "Reported on a 1995 heatwave memorial event hosted by city officials and researchers, with supporting data visualization.",
-    image: "/johnson.jpg",
-    url: "https://dailynorthwestern.com/2025/07/16/city/chicago-mayor-brandon-johnson-buffett-researchers-host-screening-and-discussion-on-1995-heat-wave/",
-    tags: ["Data Journalism", "Climate", "Chicago", "D3.js"],
-    type: "Reporting & Writing",
-  },
-
+  
   {
     title: "Evanston businesses stand up to ICE amid escalated enforcement",
     outlet: "The Daily Northwestern",
@@ -139,6 +138,17 @@ const projects = [
     tags: ["Feature Writing", "Higher Education", "Arts"],
     type: "Reporting & Writing",
   },
+    {
+    title: "Chicago Heatwave Project",
+    outlet: "The Daily Northwestern",
+    description:
+      "Reported on a 1995 heatwave memorial event hosted by city officials and researchers, with supporting data visualization.",
+    image: "/johnson.jpg",
+    url: "https://dailynorthwestern.com/2025/07/16/city/chicago-mayor-brandon-johnson-buffett-researchers-host-screening-and-discussion-on-1995-heat-wave/",
+    tags: ["Data Journalism", "Climate", "Chicago", "D3.js"],
+    type: "Reporting & Writing",
+  },
+
   {
     title: "Fulbright Funding Impact",
     outlet: "The Daily Northwestern",

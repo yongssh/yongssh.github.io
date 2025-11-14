@@ -32,7 +32,7 @@ const photos = [
 
   { src: '/chicagoriver.JPG',  width: 1017, height: 1811 },
   { src: '/deeringgarden.JPG', width: 3000, height: 2000 },
-        {src: '/quadreltenantsunion.jpeg', width: 1920, height: 1080},
+  {src: '/quadreltenantsunion.jpeg', width: 1920, height: 1080},
 
   { src: '/ntu.jpg',  width: 1080, height: 1920},
   { src: '/pikeplacejapanesestore.JPG',  width: 1080, height: 1620 },
