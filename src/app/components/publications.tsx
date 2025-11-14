@@ -12,6 +12,17 @@ const Publications = () => {
       {/* ---------- NONFICTION ---------- */}
       <div className={styles.list}>
         <h3 className={`${styles.category}`}>Journalism & Nonfiction</h3>
+        <p>
+          <a
+            className={styles.pubTitle}
+            href="https://dailynorthwestern.com/2025/11/05/city/we-cannot-be-silent-evanston-businesses-stand-up-to-ice-amid-escalated-enforcement/"
+          >
+           ‘We cannot be silent’: Evanston businesses stand up to ICE amid escalated enforcement
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Daily Northwestern</em> (Nov 2025)
+          </span>
+        </p>
          <p>
           <a
             className={styles.pubTitle}
