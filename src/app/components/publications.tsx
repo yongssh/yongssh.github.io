@@ -15,9 +15,20 @@ const Publications = () => {
         <p>
           <a
             className={styles.pubTitle}
-            href="https://dailynorthwestern.com/2025/11/05/city/we-cannot-be-silent-evanston-businesses-stand-up-to-ice-amid-escalated-enforcement/"
+            href="https://dailynorthwestern.com/2025/11/19/top-stories/snap-benefits-to-return-but-new-restrictions-may-leave-families-in-limbo/"
           >
-           ‘We cannot be silent’: Evanston businesses stand up to ICE amid escalated enforcement
+           SNAP benefits to return, but new restrictions may leave families in limbo
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Daily Northwestern</em> (Nov 2025)
+          </span>
+        </p>
+           <p>
+          <a
+            className={styles.pubTitle}
+            href="https://dailynorthwestern.com/2025/11/17/city/across-party-lines-prison-gift-bag-confrontation-disrupts-quiet-candidate-forum/"
+          >
+          Across party lines, prison gift bag confrontation disrupts quiet candidate forum
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Nov 2025)
