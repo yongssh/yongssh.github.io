@@ -6,11 +6,21 @@ import styles from "./Projects.module.css";
 
 const projects = [
   // ===== WEB & DATA PROJECTS =====
+      {
+    title: "Portrait of a Ward",
+    outlet: "The Daily Northwestern",
+    description:
+      "Designed and built project examining Evanston's wards, after the boundary updates of 2024.",
+    image: "/portraitofaward.png",
+    url: "https://apps.dailynorthwestern.com/portrait-of-a-ward-2025/",
+    tags: ["Mapbox.js", "ArcGIS"],
+    type: "Web & Data",
+  },
     {
     title: "Fall 2025 Poll",
     outlet: "The Daily Northwestern",
     description:
-      "Designed and built website for the Fall 2025 undergraduate poll. Conducted data analysis for and wrote article on national politics' effect on students",
+      "Designed and built website for the Fall 2025 undergraduate poll. Conducted data analysis for and wrote article on national politics' effect on students.",
     image: "/F25poll.png",
     url: "https://apps.dailynorthwestern.com/f25poll/",
     tags: ["Polling", "Scrollytelling", "React", "Next.js"],
@@ -20,7 +30,7 @@ const projects = [
     title: "Spring 2025 Poll",
     outlet: "The Daily Northwestern",
     description:
-      "Built and designed special issue for the Spring 2025 undergraduate poll.",
+      "Built and designed special landing page for the Spring 2025 undergraduate poll.",
     image: "/SpringCampusPoll-2.jpg",
     url: "https://apps.dailynorthwestern.com/s25poll/",
     tags: ["Polling", "Scrollytelling", "React"],
@@ -40,10 +50,10 @@ const projects = [
     title: "Know Your Rights",
     outlet: "The Daily Northwestern",
     description:
-      "Developed special issue for The Daily's coverage of ICE activity in Evanston.",
+      "Designed and built landing page for The Daily's coverage of ICE activity in Evanston, featuring carousel and grid views, as well as search functionality.",
     image: "/KYR.png",
     url: "https://apps.dailynorthwestern.com/know-your-rights/",
-    tags: ["Immigration", "React"],
+    tags: ["Immigration", "React", "regex matching"],
     type: "Web & Data",
   },
   {
