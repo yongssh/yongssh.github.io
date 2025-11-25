@@ -47,10 +47,10 @@ export default function About() {
             visibleIndex >= 0 ? styles.visible : ""
           }`}
         >
-          I study computer science and English literature at Northwestern University, where I&apos;m a Franke Undergraduate Fellow. 
+          I study computer science and English literature at Northwestern University, where my research on migration and cosmopolitanism in literature is supported by a Franke Undergraduate Fellowship. 
           I edit <em>Helicon</em>, and I also work on web projects and report for <em>The Daily Northwestern</em>. 
           In the past, I&apos;ve interned for <em>Encyclopædia Britannica</em> and edited features for <em>North By Northwestern</em>. 
-          I&apos;ve been a Kaplan Humanities Scholar and a Leopold Fellow, and I&apos;ve won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
+          I&apos;ve been a Kaplan Humanities Scholar and conducted history research as a Leopold Fellow, and I&apos;ve won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
         </p>
 
         <p
