@@ -26,6 +26,26 @@ const projects = [
     tags: ["Polling", "Scrollytelling", "React", "Next.js"],
     type: "Web & Data",
   },
+   {
+    title: "Grievances in Chicago Emergency Shelters",
+    outlet: "Personal Project",
+    description:
+      "Built a scrollytelling story about emergency migrant shelters in Chicago, using city data from 2024.",
+    image: "/migrantshelters.png",
+    url: "https://yongssh.github.io/chicago-emergency-shelters",
+    tags: ["Scrollytelling", "D3.js", "Open Data", "Public Policy"],
+    type: "Web & Data",
+  },
+  {
+    title: "Whiting Awards Analysis",
+    outlet: "Personal Project",
+    description:
+      "Analyzed more than three decades of Whiting Award winners to identify demographic and literary trends.",
+    image: "/whiting.png",
+    url: "https://yongssh.github.io/whiting-awards/",
+    tags: ["Data Analysis", "Literature", "D3.js", "Data Visualization"],
+    type: "Web & Data",
+  },
   {
     title: "Spring 2025 Poll",
     outlet: "The Daily Northwestern",
@@ -66,27 +86,6 @@ const projects = [
     tags: ["Local Politics", "Data Visualization", "D3.js", "Interactive Design"],
     type: "Reporting & Writing",
   },
-  {
-    title: "Grievances in Chicago Emergency Shelters",
-    outlet: "Personal Project",
-    description:
-      "Built a scrollytelling story about emergency migrant shelters in Chicago, using city data from 2024.",
-    image: "/migrantshelters.png",
-    url: "https://yongssh.github.io/chicago-emergency-shelters",
-    tags: ["Scrollytelling", "D3.js", "Open Data", "Public Policy"],
-    type: "Web & Data",
-  },
-  {
-    title: "Whiting Awards Analysis",
-    outlet: "Personal Project",
-    description:
-      "Analyzed more than three decades of Whiting Award winners to identify demographic and literary trends.",
-    image: "/whiting.png",
-    url: "https://yongssh.github.io/whiting-awards/",
-    tags: ["Data Analysis", "Literature", "D3.js", "Data Visualization"],
-    type: "Web & Data",
-  },
-
   {
     title: "Nobel Prizes by Country and Category",
     outlet: "Personal Project",
