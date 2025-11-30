@@ -30,7 +30,7 @@ const projects = [
     title: "Know Your Rights",
     outlet: "The Daily Northwestern",
     description:
-      "Designed and built landing page for The Daily's coverage of ICE activity in Evanston, featuring carousel and grid views, as well as search functionality.",
+      "Designed and built landing page for The Daily's coverage of ICE activity in Evanston, featuring search functionality for articles.",
     image: "/KYR.png",
     url: "https://apps.dailynorthwestern.com/know-your-rights/",
     tags: ["Immigration", "React", "regex matching"],
