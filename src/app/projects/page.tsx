@@ -26,6 +26,16 @@ const projects = [
     tags: ["Polling", "Scrollytelling", "React", "Next.js"],
     type: "Web & Data",
   },
+      {
+    title: "Know Your Rights",
+    outlet: "The Daily Northwestern",
+    description:
+      "Designed and built landing page for The Daily's coverage of ICE activity in Evanston, featuring carousel and grid views, as well as search functionality.",
+    image: "/KYR.png",
+    url: "https://apps.dailynorthwestern.com/know-your-rights/",
+    tags: ["Immigration", "React", "regex matching"],
+    type: "Web & Data",
+  },
    {
     title: "Grievances in Chicago Emergency Shelters",
     outlet: "Personal Project",
@@ -66,16 +76,7 @@ const projects = [
     tags: ["Elections", "React", "D3.js", "Design Systems"],
     type: "Web & Data",
   },
-    {
-    title: "Know Your Rights",
-    outlet: "The Daily Northwestern",
-    description:
-      "Designed and built landing page for The Daily's coverage of ICE activity in Evanston, featuring carousel and grid views, as well as search functionality.",
-    image: "/KYR.png",
-    url: "https://apps.dailynorthwestern.com/know-your-rights/",
-    tags: ["Immigration", "React", "regex matching"],
-    type: "Web & Data",
-  },
+
   {
     title: "Evanston Public Library considers split from city",
     outlet: "The Daily Northwestern",
@@ -154,7 +155,7 @@ const projects = [
       "Reported on a 1995 heatwave memorial event hosted by city officials and researchers, with supporting data visualization.",
     image: "/johnson.jpg",
     url: "https://dailynorthwestern.com/2025/07/16/city/chicago-mayor-brandon-johnson-buffett-researchers-host-screening-and-discussion-on-1995-heat-wave/",
-    tags: ["Data Journalism", "Climate", "Chicago", "D3.js"],
+    tags: ["Data Journalism", "Climate", "Chicago", "Datawrapper"],
     type: "Reporting & Writing",
   },
 
