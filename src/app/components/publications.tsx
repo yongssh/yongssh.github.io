@@ -15,6 +15,18 @@ const Publications = () => {
         <p>
           <a
             className={styles.pubTitle}
+            href=" https://dailynorthwestern.com/2025/11/28/campus/northwestern-strikes-deal-with-trump-administration-to-restore-federal-funding/"
+          >
+           Northwestern strikes deal with Trump administration to restore federal funding
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Daily Northwestern</em> (Nov 2025)
+          </span>
+        </p>
+       
+        <p>
+          <a
+            className={styles.pubTitle}
             href="https://dailynorthwestern.com/2025/11/19/top-stories/snap-benefits-to-return-but-new-restrictions-may-leave-families-in-limbo/"
           >
            SNAP benefits to return, but new restrictions may leave families in limbo
