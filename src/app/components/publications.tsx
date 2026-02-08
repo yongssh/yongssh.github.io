@@ -15,6 +15,18 @@ const Publications = () => {
         <p>
           <a
             className={styles.pubTitle}
+            href="https://dailynorthwestern.com/2026/01/21/city/an-uphill-climb-four-republicans-make-their-case-in-illinois-heavily-democratic-9th-congressional-district/"
+          >
+          ‘An uphill climb’: Four Republicans make their case in Illinois’ heavily Democratic 9th Congressional District
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Daily Northwestern</em> (Jan 2026)
+          </span>
+        </p>
+       
+        <p>
+          <a
+            className={styles.pubTitle}
             href=" https://dailynorthwestern.com/2025/11/28/campus/northwestern-strikes-deal-with-trump-administration-to-restore-federal-funding/"
           >
            Northwestern strikes deal with Trump administration to restore federal funding
@@ -267,7 +279,12 @@ const Publications = () => {
       {/* ---------- POETRY ---------- */}
       <div className={styles.list}>
         <h3 className={`${styles.category} ${styles.pinkCategory}`}>Poetry</h3>
-
+        <p>
+          <a className={styles.pubTitle}>Feast</a>
+          <span className={styles.pubMeta}>
+            in <em>Poet Lore</em> (Forthcoming)
+          </span>
+        </p>
         <p>
           <a className={styles.pubTitle}>Sweeter</a>
           <span className={styles.pubMeta}>
@@ -354,7 +371,7 @@ const Publications = () => {
         <p>
           <a
             className={styles.pubTitle}
-            href="https://superstitionreview.asu.edu/issue30/poetry/youngyuhuang"
+            href="https://web.archive.org/web/20240709165924/https://superstitionreview.asu.edu/issue30/poetry/youngyuhuang"
           >
             Wasteland
           </a>
