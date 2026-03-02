@@ -71,15 +71,10 @@ export default function About() {
           <a href="mailto:yongyu.yy.huang@gmail.com">
             <u>Email</u>
           </a>
-          ,{" "}
+          or{" "}
           <a href="https://www.twitter.com/yong_yuhuang">
             <u>Twitter</u>
-          </a>
-          , or read more on{" "}
-          <a href="https://yongyuhuang.substack.com/">
-            <u>Substack</u>
-          </a>
-          .
+          </a>.
         </p>
       </article>
     </section>
