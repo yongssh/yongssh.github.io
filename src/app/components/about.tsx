@@ -69,11 +69,11 @@ export default function About() {
           }`}
         >
           <a href="mailto:yongyu.yy.huang@gmail.com">
-            <u> Email</u>
+            <u>Email</u>
           </a>
-          or{" "}
+           or{" "}
           <a href="https://www.twitter.com/yong_yuhuang">
-            <u> Twitter</u>
+            <u>Twitter</u>
           </a>.
         </p>
       </article>
