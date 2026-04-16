@@ -12,6 +12,58 @@ const Publications = () => {
       {/* ---------- NONFICTION ---------- */}
       <div className={styles.list}>
         <h3 className={`${styles.category}`}>Journalism & Nonfiction</h3>
+
+        <p>
+          <a
+            className={styles.pubTitle}
+            href="https://www.thenation.com/article/society/trump-immigration-international-students-tuition-illinois-chicago/"
+          >
+         The Immigration Crackdown Hurts More Than Just International Students
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Nation</em> (March 2026)
+          </span>
+        </p>
+       
+
+
+        <p>
+          <a
+            className={styles.pubTitle}
+            href="https://dailynorthwestern.com/2026/03/04/city/come-in-with-clean-hands-phil-andrew-aims-to-bring-crisis-management-experience-to-congress/"
+          >
+         ‘Come in with clean hands’: Phil Andrew aims to bring crisis management experience to Congress
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Daily Northwestern</em> (March 2026)
+          </span>
+        </p>
+       
+
+        <p>
+          <a
+            className={styles.pubTitle}
+            href="https://dailynorthwestern.com/2026/03/04/city/bushra-amiwala-touts-progressive-credentials-personal-connections-in-hyper-local-congressional-race/"
+          >
+        Bushra Amiwala touts progressive credentials, personal connections in ‘hyper-local’ congressional race
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Daily Northwestern</em> (March 2026)
+          </span>
+        </p>
+
+             <p>
+          <a
+            className={styles.pubTitle}
+            href="https://dailynorthwestern.com/2026/02/26/city/federal-prosecutors-to-reduce-conspiracy-allegations-in-broadview-six-protest-case/"
+          >
+       Federal prosecutors to reduce conspiracy allegations in ‘Broadview Six’ protest case
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Daily Northwestern</em> (February 2026)
+          </span>
+        </p>
+       
         <p>
           <a
             className={styles.pubTitle}
