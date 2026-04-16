@@ -52,18 +52,28 @@ const Publications = () => {
           </span>
         </p>
 
-             <p>
+            <p>
+        <a
+          className={styles.pubTitle}
+          href="https://dailynorthwestern.com/2026/02/26/city/federal-prosecutors-to-reduce-conspiracy-allegations-in-broadview-six-protest-case/"
+        >
+      Federal prosecutors to reduce conspiracy allegations in ‘Broadview Six’ protest case
+        </a>
+        <span className={styles.pubMeta}>
+          in <em>The Daily Northwestern</em> (Feb 2026)
+        </span>
+      </p>
+       
+               <p>
           <a
             className={styles.pubTitle}
-            href="https://dailynorthwestern.com/2026/02/26/city/federal-prosecutors-to-reduce-conspiracy-allegations-in-broadview-six-protest-case/"
+            href="https://dailynorthwestern.com/2026/02/02/city/abughazaleh-biss-fine-lead-fundraising-as-11-million-floods-congressional-race/"
           >
-       Federal prosecutors to reduce conspiracy allegations in ‘Broadview Six’ protest case
-          </a>
+            Abughazaleh, Biss, Fine lead fundraising as $11 million floods congressional race          </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Feb 2026)
           </span>
         </p>
-       
         <p>
           <a
             className={styles.pubTitle}
