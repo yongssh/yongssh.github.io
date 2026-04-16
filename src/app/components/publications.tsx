@@ -21,7 +21,7 @@ const Publications = () => {
          The Immigration Crackdown Hurts More Than Just International Students
           </a>
           <span className={styles.pubMeta}>
-            in <em>The Nation</em> (March 2026)
+            in <em>The Nation</em> (Mar 2026)
           </span>
         </p>
        
@@ -35,7 +35,7 @@ const Publications = () => {
          ‘Come in with clean hands’: Phil Andrew aims to bring crisis management experience to Congress
           </a>
           <span className={styles.pubMeta}>
-            in <em>The Daily Northwestern</em> (March 2026)
+            in <em>The Daily Northwestern</em> (Mar 2026)
           </span>
         </p>
        
@@ -48,7 +48,7 @@ const Publications = () => {
         Bushra Amiwala touts progressive credentials, personal connections in ‘hyper-local’ congressional race
           </a>
           <span className={styles.pubMeta}>
-            in <em>The Daily Northwestern</em> (March 2026)
+            in <em>The Daily Northwestern</em> (Mar 2026)
           </span>
         </p>
 
@@ -60,7 +60,7 @@ const Publications = () => {
        Federal prosecutors to reduce conspiracy allegations in ‘Broadview Six’ protest case
           </a>
           <span className={styles.pubMeta}>
-            in <em>The Daily Northwestern</em> (February 2026)
+            in <em>The Daily Northwestern</em> (Feb 2026)
           </span>
         </p>
        
