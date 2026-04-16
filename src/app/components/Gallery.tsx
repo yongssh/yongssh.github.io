@@ -13,38 +13,38 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 const photos = [
-  { src: '/aquarium.JPG', width: 1080, height: 1720}, 
-  { src: '/londoncrowd.jpeg', width: 1080, height: 1720}, 
+  { src: '/aquarium.JPG', width: 1080, height: 1720 },
+  { src: '/londoncrowd.jpeg', width: 1080, height: 1720 },
   { src: '/foster-taylor.jpeg', width: 1920, height: 1080 },
 
   { src: '/uwcherryblossoms.JPG', width: 1920, height: 1080 },
-        { src: '/chicagohenge.jpeg', width: 1080, height: 1720}, 
+  { src: '/chicagohenge.jpeg', width: 1080, height: 1720 },
 
-    { src: '/londonstreet.JPG', width: 1920, height: 1080 },
+  { src: '/londonstreet.JPG', width: 1920, height: 1080 },
 
-  { src: '/beach.JPG', width: 4000, height: 6000},
+  { src: '/beach.JPG', width: 4000, height: 6000 },
 
-      {src: '/evanstonbizowners.JPG', width: 1920, height: 1080},
+  { src: '/evanstonbizowners.JPG', width: 1920, height: 1080 },
 
-    { src: '/skitracks.JPG', width: 1080, height: 1720}, 
+  { src: '/skitracks.JPG', width: 1080, height: 1720 },
 
-  { src: '/gumwall.JPG', width: 5910, height: 3940},
+  { src: '/gumwall.JPG', width: 5910, height: 3940 },
   { src: '/kellogg.JPG', width: 1080, height: 1920 },
-  { src: '/soccerdance.JPG', width: 3000, height: 2000},
-  { src: '/northerntrust.JPG',width: 1080, height: 1920},
-  { src: '/motelbreakfast.JPG',width: 1920, height: 1080},
+  { src: '/soccerdance.JPG', width: 3000, height: 2000 },
+  { src: '/northerntrust.JPG', width: 1080, height: 1920 },
+  { src: '/motelbreakfast.JPG', width: 1920, height: 1080 },
 
-  { src: '/chicagoriver.JPG',  width: 1017, height: 1811 },
+  { src: '/chicagoriver.JPG', width: 1017, height: 1811 },
   { src: '/deeringgarden.JPG', width: 3000, height: 2000 },
-  {src: '/quadreltenantsunion.jpeg', width: 1920, height: 1080},
+  { src: '/quadreltenantsunion.jpeg', width: 1920, height: 1080 },
 
-  { src: '/ntu.jpg',  width: 1080, height: 1920},
-  { src: '/pikeplacejapanesestore.JPG',  width: 1080, height: 1620 },
-  { src: '/eclipse.JPG', width: 1400, height: 900  },
-  { src: '/soccer.JPG',  width: 1080, height: 1920},
+  { src: '/ntu.jpg', width: 1080, height: 1920 },
+  { src: '/pikeplacejapanesestore.JPG', width: 1080, height: 1620 },
+  { src: '/eclipse.JPG', width: 1400, height: 900 },
+  { src: '/soccer.JPG', width: 1080, height: 1920 },
 
   { src: '/greengoose.JPG', width: 3000, height: 2000 },
-  { src: '/gtownchambers.jpeg',  width: 2827, height: 4242},
+  { src: '/gtownchambers.jpeg', width: 2827, height: 4242 },
   { src: '/geesefamily.JPG', width: 3996, height: 5994 },
   { src: '/hike.JPG', width: 3648, height: 2432 },
 
@@ -58,19 +58,19 @@ export default function PhotoGallery() {
   const [index, setIndex] = useState(-1);
   return (
     <section>
-    <>
-      <MasonryPhotoAlbum photos={photos} columns={3} onClick={({ index }) => setIndex(index)}/>
-      
-      <Lightbox
-      slides={photos}
-      open={index >= 0}
-      index={index}
-      close={() => setIndex(-1)}
-      
-      plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]} />
-    </>
+      <>
+        <MasonryPhotoAlbum photos={photos} columns={3} onClick={({ index }) => setIndex(index)} />
+
+        <Lightbox
+          slides={photos}
+          open={index >= 0}
+          index={index}
+          close={() => setIndex(-1)}
+
+          plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]} />
+      </>
     </section>
 
-    );
-  
+  );
+
 }
