@@ -12,19 +12,42 @@ const Publications = () => {
       {/* ---------- NONFICTION ---------- */}
       <div className={styles.list}>
         <h3 className={`${styles.category}`}>Journalism & Nonfiction</h3>
+        <p>
+          <a
+            className={styles.pubTitle}
+            href="https://dailynorthwestern.com/2026/06/13/top-stories/roycemores-future-remains-uncertain-as-school-races-to-close-fundraising-gap/"
+          >
+            Roycemore’s future remains uncertain as school races to close fundraising gap
+
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Daily Northwestern</em> (June 2026)
+          </span>
+        </p>
+        <p>
+          <a
+            className={styles.pubTitle}
+            href="https://dailynorthwestern.com/2026/05/28/city/evanston-author-daniel-kraus-puts-horror-in-the-spotlight-talks-pulitzer-win/"
+          >
+            Evanston author Daniel Kraus puts horror in the spotlight, talks Pulitzer win
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Daily Northwestern</em> (May 2026)
+          </span>
+        </p>
 
         <p>
           <a
             className={styles.pubTitle}
             href="https://www.thenation.com/article/society/trump-immigration-international-students-tuition-illinois-chicago/"
           >
-         The Immigration Crackdown Hurts More Than Just International Students
+            The Immigration Crackdown Hurts More Than Just International Students
           </a>
           <span className={styles.pubMeta}>
             in <em>The Nation</em> (Mar 2026)
           </span>
         </p>
-       
+
 
 
         <p>
@@ -32,39 +55,39 @@ const Publications = () => {
             className={styles.pubTitle}
             href="https://dailynorthwestern.com/2026/03/04/city/come-in-with-clean-hands-phil-andrew-aims-to-bring-crisis-management-experience-to-congress/"
           >
-         ‘Come in with clean hands’: Phil Andrew aims to bring crisis management experience to Congress
+            ‘Come in with clean hands’: Phil Andrew aims to bring crisis management experience to Congress
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Mar 2026)
           </span>
         </p>
-       
+
 
         <p>
           <a
             className={styles.pubTitle}
             href="https://dailynorthwestern.com/2026/03/04/city/bushra-amiwala-touts-progressive-credentials-personal-connections-in-hyper-local-congressional-race/"
           >
-        Bushra Amiwala touts progressive credentials, personal connections in ‘hyper-local’ congressional race
+            Bushra Amiwala touts progressive credentials, personal connections in ‘hyper-local’ congressional race
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Mar 2026)
           </span>
         </p>
 
-            <p>
-        <a
-          className={styles.pubTitle}
-          href="https://dailynorthwestern.com/2026/02/26/city/federal-prosecutors-to-reduce-conspiracy-allegations-in-broadview-six-protest-case/"
-        >
-      Federal prosecutors to reduce conspiracy allegations in ‘Broadview Six’ protest case
-        </a>
-        <span className={styles.pubMeta}>
-          in <em>The Daily Northwestern</em> (Feb 2026)
-        </span>
-      </p>
-       
-               <p>
+        <p>
+          <a
+            className={styles.pubTitle}
+            href="https://dailynorthwestern.com/2026/02/26/city/federal-prosecutors-to-reduce-conspiracy-allegations-in-broadview-six-protest-case/"
+          >
+            Federal prosecutors to reduce conspiracy allegations in ‘Broadview Six’ protest case
+          </a>
+          <span className={styles.pubMeta}>
+            in <em>The Daily Northwestern</em> (Feb 2026)
+          </span>
+        </p>
+
+        <p>
           <a
             className={styles.pubTitle}
             href="https://dailynorthwestern.com/2026/02/02/city/abughazaleh-biss-fine-lead-fundraising-as-11-million-floods-congressional-race/"
@@ -79,53 +102,53 @@ const Publications = () => {
             className={styles.pubTitle}
             href="https://dailynorthwestern.com/2026/01/21/city/an-uphill-climb-four-republicans-make-their-case-in-illinois-heavily-democratic-9th-congressional-district/"
           >
-          ‘An uphill climb’: Four Republicans make their case in Illinois’ heavily Democratic 9th Congressional District
+            ‘An uphill climb’: Four Republicans make their case in Illinois’ heavily Democratic 9th Congressional District
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Jan 2026)
           </span>
         </p>
-       
+
         <p>
           <a
             className={styles.pubTitle}
             href=" https://dailynorthwestern.com/2025/11/28/campus/northwestern-strikes-deal-with-trump-administration-to-restore-federal-funding/"
           >
-           Northwestern strikes deal with Trump administration to restore federal funding
+            Northwestern strikes deal with Trump administration to restore federal funding
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Nov 2025)
           </span>
         </p>
-       
+
         <p>
           <a
             className={styles.pubTitle}
             href="https://dailynorthwestern.com/2025/11/19/top-stories/snap-benefits-to-return-but-new-restrictions-may-leave-families-in-limbo/"
           >
-           SNAP benefits to return, but new restrictions may leave families in limbo
+            SNAP benefits to return, but new restrictions may leave families in limbo
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Nov 2025)
           </span>
         </p>
-           <p>
+        <p>
           <a
             className={styles.pubTitle}
             href="https://dailynorthwestern.com/2025/11/17/city/across-party-lines-prison-gift-bag-confrontation-disrupts-quiet-candidate-forum/"
           >
-          Across party lines, prison gift bag confrontation disrupts quiet candidate forum
+            Across party lines, prison gift bag confrontation disrupts quiet candidate forum
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Nov 2025)
           </span>
         </p>
-         <p>
+        <p>
           <a
             className={styles.pubTitle}
             href="https://dailynorthwestern.com/2025/11/05/city/we-cannot-be-silent-evanston-businesses-stand-up-to-ice-amid-escalated-enforcement/"
           >
-           ‘We cannot be silent’: Evanston businesses stand up to ICE amid escalated enforcement
+            ‘We cannot be silent’: Evanston businesses stand up to ICE amid escalated enforcement
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Nov 2025)
@@ -136,7 +159,7 @@ const Publications = () => {
             className={styles.pubTitle}
             href="https://dailynorthwestern.com/2025/10/21/campus/fueled-by-curiosity-nobel-laureate-joel-mokyr-fashions-a-life-long-case-for-human-progress/"
           >
-           Fueled by curiosity, Nobel laureate Joel Mokyr fashions a life-long case for human progress
+            Fueled by curiosity, Nobel laureate Joel Mokyr fashions a life-long case for human progress
           </a>
           <span className={styles.pubMeta}>
             in <em>The Daily Northwestern</em> (Oct 2025)
@@ -198,9 +221,9 @@ const Publications = () => {
             H-1B or Bust
           </a>
           <span className={styles.pubMeta}>
-            in <em>nuAZN</em> 
+            in <em>nuAZN</em>
           </span>
-           <a href="https://drive.google.com/file/d/1bd3aXz4QDAbdQL8dBzSYJSPl_kP0usYb/view?usp=sharing"> (PDF)</a>
+          <a href="https://drive.google.com/file/d/1bd3aXz4QDAbdQL8dBzSYJSPl_kP0usYb/view?usp=sharing"> (PDF)</a>
         </p>
 
         <p>
@@ -339,20 +362,23 @@ const Publications = () => {
       </div>
 
       {/* ---------- POETRY ---------- */}
+
       <div className={styles.list}>
         <h3 className={`${styles.category} ${styles.pinkCategory}`}>Poetry</h3>
-        <p>
-          <a className={styles.pubTitle}>Feast</a>
-          <span className={styles.pubMeta}>
-            in <em>Poet Lore</em> (Forthcoming)
-          </span>
-        </p>
+
         <p>
           <a className={styles.pubTitle}>Sweeter</a>
           <span className={styles.pubMeta}>
-            in <em>Narrative Magazine</em> (Forthcoming)
+            in <em>Narrative Magazine</em> (July 2026)
           </span>
         </p>
+        <p>
+          <a className={styles.pubTitle}>Feast</a>
+          <span className={styles.pubMeta}>
+            in <em>Poet Lore</em> (June 2026)
+          </span>
+        </p>
+
         <p>
           <a
             className={styles.pubTitle}
