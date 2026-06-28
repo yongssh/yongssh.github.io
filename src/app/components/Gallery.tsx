@@ -19,11 +19,10 @@ const photos = [
   { src: '/londoncrowd.jpeg', width: 1080, height: 1720 },
 
   { src: '/uwcherryblossoms.JPG', width: 1920, height: 1080 },
-  { src: '/taylorgoal.jpg', width: 1920, height: 1080 },
 
   {src: '/rutgers.jpeg', width: 1200, height: 1800},
   { src: '/chicagohenge.jpeg', width: 1080, height: 1720 },
-  { src: '/fostergoal.jpg', width: 1920, height: 1080 },
+  { src: '/fostergoal.jpg', width: 1920, height: 1280 },
 
   { src: '/londonstreet.JPG', width: 1920, height: 1080 },
 
@@ -34,6 +33,8 @@ const photos = [
   { src: '/skitracks.JPG', width: 1080, height: 1720 },
 
   { src: '/gumwall.JPG', width: 5910, height: 3940 },
+    { src: '/taylorgoal.jpg', width: 1920, height: 1280 },
+
   { src: '/kellogg.JPG', width: 1080, height: 1920 },
   { src: '/soccerdance.JPG', width: 3000, height: 2000 },
   { src: '/northerntrust.JPG', width: 1080, height: 1920 },
