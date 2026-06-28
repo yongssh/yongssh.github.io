@@ -48,7 +48,7 @@ export default function About() {
           }`}
         >
           I studied computer science and English literature at Northwestern University, where I was a recipient of a Franke Fellowship and reported for <em>The Daily Northwestern</em>. 
-          Previously, I interned for <em>Encyclopædia Britannica</em>, was a Kaplan Humanities Scholar and conducted history research as a Leopold Fellow, and I&apos;ve won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
+          Previously, I interned for <em>Encyclopædia Britannica</em>, was a Kaplan Humanities Scholar and conducted history research as a Leopold Fellow. I was the receipient of the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
         </p>
 
         <p
