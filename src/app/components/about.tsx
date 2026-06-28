@@ -47,8 +47,7 @@ export default function About() {
             visibleIndex >= 0 ? styles.visible : ""
           }`}
         >
-          I am a recent computer science and English literature from Northwestern University, where I was a recipient of a Franke Fellowship.
-          I edited <em>Helicon</em> and worked on web projects and report for <em>The Daily Northwestern</em>. 
+          I studied computer science and English literature at Northwestern University, where I was a recipient of a Franke Fellowship and reported for <em>The Daily Northwestern</em>. 
           Previously, I interned for <em>Encyclopædia Britannica</em>, was a Kaplan Humanities Scholar and conducted history research as a Leopold Fellow, and I&apos;ve won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
         </p>
 
