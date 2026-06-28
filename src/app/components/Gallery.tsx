@@ -19,8 +19,11 @@ const photos = [
   { src: '/londoncrowd.jpeg', width: 1080, height: 1720 },
 
   { src: '/uwcherryblossoms.JPG', width: 1920, height: 1080 },
+  { src: '/taylorgoal.jpg', width: 1920, height: 1080 },
+
   {src: '/rutgers.jpeg', width: 1200, height: 1800},
   { src: '/chicagohenge.jpeg', width: 1080, height: 1720 },
+  { src: '/fostergoal.jpg', width: 1920, height: 1080 },
 
   { src: '/londonstreet.JPG', width: 1920, height: 1080 },
 
