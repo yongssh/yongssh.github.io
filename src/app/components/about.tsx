@@ -47,10 +47,9 @@ export default function About() {
             visibleIndex >= 0 ? styles.visible : ""
           }`}
         >
-          I study computer science and English literature at Northwestern University, where my research on migration and cosmopolitanism in literature is supported by a Franke Undergraduate Fellowship. 
-          I edit <em>Helicon</em>, and I also work on web projects and report for <em>The Daily Northwestern</em>. 
-          In the past, I&apos;ve interned for <em>Encyclopædia Britannica</em> and edited features for <em>North By Northwestern</em>. 
-          I&apos;ve been a Kaplan Humanities Scholar and conducted history research as a Leopold Fellow, and I&apos;ve won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
+          I am a recent computer science and English literature from Northwestern University, where I was a recipient of a Franke Fellowship.
+          I edited <em>Helicon</em> and worked on web projects and report for <em>The Daily Northwestern</em>. 
+          Previously, I interned for <em>Encyclopædia Britannica</em>, was a Kaplan Humanities Scholar and conducted history research as a Leopold Fellow, and I&apos;ve won the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
         </p>
 
         <p
@@ -58,9 +57,7 @@ export default function About() {
             visibleIndex >= 1 ? styles.visible : ""
           }`}
         >
-          My creative work appears in <em>Waxwing</em>, <em>The Adroit Journal</em>, <em>The Offing</em>, <em>Sixth Finch</em>, and elsewhere. 
           I was a commended poet in the Poetry Society of the UK&apos;s 2024 National Poetry Competition and the recipient of the 2021 Elinor Benedict Poetry Prize. My work has been recognized by Best Small Fictions, the Hippocrates Society, and the Gregory Djanikian Scholars Program, among others. 
-          In my free time, I can be found listening to Lorde or going on a walk. 
         </p>
 
         <p
@@ -71,7 +68,7 @@ export default function About() {
           <a href="mailto:yongyu.yy.huang@gmail.com">
             <u>Email</u>
           </a>
-           or{" "}
+          {" "}or{" "}
           <a href="https://www.twitter.com/yong_yuhuang">
             <u>Twitter</u>
           </a>.
