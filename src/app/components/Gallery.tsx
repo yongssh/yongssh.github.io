@@ -14,10 +14,12 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 const photos = [
   { src: '/aquarium.JPG', width: 1080, height: 1720 },
+    { src: '/foster-taylor.jpeg', width: 2700, height: 1800 },
+
   { src: '/londoncrowd.jpeg', width: 1080, height: 1720 },
-  { src: '/foster-taylor.jpeg', width: 1920, height: 1080 },
 
   { src: '/uwcherryblossoms.JPG', width: 1920, height: 1080 },
+  {src: '/rutgers.jpeg', width: 1200, height: 1500},
   { src: '/chicagohenge.jpeg', width: 1080, height: 1720 },
 
   { src: '/londonstreet.JPG', width: 1920, height: 1080 },
