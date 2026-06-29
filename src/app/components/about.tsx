@@ -48,7 +48,7 @@ export default function About() {
           }`}
         >
           I studied computer science and English literature at Northwestern University, where I was a recipient of a Franke Fellowship and reported for <em>The Daily Northwestern</em>. 
-          Previously, I interned for <em>Encyclopædia Britannica</em>, was a Kaplan Humanities Scholar and conducted history research as a Leopold Fellow. I was the receipient of the William Faricy Poetry Award, the Helen G. Scott Essay Prize, and the Kaplan Humanities Scholars Prize. 
+          Previously, I interned for <em>Encyclopædia Britannica</em>, was a Kaplan Humanities Scholar and conducted history research as a Leopold Fellow. I was the receipient of the William Faricy Poetry Award, the Helen G. Scott Essay Prize and the Kaplan Humanities Scholars Prize. 
         </p>
 
         <p
@@ -56,7 +56,7 @@ export default function About() {
             visibleIndex >= 1 ? styles.visible : ""
           }`}
         >
-          I was a commended poet in the Poetry Society of the UK&apos;s 2024 National Poetry Competition and the recipient of the 2021 Elinor Benedict Poetry Prize. My work has been recognized by Best Small Fictions, the Hippocrates Society, and the Gregory Djanikian Scholars Program, among others. 
+          I was a commended poet in the Poetry Society of the UK&apos;s 2024 National Poetry Competition and the recipient of the 2021 Elinor Benedict Poetry Prize. My work has been recognized by Best Small Fictions, the Hippocrates Society and the Gregory Djanikian Scholars Program, among others. <a href="https://www.printedmatter.org/catalog/71152">Here's</a> a zine of my poetry and photography, in collaboration with Kimberly Jao.
         </p>
 
         <p
