@@ -26,6 +26,7 @@ const photos = [
 
   { src: '/londonstreet.JPG', width: 1920, height: 1080 },
 
+
   { src: '/beach.JPG', width: 4000, height: 6000 },
 
   { src: '/evanstonbizowners.JPG', width: 1920, height: 1080 },
@@ -48,6 +49,7 @@ const photos = [
   { src: '/pikeplacejapanesestore.JPG', width: 1080, height: 1620 },
   { src: '/eclipse.JPG', width: 1400, height: 900 },
   { src: '/soccer.JPG', width: 1080, height: 1920 },
+    { src: '/bright.jpg', width: 1920, height: 1080 },
 
   { src: '/greengoose.JPG', width: 3000, height: 2000 },
   { src: '/gtownchambers.jpeg', width: 2827, height: 4242 },
