@@ -56,7 +56,7 @@ export default function About() {
             visibleIndex >= 1 ? styles.visible : ""
           }`}
         >
-          I was a commended poet in the Poetry Society of the UK&apos;s 2024 National Poetry Competition and the recipient of the 2021 Elinor Benedict Poetry Prize. My work has been recognized by Best Small Fictions, the Hippocrates Society and the Gregory Djanikian Scholars Program, among others. <a href="https://www.printedmatter.org/catalog/71152">Here's</a> a zine of my poetry and photography, made in collaboration with Kimberly Jao.
+          I was a commended poet in the Poetry Society of the UK&apos;s 2024 National Poetry Competition and the recipient of the 2021 Elinor Benedict Poetry Prize. My work has been recognized by Best Small Fictions, the Hippocrates Society and the Gregory Djanikian Scholars Program, among others. <a href="https://www.printedmatter.org/catalog/71152">Here&apos;s</a> a zine of my poetry and photography, made in collaboration with Kimberly Jao.
         </p>
 
         <p
