@@ -39,21 +39,22 @@ const photos = [
   { src: '/gumwall.JPG', width: 5910, height: 3940 },
   { src: '/taylorgoal.jpg', width: 1920, height: 1280 },
 
-  { src: '/kellogg.JPG', width: 1080, height: 1920 },
   { src: '/soccerdance.JPG', width: 3000, height: 2000 },
       { src: '/foster.jpg', width: 5910, height: 3940 },
+  { src: '/kellogg.JPG', width: 1080, height: 1920 },
 
   { src: '/northerntrust.JPG', width: 1080, height: 1920 },
   { src: '/motelbreakfast.JPG', width: 1920, height: 1080 },
 
   { src: '/chicagoriver.JPG', width: 1017, height: 1811 },
   { src: '/deeringgarden.JPG', width: 3000, height: 2000 },
-  { src: '/quadreltenantsunion.jpeg', width: 1920, height: 1080 },
 
   { src: '/ntu.jpg', width: 1080, height: 1920 },
   { src: '/pikeplacejapanesestore.JPG', width: 1080, height: 1620 },
   { src: '/eclipse.JPG', width: 1400, height: 900 },
   { src: '/soccer.JPG', width: 1080, height: 1920 },
+    { src: '/quadreltenantsunion.jpeg', width: 1920, height: 1080 },
+
 
   { src: '/greengoose.JPG', width: 3000, height: 2000 },
   { src: '/gtownchambers.jpeg', width: 2827, height: 4242 },
