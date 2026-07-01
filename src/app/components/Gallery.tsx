@@ -28,6 +28,8 @@ const photos = [
 
 
   { src: '/beach.JPG', width: 4000, height: 6000 },
+    { src: '/QFlax.PNG', width: 5910, height: 3940 },
+
 
   { src: '/evanstonbizowners.JPG', width: 1920, height: 1080 },
 
@@ -39,6 +41,8 @@ const photos = [
 
   { src: '/kellogg.JPG', width: 1080, height: 1920 },
   { src: '/soccerdance.JPG', width: 3000, height: 2000 },
+      { src: '/foster.jpg', width: 5910, height: 3940 },
+
   { src: '/northerntrust.JPG', width: 1080, height: 1920 },
   { src: '/motelbreakfast.JPG', width: 1920, height: 1080 },
 
