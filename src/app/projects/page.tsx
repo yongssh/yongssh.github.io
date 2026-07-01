@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/footer";
 import Link from "next/link";
 import styles from "./Projects.module.css";
+import Image from "next/image";
 
 const projects = [
   // ===== WEB & DATA PROJECTS =====
@@ -246,7 +247,7 @@ export default function ProjectsPage() {
                 <article key={idx} className={styles.card}>
                   <figure className={styles.figure}>
                     <Link href={project.url} target="_blank" rel="noopener noreferrer">
-                      <img
+                      <Image
                         src={project.image}
                         alt={`Thumbnail for ${project.title}`}
                       />

@@ -32,9 +32,10 @@ const photos = [
   { src: '/evanstonbizowners.JPG', width: 1920, height: 1080 },
 
   { src: '/skitracks.JPG', width: 1080, height: 1720 },
+  { src: '/bright.jpg', width: 1080, height: 1720 },
 
   { src: '/gumwall.JPG', width: 5910, height: 3940 },
-    { src: '/taylorgoal.jpg', width: 1920, height: 1280 },
+  { src: '/taylorgoal.jpg', width: 1920, height: 1280 },
 
   { src: '/kellogg.JPG', width: 1080, height: 1920 },
   { src: '/soccerdance.JPG', width: 3000, height: 2000 },
@@ -49,7 +50,6 @@ const photos = [
   { src: '/pikeplacejapanesestore.JPG', width: 1080, height: 1620 },
   { src: '/eclipse.JPG', width: 1400, height: 900 },
   { src: '/soccer.JPG', width: 1080, height: 1920 },
-    { src: '/bright.jpg', width: 1920, height: 1080 },
 
   { src: '/greengoose.JPG', width: 3000, height: 2000 },
   { src: '/gtownchambers.jpeg', width: 2827, height: 4242 },
