@@ -253,7 +253,7 @@ const Publications = () => {
             in <em>Encyclopædia Britannica</em> (Sept 2024)
           </span>
         </p>
-        <p>
+        {/* <p>
           <a className={styles.pubTitle} href="https://northbynorthwestern.com/a-just-look-at-jennifer-lackey/">
             A Just Look at Jennifer Lackey
           </a>
@@ -304,7 +304,7 @@ const Publications = () => {
           <span className={styles.pubMeta}>
             in <em>North By Northwestern</em> (Mar 2024)
           </span>
-        </p>
+        </p> */}
         <p>
           <a
             className={styles.pubTitle}
