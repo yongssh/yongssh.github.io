@@ -4,13 +4,18 @@ import styles from "../styles/Publications.module.css";
 const Publications = () => {
   return (
     <section className={styles.publicationsSection}>
-      <header className={styles.header}>
-        <h2 className={styles.title}>Selected Publications</h2>
+   <header className={styles.header}>
+  <h2 className={styles.title}>Selected Publications</h2>
 
-      </header>
+  <nav className={styles.categoryNav} aria-label="Publication categories">
+    <a href="#journalism">Journalism & Nonfiction</a>
+    <a href="#poetry">Poetry</a>
+    <a href="#fiction">Fiction</a>
+  </nav>
+</header>
 
       {/* ---------- NONFICTION ---------- */}
-      <div className={styles.list}>
+        <div id="journalism" className={styles.list}>
         <h3 className={`${styles.category}`}>Journalism & Nonfiction</h3>
         <p>
           <a
@@ -360,8 +365,8 @@ const Publications = () => {
       </div>
 
       {/* ---------- POETRY ---------- */}
+        <div id="poetry" className={styles.list}>
 
-      <div className={styles.list}>
         <h3 className={`${styles.category} ${styles.pinkCategory}`}>Poetry</h3>
 
         <p>
@@ -502,8 +507,9 @@ const Publications = () => {
 
 
       {/* ---------- FICTION ---------- */}
-      {/* ---------- FICTION ---------- */}
-      <div className={styles.list}>
+
+        <div id="fiction" className={styles.list}>
+
         <h3 className={`${styles.category} ${styles.pinkCategory}`}>Fiction</h3>
 
         <p>
