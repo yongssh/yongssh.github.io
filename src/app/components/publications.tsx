@@ -48,8 +48,6 @@ const Publications = () => {
           </span>
         </p>
 
-
-
         <p>
           <a
             className={styles.pubTitle}
