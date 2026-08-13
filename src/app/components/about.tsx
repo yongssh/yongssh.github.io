@@ -47,18 +47,11 @@ export default function About() {
             visibleIndex >= 0 ? styles.visible : ""
           }`}
         >
-          I studied computer science and English literature at Northwestern University, where I received a Franke Fellowship and reported for <em>The Daily Northwestern</em>. 
-          Previously, I interned for <em>Encyclopædia Britannica</em>, was a Kaplan Humanities Scholar and conducted history research as a Leopold Fellow. I was the receipient of the William Faricy Poetry Award, the Helen G. Scott Essay Prize and the Kaplan Humanities Scholars Prize. 
+          Yong-Yu Huang studied English literature and computer science at Northwestern University. Currently, she is a data and reporting fellow at <i><a href="https://www.rangemedia.co/author/yong-yuhuang/">RANGE Media</a></i> in Spokane, Washington. 
+          Her work can be found in <i>The Nation</i>, <i>Britannica</i>, <i>Penang Monthly</i>, and <i>The Daily Northwestern</i>.
+          <br></br>
+          Her poery is featured in <i>Narrative Magazine</i>, <i>Poet Lore</i>, and<i>The Adroit Journal</i>, among others, and has been recognized by The Poetry Society of the UK. <u><a href="https://www.printedmatter.org/catalog/71152">Here&apos;s</a></u> a zine of my poetry and photography, made in collaboration with Kimberly Jao.
         </p>
-
-        <p
-          className={`${styles.bioText} ${
-            visibleIndex >= 1 ? styles.visible : ""
-          }`}
-        >
-          I was a commended poet in the Poetry Society of the UK&apos;s 2024 National Poetry Competition and the recipient of the 2021 Elinor Benedict Poetry Prize. My work has been recognized by Best Small Fictions, the Hippocrates Society and the Gregory Djanikian Scholars Program, among others. <u><a href="https://www.printedmatter.org/catalog/71152">Here&apos;s</a></u> a zine of my poetry and photography, made in collaboration with Kimberly Jao.
-        </p>
-
         <p
           className={`${styles.bioText} ${
             visibleIndex >= 2 ? styles.visible : ""
