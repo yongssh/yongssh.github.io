@@ -49,8 +49,14 @@ export default function About() {
         >
           Yong-Yu Huang studied English literature and computer science at Northwestern University. Currently, she is a data and reporting fellow at <i><a href="https://www.rangemedia.co/author/yong-yuhuang/">RANGE Media</a></i> in Spokane, Washington. 
           Her work can be found in <i>The Nation</i>, <i>Britannica</i>, <i>Penang Monthly</i>, and <i>The Daily Northwestern</i>.
-          <br></br>
-          Her poery is featured in <i>Narrative Magazine</i>, <i>Poet Lore</i>, and<i>The Adroit Journal</i>, among others, and has been recognized by The Poetry Society of the UK. <u><a href="https://www.printedmatter.org/catalog/71152">Here&apos;s</a></u> a zine of my poetry and photography, made in collaboration with Kimberly Jao.
+
+        </p>
+         <p
+          className={`${styles.bioText} ${
+            visibleIndex >= 0 ? styles.visible : ""
+          }`}
+        >
+        Her poery is featured in <i>Narrative Magazine</i>, <i>Poet Lore</i>, and<i>The Adroit Journal</i>, among others, and has been recognized by The Poetry Society of the UK. <u><a href="https://www.printedmatter.org/catalog/71152">Here&apos;s</a></u> a zine of her poetry and photography, made in collaboration with Kimberly Jao.
         </p>
         <p
           className={`${styles.bioText} ${
