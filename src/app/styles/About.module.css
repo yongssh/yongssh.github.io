@@ -17,7 +17,7 @@
   margin-bottom: 0.25rem;
   position: relative;
   display: inline-block;
-  z-index: 0; /* ensure ::after stays behind text */
+  z-index: 0;
   opacity: 0;
   transform: translateY(10px);
   animation: fadeSlideIn 1s ease forwards;

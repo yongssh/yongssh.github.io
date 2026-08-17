@@ -56,7 +56,7 @@ export default function About() {
             visibleIndex >= 0 ? styles.visible : ""
           }`}
         >
-        Her poetry is featured in <i>Narrative Magazine</i>, <i>Poet Lore</i>, and<i>The Adroit Journal</i>, among others, and has been recognized by The Poetry Society of the UK. <u><a href="https://www.printedmatter.org/catalog/71152">Here&apos;s</a></u> a zine of her poetry and photography, made in collaboration with Kimberly Jao.
+        Her poetry is featured in <i>Narrative Magazine</i>, <i>Poet Lore</i>, and <i>The Adroit Journal</i>, among others, and has been recognized by The Poetry Society of the UK. <u><a href="https://www.printedmatter.org/catalog/71152">Here&apos;s</a></u> a zine of her poetry and photography, made in collaboration with Kimberly Jao.
         </p>
         <p
           className={`${styles.bioText} ${
