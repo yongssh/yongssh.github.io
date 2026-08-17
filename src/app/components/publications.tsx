@@ -229,7 +229,7 @@ const Publications = () => {
           <a href="https://drive.google.com/file/d/1bd3aXz4QDAbdQL8dBzSYJSPl_kP0usYb/view?usp=sharing"> (PDF)</a>
         </p>
 
-        <p>
+        {/* <p>
           <a
             className={styles.pubTitle}
             href="https://northbynorthwestern.com/sense-track-understand-northwestern-professor-karan-ahuja-and-the-spice-lab/"
@@ -239,7 +239,7 @@ const Publications = () => {
           <span className={styles.pubMeta}>
             in <em>North By Northwestern</em> (Nov 2024)
           </span>
-        </p>
+        </p> */}
         <p>
           <a className={styles.pubTitle} href="https://www.britannica.com/biography/Min-Jin-Lee">
             Min Jin Lee
