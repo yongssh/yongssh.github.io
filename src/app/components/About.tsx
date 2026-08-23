@@ -60,7 +60,7 @@ useEffect(() => {
             visibleIndex >= 1 ? styles.visible : ""
           }`}
         >
-          I’m a recent graduate of Northwestern University, where I studied English literature and computer science.
+          I’m a recent graduate of Northwestern University, where I studied English literature and computer science and received a Franke Fellowship.
 
         </p>
          <p
