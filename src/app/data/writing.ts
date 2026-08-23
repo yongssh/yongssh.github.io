@@ -300,17 +300,35 @@ export type Honor = {
 
 export const honors: Honor[] = [
   {
+    year: 2026,
+    result: "Recipient",
+    prize: "Outstanding Senior in Literature",
+    organization: "Northwestern University Department of English",
+  },
+  {
+    year: 2025,
+    result: "Winner",
+    prize: "Mark of Excellence Awards, Region 5 — General News Reporting",
+    organization: "Society of Professional Journalists",
+  },
+  {
     year: 2025,
     result: "Longlist",
     prize: "Queen Mary Wasafiri New Writing Prize",
     organization: "Wasafiri",
-
   },
   {
     year: 2025,
     result: "Finalist",
     prize: "17th Annual Poetry Contest",
     organization: "Narrative Magazine",
+  },
+    {
+    year: 2025,
+    result: "Finalist",
+    prize: "17th Annual Robert and Adele Schiff Awards",
+    organization: "Cincinnati Review",
+
   },
   {
     year: 2025,
