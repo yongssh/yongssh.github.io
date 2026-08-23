@@ -68,7 +68,7 @@ useEffect(() => {
             visibleIndex >= 2 ? styles.visible : ""
           }`}
         >
-        Once, I got to read at The Poetry Society of the UK’s awards ceremony in London. My poetry has also been featured in <i>Narrative Magazine</i>, <i>Poet Lore</i>, and <i>The Adroit Journal</i>, among others. <a href="https://www.printedmatter.org/catalog/71152">Here’s</a> a zine of my writing and photography, made in collaboration with Kimberly Jao.
+        Once, I got to read at The Poetry Society of the UK’s awards ceremony. My poetry has also been featured in <i>Narrative Magazine</i>, <i>Poet Lore</i>, and <i>The Adroit Journal</i>, among others. <a href="https://www.printedmatter.org/catalog/71152">Here’s</a> a zine of my writing and photography, made in collaboration with Kimberly Jao.
         </p>
 
         <p
