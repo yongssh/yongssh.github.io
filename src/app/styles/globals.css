@@ -9,44 +9,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+:root {
+  --page-bg: #ffffff;
+  --text-dark: #111111;
+  --text-muted: #666666;
+  --brand-accent: #111111;
+  --highlight-blue: #dcecf4;
+}
+
+/* --- Base / Global Typography --- */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+
+    background: var(--page-bg);
+    color: var(--text-dark);
+
+    font-family: "Space Grotesk", sans-serif;
+    background: #fff;
+    color: #111;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.55;
+
+    scroll-behavior: smooth;
+  }
+button,
+input,
+nav,
+footer {
+  font-family: "Space Grotesk", sans-serif;
+}
+  body {
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+  }
+
+  h2 {
+    font-size: clamp(1.7rem, 3vw, 2.6rem);
+    line-height: 1.08;
+    font-weight: 500;
+    letter-spacing: -0.035em;
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 2vw, 1.6rem);
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  a {
+    color: inherit;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  em {
+    font-family: "Instrument Serif", serif;
+    font-size: 1.08em;
+  }
+}
+
 /* --- Font Utilities --- */
 .font-righteous {
-  font-family: 'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
 }
+
 .font-space {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .font-zen-old-mincho {
-  font-family: 'Zen Old Mincho', serif;
+  font-family: "Zen Old Mincho", serif;
 }
+
 .font-montserrat {
   font-family: "Montserrat", sans-serif;
 }
+
 .font-instrument-serif {
   font-family: "Instrument Serif", serif;
-}
-:root {
-  --font-poppins: 'Poppins', sans-serif;
-  --font-zen-old-mincho: 'Zen Old Mincho'
-  --brand-accent: #c47a88;
-  --page-bg: #f3f3f3;
-  --text-dark: #111111;
-  --text-muted: #555555;
-}
-
-/* --- Base Layer --- */
-@layer base {
-  html, body {
-    font-family: 'Zen Old Mincho';
-    background-color: var(--page-bg);
-    color: var(--text-dark);
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    min-height: 100vh;
-    scroll-behavior: smooth;
-  }
 }
 
 /* --- Global Layout --- */
@@ -54,61 +130,41 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--page-bg);
+  background: #ffffff;
 }
 
-
-
 main {
-  padding-top: 50px; 
+  flex: 1;
+  padding-top: 50px;
 }
 
 /* --- Header --- */
 .header {
-  font-family: 'Zen Old Mincho';
-  font-size: 2rem;
-  color: var(--text-dark);
-  text-align: center;
-  justify-content: center;
   width: 100%;
-}
-
-/* --- Typing Effect --- */
-.typed-text {
-  color: #007acc;
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  width: fit-content;
-  max-width: 100%;
-  border-right: 3px solid #007acc;
-  animation: typing 3s steps(20, end), blink .5s step-end infinite alternate;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-@keyframes blink {
-  50% { border-color: transparent; }
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #111111;
+  text-align: center;
 }
 
 /* --- Navbar --- */
 .navbar {
   width: 100%;
-  background-color: var(--page-bg);
+  background: #ffffff;
 }
 
 /* --- Footer --- */
 .footer {
-  font-family: 'Zen Old Mincho', serif;
-  /* background-color: var(--brand-accent); */
-  color: #c47a88;
   width: 100%;
-  text-align: center;
-  padding: 0.5rem 0;
   margin: 0;
-  position: relative;
+  padding: 1rem 0;
+
+  font-family: "Space Grotesk", sans-serif;
+  color: #111111;
+  text-align: center;
+
+  background: #ffffff;
 }
 
 .footer-text {
@@ -120,32 +176,69 @@ main {
 .intro-section,
 .about-section {
   flex: 1;
-  padding: 1rem;
-  flex-direction: column;
-  background-color: var(--page-bg);
-}
-
-/* --- Typography Utilities --- */
-.font-xs {
-  font-size: 0.8rem;
-}
-
-/* --- Bio & Layout --- */
-.bio {
-  flex: auto;
-  align-items: center;
-  padding-left: 20px;
-}
-
-.divider {
-  margin: auto;
   display: flex;
-  width: 40%;
-  position: relative;
-  margin-top: 25px;
+  flex-direction: column;
+  padding: 2rem;
+  background: #ffffff;
+  color: #111111;
 }
 
-/* --- Hover Color Blocks --- */
+/* --- About Page --- */
+.about-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* --- Portrait --- */
+.portrait-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.portrait-image {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 0;
+}
+
+/* --- About Text --- */
+.bio-text {
+  max-width: 55ch;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.6;
+
+  text-align: left;
+  color: #111111;
+}
+
+/* --- Highlight --- */
+.highlight {
+  background: #111111;
+  color: #ffffff;
+  padding: 0.05em 0.18em;
+}
+
+/* --- Existing Hover Effects --- */
 .hover-poetry:hover,
 body:has(.hover-poetry:hover) .poetry {
   background-color: #caffaf;
@@ -161,51 +254,53 @@ body:has(.hover-journ:hover) .journ {
   background-color: #e4b4f2;
 }
 
-/* --- Link & Label Styling --- */
 .poetry,
 .prose,
 .journ {
   text-decoration: underline;
 }
 
-/* --- About Page Layout --- */
-.about-section {
-  padding: 2rem;
-  color: var(--text-dark);
+/* --- Utility --- */
+.font-xs {
+  font-size: 0.75rem;
+}
+
+.bio {
+  flex: auto;
+  padding-left: 20px;
+}
+
+.divider {
+  position: relative;
   display: flex;
-  background-color: var(--page-bg);
+  width: 40%;
+  margin: 25px auto 0;
 }
 
-.about-container {
-  display: flex;
-  flex-direction: column;
-}
+/* --- Mobile --- */
+@media (max-width: 700px) {
+  html,
+  body {
+    font-size: 14px;
+  }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  align-items: center;
-}
+  main {
+    padding-top: 30px;
+  }
 
-.portrait-container {
-  display: flex;
-  justify-content: center;
-}
+  .about-section {
+    padding: 4rem 1.25rem;
+  }
 
-.portrait-image {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 12px;
-}
+  .intro-section {
+    padding: 1.25rem;
+  }
 
-.bio-text {
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-  margin: auto 2rem;
-  color: var(--text-dark);
-  padding: 1rem;
-}
+  .bio {
+    padding-left: 0;
+  }
 
+  .divider {
+    width: 70%;
+  }
+}

@@ -1,23 +1,10 @@
+.gallery img {
+  outline: 2px solid transparent;
+  outline-offset: 0;
+  transition: outline-color 0.15s ease;
+  cursor: pointer;
+}
 
-.myMasonryGrid {
-    display: flex;
-    margin-left: -30px; 
-    width: auto;
-  }
-  
-  .myMasonryGridColumn {
-    padding-left: 30px;
-    background-clip: padding-box;
-  }
-  
-  .imageWrapper {
-    margin-bottom: 30px;
-    margin-bottom:30px;
-    cursor: pointer;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+.gallery img:hover {
+  outline-color: #dcecf4;
+}

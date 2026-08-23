@@ -1,89 +1,40 @@
 "use client";
-import React, { useState } from 'react';
-import Footer from './footer';
+
+import React, { useState } from "react";
 import { MasonryPhotoAlbum } from "react-photo-album";
 import "react-photo-album/masonry.css";
 
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-const photos = [
-  { src: '/aquarium.JPG', width: 1080, height: 1720 },
-    { src: '/foster-taylor.jpeg', width: 2700, height: 1800 },
-
-  { src: '/londoncrowd.jpeg', width: 1080, height: 1720 },
-
-  { src: '/uwcherryblossoms.JPG', width: 1920, height: 1080 },
-
-  {src: '/rutgers.jpeg', width: 1200, height: 1800},
-  { src: '/chicagohenge.jpeg', width: 1080, height: 1720 },
-  { src: '/fostergoal.jpg', width: 1920, height: 1280 },
-
-  { src: '/londonstreet.JPG', width: 1920, height: 1080 },
-
-
-  { src: '/beach.JPG', width: 4000, height: 6000 },
-    { src: '/QFlax.PNG', width: 5910, height: 3940 },
-
-
-  { src: '/evanstonbizowners.JPG', width: 1920, height: 1080 },
-
-  { src: '/skitracks.JPG', width: 1080, height: 1720 },
-  { src: '/bright.jpg', width: 1080, height: 1720 },
-
-  { src: '/gumwall.JPG', width: 5910, height: 3940 },
-  { src: '/taylorgoal.jpg', width: 1920, height: 1280 },
-
-  { src: '/soccerdance.JPG', width: 3000, height: 2000 },
-      { src: '/foster.jpg', width: 5910, height: 3940 },
-  { src: '/kellogg.JPG', width: 1080, height: 1920 },
-
-  { src: '/northerntrust.JPG', width: 1080, height: 1920 },
-  { src: '/motelbreakfast.JPG', width: 1920, height: 1080 },
-
-  { src: '/chicagoriver.JPG', width: 1017, height: 1811 },
-  { src: '/deeringgarden.JPG', width: 3000, height: 2000 },
-
-  { src: '/ntu.jpg', width: 1080, height: 1920 },
-  { src: '/pikeplacejapanesestore.JPG', width: 1080, height: 1620 },
-  { src: '/eclipse.JPG', width: 1400, height: 900 },
-  { src: '/soccer.JPG', width: 1080, height: 1920 },
-    { src: '/quadreltenantsunion.jpeg', width: 1920, height: 1080 },
-
-
-  { src: '/greengoose.JPG', width: 3000, height: 2000 },
-  { src: '/gtownchambers.jpeg', width: 2827, height: 4242 },
-  { src: '/geesefamily.JPG', width: 3996, height: 5994 },
-  { src: '/hike.JPG', width: 3648, height: 2432 },
-
-  { src: '/strokes.JPG', width: 1920, height: 1080 },
-
-
-];
-
+import styles from "../styles/Gallery.module.css";
+import { photos } from "../data/photos";
 
 export default function PhotoGallery() {
   const [index, setIndex] = useState(-1);
+
   return (
-    <section>
-      <>
-        <MasonryPhotoAlbum photos={photos} columns={3} onClick={({ index }) => setIndex(index)} />
+    <>
+      <div className={styles.gallery}>
+        <MasonryPhotoAlbum
+          photos={photos}
+          onClick={({ index }) => setIndex(index)}
+        />
+      </div>
 
-        <Lightbox
-          slides={photos}
-          open={index >= 0}
-          index={index}
-          close={() => setIndex(-1)}
-
-          plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]} />
-      </>
-    </section>
-
+      <Lightbox
+        slides={photos}
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+      />
+    </>
   );
-
 }
