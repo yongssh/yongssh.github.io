@@ -197,7 +197,7 @@ export const poetry: Publication[] = [
     publication: "The Slowdown",
     date: "Oct 2025",
     href: "https://www.slowdownshow.org/episode/2025/09/30/1363-notes-on-beachgrass-by-yongyu-huang",
-    preposition: "on",
+    preposition: "featured on",
   },
   {
     title: "Clark Street Beach in April",

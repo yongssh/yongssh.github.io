@@ -51,7 +51,7 @@ useEffect(() => {
             visibleIndex >= 0 ? styles.visible : ""
           }`}
         >
-          Currently, I’m a <span className={styles.highlight}>data and reporting fellow</span> at <i><a href="https://www.rangemedia.co/author/yong-yuhuang/">RANGE Media</a></i> in Spokane, WA. 
+          Currently, I’m a <span className={styles.highlight}>data and reporting fellow</span> at <i><a href="https://www.rangemedia.co/author/yong-yuhuang/">RANGE Media</a></i> in Spokane, WA.
           My work can be found in <i>The Nation</i>, <i>Britannica</i>, <i>Penang Monthly</i>, and <i>The Daily Northwestern</i>.
 
         </p>
