@@ -163,7 +163,7 @@ export const journalism: Publication[] = [
     href: "https://www.penangmonthly.com/addressing-cultural-taboos-and-alleviating-period-poverty/",
   },
   {
-    title: "Indigenous Malaysian Filmmaker Nadira Ilana",
+    title: "Claiming Right of Place in Malaysian Cinema for Indigenous Stories: Nadira Ilana",
     publication: "Penang Monthly",
     date: "Dec 2021",
     href: "https://penangmonthly.com/claiming-right-of-place-in-malaysian-cinema-for-indigenous-stories",
