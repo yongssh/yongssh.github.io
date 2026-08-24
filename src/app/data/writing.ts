@@ -121,7 +121,7 @@ export const journalism: Publication[] = [
     href: "https://dailynorthwestern.com/2025/02/13/features/evanston-photographer-and-academic-junko-yokota-wanders-near-and-far/",
   },
   {
-    title: "Trouble in Paradise: Their vacation, the locals' home",
+    title: "Trouble in Paradise: Their vacation, the locals’ home",
     publication: "nuAZN",
     href: "https://drive.google.com/file/d/1vK4wTHjW8tW71FnGgFgAMq6RO7ak7VQg/view?usp=share_link",
   },
