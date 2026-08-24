@@ -186,11 +186,13 @@ export const poetry: Publication[] = [
     title: "Sweeter",
     publication: "Narrative Magazine",
     date: "July 2026",
+    href:"https://www.narrativemagazine.com/issues/spring-2026/poetry/sweeter-yong-yu-huang?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnQ8inTcRUBSTEiZKKe_hEBXCIA6nhIQCLrlZlZ7jo1_n-VKGGRw_EcBdxXgs_aem_YjZwf_NMvn-Ugi_RTnMR3Q"
   },
   {
     title: "Feast",
     publication: "Poet Lore",
     date: "June 2026",
+    href:"https://www.poetlore.com/buy-single-issues/",
   },
   {
     title: "Notes on Beachgrass",
