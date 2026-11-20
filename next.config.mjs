@@ -10,7 +10,7 @@ const nextConfig = {
     basePath: process.env.BASE_PATH,
 
     images: {
-      remotePattersn: [
+      remotePatterns: [
         {protocol: "https", hostname: "storage.ghost.io"},
         {protocol: "https", hostname: "dailynortwestern.com"},
         {protocol: "https", hostname: "www.thenation.com"}
