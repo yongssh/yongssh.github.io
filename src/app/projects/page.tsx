@@ -60,6 +60,12 @@ const clips: Clip[] = [
     date: "February 2026",
   },
   {
+    title: "International students navigate US workforce through OPT program",
+    publication: "The Daily Northwestern",
+    href: "https://dailynorthwestern.com/2026/04/29/campus/international-students-navigate-us-workforce-through-opt-program/",
+    date: "April 2026",
+  },
+  {
     title: "SNAP benefits to return, but new restrictions may leave families in limbo",
     publication: "The Daily Northwestern",
     href: "https://dailynorthwestern.com/2025/11/19/top-stories/snap-benefits-to-return-but-new-restrictions-may-leave-families-in-limbo/",
@@ -72,7 +78,7 @@ const clips: Clip[] = [
     date: "March 2026",
   },
   {
-    title: "Fall 2025 Poll",
+    title: "Fall 2025 Poll: National Politics",
     publication: "The Daily Northwestern",
     href: "https://apps.dailynorthwestern.com/f25poll/national-politics/",
     date: "Fall 2025",
@@ -91,12 +97,7 @@ const clips: Clip[] = [
     date: "July 2025",
   },
   {
-    title: "Grievances in Chicago Emergency Shelters",
-    publication: "Personal Project",
-    href: "https://yongssh.github.io/chicago-emergency-shelters",
-  },
-  {
-    title: "Chicago Heatwave Project",
+    title: "Chicago Mayor Brandon Johnson, Buffett researchers host screening and discussion on 1995 Heat Wave",
     publication: "The Daily Northwestern",
     href: "https://dailynorthwestern.com/2025/07/16/city/chicago-mayor-brandon-johnson-buffett-researchers-host-screening-and-discussion-on-1995-heat-wave/",
     date: "July 2025",
@@ -111,7 +112,7 @@ export default function ProjectsPage() {
 
       <main id="main-content" className={styles.main}>
         <header className={styles.pageHeader}>
-          <h1 className={styles.heading}>Data journalism portfolio</h1>
+          <h1 className={styles.heading}>Portfolio</h1>
         </header>
 
         <div className={styles.content}>
