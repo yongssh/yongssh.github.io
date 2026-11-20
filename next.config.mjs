@@ -8,6 +8,14 @@ const nextConfig = {
     reactStrictMode: true,
     assetPrefix: process.env.ASSET_PREFIX,
     basePath: process.env.BASE_PATH,
+
+    images: {
+      remotePattersn: [
+        {protocol: "https", hostname: "storage.ghost.io"},
+        {protocol: "https", hostname: "dailynortwestern.com"},
+        {protocol: "https", hostname: "www.thenation.com"}
+      ],
+    },
 };
 
 export default nextConfig;

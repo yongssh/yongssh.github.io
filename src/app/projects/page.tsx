@@ -5,151 +5,106 @@ import Link from "next/link";
 import styles from "./Projects.module.css";
 import Image from "next/image";
 
+// Newest first
 const projects = [
-  // ===== WEB & DATA PROJECTS =====
+  {
+    title: "Spokane area homeowners could lose insurance, adding insult to injury",
+    outlet: "RANGE Media",
+    description:
+      "Used past wildfire data to show how insurance cancellations rise in fire-affected areas, even for homes that never burned, as a temporary state order offers relief.",
+    image:
+      "https://storage.ghost.io/c/35/e7/35e7a6d5-1d7d-405c-9ee3-dce92dfd190f/content/images/size/w1200/2026/08/_38A3921.jpg",
+    url: "https://www.rangemedia.co/spokane-area-homeowners-could-lose-insurance-adding-insult-to-injury-2/",
+    tags: ["Insurance", "Wildfires", "Data Journalism"],
+  },
+  {
+    title: "Here's what the money looks like in the WA-05 race",
+    outlet: "RANGE Media",
+    description:
+      "Tracked campaign finance and late outside spending in Washington's 5th Congressional District race between Rep. Michael Baumgartner and Carmela Conroy.",
+    image:
+      "https://storage.ghost.io/c/35/e7/35e7a6d5-1d7d-405c-9ee3-dce92dfd190f/content/images/2026/11/General-Election-2026-package---5-.jpg",
+    url: "https://www.rangemedia.co/wa-congressional-district-5-money-2026/",
+    tags: ["Elections", "Campaign Finance", "Data Journalism"],
+  },
       {
-    title: "Portrait of a Ward",
+    title: "Election turnout dropped in Spokane evacuation zones",
+    outlet: "RANGE Media",
+    description:
+      "Conducted an original analysis of county voting data showing steeper primary turnout declines in wildfire evacuation zones than elsewhere in Spokane County.",
+    image:
+      "https://storage.ghost.io/c/35/e7/35e7a6d5-1d7d-405c-9ee3-dce92dfd190f/content/images/size/w1200/2026/08/638A4477.jpg",
+    url: "https://www.rangemedia.co/election-turnout-dropped-in-spokane-evacuation-zones/",
+    tags: ["Elections", "Data Analysis", "Wildfires"],
+  },
+  {
+    title: "How long will it take for WA fire victims to get FEMA relief?",
+    outlet: "RANGE Media",
+    description:
+      "Explained the federal disaster declaration process after Gov. Bob Ferguson asked the White House for aid following the Eastern Washington wildfires.",
+    image:
+      "https://storage.ghost.io/c/35/e7/35e7a6d5-1d7d-405c-9ee3-dce92dfd190f/content/images/2026/10/Spokane-Wildfires-FEMA-Press-Conference-6.jpg",
+    url: "https://www.rangemedia.co/how-long-will-it-take-for-wa-fire-victims-to-get-fema-relief/",
+    tags: ["Wildfires", "Federal Policy", "Disaster Recovery"],
+  },
+  {
+    title: "Local educators say lagging test scores don't tell the full story",
+    outlet: "RANGE Media",
+    description:
+      "Analyzed state test data showing Spokane students trailing state averages, and reported on educators who say proficiency rates miss student growth.",
+    image:
+      "https://storage.ghost.io/c/35/e7/35e7a6d5-1d7d-405c-9ee3-dce92dfd190f/content/images/2026/09/_38A4681.jpg",
+    url: "https://www.rangemedia.co/local-educators-say-lagging-test-scores-dont-tell-the-full-story/",
+    tags: ["Education", "Data Analysis", "Spokane"],
+  },
+  {
+    title: "'One way out': Spokane fire evacuees fled and faced gridlock",
+    outlet: "RANGE Media",
+    description:
+      "Reported on hours-long evacuation gridlock in neighborhoods with limited road access during the August wildfires, a risk that had been building for years.",
+    image:
+      "https://storage.ghost.io/c/35/e7/35e7a6d5-1d7d-405c-9ee3-dce92dfd190f/content/images/size/w1200/2026/08/638A4267-1.jpg",
+    url: "https://www.rangemedia.co/fire-evacuees-face-gridlock/",
+    tags: ["Wildfires", "Infrastructure", "Spokane"],
+  },
+  {
+    title: "Abughazaleh, Biss, Fine lead fundraising as $11 million floods congressional race",
     outlet: "The Daily Northwestern",
     description:
-      "Designed and built project examining Evanston's wards, after the boundary updates of 2024.",
-    image: "/portraitofaward.png",
-    url: "https://apps.dailynorthwestern.com/portrait-of-a-ward-2025/",
-    tags: ["Mapbox.js", "ArcGIS"],
-    type: "Web & Data",
+      "Analyzed FEC filings across the 19-candidate field to replace retiring U.S. Rep. Jan Schakowsky in Illinois' 9th Congressional District.",
+    image: "https://dailynorthwestern.com/wp-content/uploads/2026/02/fundraising-1.jpeg",
+    url: "https://dailynorthwestern.com/2026/02/02/city/abughazaleh-biss-fine-lead-fundraising-as-11-million-floods-congressional-race/",
+    tags: ["Elections", "Campaign Finance", "Data Analysis"],
   },
-    {
+  {
+    title: "SNAP benefits to return, but new restrictions may leave families in limbo",
+    outlet: "The Daily Northwestern",
+    description:
+      "Reported on Evanston families who went without SNAP benefits during the federal shutdown and face uncertainty under new federal work requirements.",
+    image: "https://dailynorthwestern.com/wp-content/uploads/2025/11/DSC_0024.jpg",
+    url: "https://dailynorthwestern.com/2025/11/19/top-stories/snap-benefits-to-return-but-new-restrictions-may-leave-families-in-limbo/",
+    tags: ["Food Access", "Federal Policy", "Community"],
+  },
+  {
+    title: "The Immigration Crackdown Hurts More Than Just International Students",
+    outlet: "The Nation",
+    description:
+      "Reported on how falling international enrollment is driving tuition hikes, layoffs and program cuts at Chicago-area universities.",
+    image: "https://www.thenation.com/wp-content/uploads/2026/03/SAICProtestHuang.jpg",
+    url: "https://www.thenation.com/article/society/trump-immigration-international-students-tuition-illinois-chicago/",
+    tags: ["Immigration", "Higher Education", "Chicago"],
+  },
+  {
     title: "Fall 2025 Poll",
     outlet: "The Daily Northwestern",
     description:
-      "Designed and built website for the Fall 2025 undergraduate poll. Conducted data analysis for and wrote article on national politics' effect on students.",
+      "Designed and built the website for the Fall 2025 undergraduate poll, and analyzed results for an article on how national politics are shaping students' views and plans.",
     image: "/F25poll.png",
-    url: "https://apps.dailynorthwestern.com/f25poll/",
-    tags: ["Polling", "Scrollytelling", "React", "Next.js"],
-    type: "Web & Data",
+    url: "https://apps.dailynorthwestern.com/f25poll/national-politics/",
+    tags: ["Polling", "Data Analysis", "React", "Next.js"],
   },
-      {
-    title: "Know Your Rights",
-    outlet: "The Daily Northwestern",
-    description:
-      "Designed and built landing page for The Daily's coverage of ICE activity in Evanston, featuring search functionality for articles.",
-    image: "/KYR.png",
-    url: "https://apps.dailynorthwestern.com/know-your-rights/",
-    tags: ["Immigration", "React", "regex matching"],
-    type: "Web & Data",
-  },
-   {
-    title: "Grievances in Chicago Emergency Shelters",
-    outlet: "Personal Project",
-    description:
-      "Built a scrollytelling story about emergency migrant shelters in Chicago, using city data from 2024.",
-    image: "/migrantshelters.png",
-    url: "https://yongssh.github.io/chicago-emergency-shelters",
-    tags: ["Scrollytelling", "D3.js", "Open Data", "Public Policy"],
-    type: "Web & Data",
-  },
-  {
-    title: "Whiting Awards Analysis",
-    outlet: "Personal Project",
-    description:
-      "Analyzed more than three decades of Whiting Award winners to identify demographic and literary trends.",
-    image: "/whiting.png",
-    url: "https://yongssh.github.io/whiting-awards/",
-    tags: ["Data Analysis", "Literature", "D3.js", "Data Visualization"],
-    type: "Web & Data",
-  },
-  {
-    title: "Spring 2025 Poll",
-    outlet: "The Daily Northwestern",
-    description:
-      "Built and designed special landing page for the Spring 2025 undergraduate poll.",
-    image: "/SpringCampusPoll-2.jpg",
-    url: "https://apps.dailynorthwestern.com/s25poll/",
-    tags: ["Polling", "Scrollytelling", "React"],
-    type: "Web & Data",
-  },
-  {
-    title: "2024 Elections",
-    outlet: "The Daily Northwestern",
-    description:
-      "Built and designed an interactive election results landing page using The Washington Post’s React component library and D3.js.",
-    image: "/2024elections.png",
-    url: "https://apps.dailynorthwestern.com/election2024/",
-    tags: ["Elections", "React", "D3.js", "Design Systems"],
-    type: "Web & Data",
-  },
-
-  {
-    title: "Evanston Public Library considers split from city",
-    outlet: "The Daily Northwestern",
-    description:
-      "Reported on local politics debate and built an interactive tax calculator and visualizations to communicate proposed funding changes.",
-    image: "/epl.jpeg",
-    url: "https://dailynorthwestern.com/2025/10/01/top-stories/not-just-a-place-of-books-evanston-public-library-debates-potential-split-from-city/",
-    tags: ["Local Politics", "Data Visualization", "D3.js", "Interactive Design"],
-    type: "Reporting & Writing",
-  },
-  {
-    title: "Nobel Prizes by Country and Category",
-    outlet: "Personal Project",
-    description:
-      "A visual storytelling piece created in Adobe Illustrator, illustrating Nobels won by country and category.",
-    image: "/NobelByCountry.png",
-    url: "/NobelByCountry.pdf",
-    tags: ["Design", "Adobe Illustrator", "Data Analysis"],
-    type: "Web & Data",
-  },
-  {
-    title: "World Energy Mix Visualizer",
-    outlet: "Personal Project",
-    description:
-      "Built an interactive visualization showing how countries source their energy, using World Bank data and D3.js, following a tutorial from D3: From Start to Finish.",
-    image: "/d3.png",
-    url: "https://stately-frangollo-b9a02e.netlify.app",
-    tags: ["Energy", "D3.js", "Open Data", "Web Development"],
-    type: "Web & Data",
-  },
-  {
-    title: "Migration in Mohsin Hamid’s Exit West",
-    outlet: "Personal Project",
-    description:
-      "Created an interactive scrollytelling piece mapping the journeys of Hamid’s characters with Leaflet.js and custom storytelling layout.",
-    image: "/lahore-map.png",
-    url: "https://yongssh.github.io/exit-west.html",
-    tags: ["Scrollytelling", "Leaflet.js", "Literature", "Interactive Design"],
-    type: "Web & Data",
-  },
-  {
-    title: "Northwestern Executives in Numbers",
-    outlet: "The Daily Northwestern",
-    description:
-      "Built supporting data visuals with Flourish for executive compensation coverage.",
-    image: "/presidentspay.png",
-    url: "https://dailynorthwestern.com/2025/09/15/campus/outgoing-university-president-michael-schill-earned-nearly-1-7-million-in-first-full-year-tax-filings-show/",
-    tags: ["Higher Education", "Flourish", "Data Visualization"],
-    type: "Web & Data",
-  },
-    // ===== REPORTING & WRITING =====
   
   {
-    title: "Evanston businesses stand up to ICE amid escalated enforcement",
-    outlet: "The Daily Northwestern",
-    description:
-      "Reported on local businesses' reaction to increased ICE activity.",
-    image: "/noice.jpeg",
-    url: "https://dailynorthwestern.com/2025/11/05/city/we-cannot-be-silent-evanston-businesses-stand-up-to-ice-amid-escalated-enforcement/",
-    tags: ["Immigration", "Community"],
-    type: "Reporting & Writing",
-  },{
-    title: "Evanston creative Junko Yokota",
-    outlet: "The Daily Northwestern",
-    description:
-      "Profile of Junko Yokota, an Evanston-based academic and photographer whose visual storytelling spans continents.",
-    image: "/yokota.png",
-    url: "https://dailynorthwestern.com/2025/10/28/city/this-rent-is-bananas-quadrel-evanston-tenants-union-protests-rent-hikes-mismanagement/",
-    tags: ["Feature Writing", "Higher Education", "Arts"],
-    type: "Reporting & Writing",
-  },
-    {
     title: "Chicago Heatwave Project",
     outlet: "The Daily Northwestern",
     description:
@@ -157,74 +112,28 @@ const projects = [
     image: "/johnson.jpg",
     url: "https://dailynorthwestern.com/2025/07/16/city/chicago-mayor-brandon-johnson-buffett-researchers-host-screening-and-discussion-on-1995-heat-wave/",
     tags: ["Data Journalism", "Climate", "Chicago", "Datawrapper"],
-    type: "Reporting & Writing",
   },
-
   {
-    title: "Fulbright Funding Impact",
+    title: "'A shift going on': Fulbright scholars at NU and abroad discuss impact, program's future amid political uncertainty",
     outlet: "The Daily Northwestern",
     description:
       "Reported on how federal policy has affected Northwestern-affiliated Fulbright scholars and the program’s future.",
     image: "/Fulbright_Seal_RGB-scaled-1.jpg",
     url: "https://dailynorthwestern.com/2025/07/07/top-stories/a-shift-going-on-fulbright-scholars-at-nu-and-abroad-discuss-impact-programs-future-amid-political-uncertainty/",
     tags: ["Education", "Policy"],
-    type: "Reporting & Writing",
   },
   {
-    title: "H-1B or Bust",
-    outlet: "nuAZN",
+    title: "Grievances in Chicago Emergency Shelters",
+    outlet: "Personal Project",
     description:
-      "Led reporting on an enterprise feature exploring how international students navigate visa uncertainty and shifting U.S. immigration policy.",
-    image: "/h1b.png",
-    url: "https://drive.google.com/file/d/1bd3aXz4QDAbdQL8dBzSYJSPl_kP0usYb/view?usp=sharing",
-    tags: ["Immigration", "Higher Education", "Feature Writing"],
-    type: "Reporting & Writing",
-  },
-  {
-    title: "Taiwan’s White Terror",
-    outlet: "Encyclopaedia Britannica",
-    description:
-      "Wrote political history article on Taiwan’s White Terror period, covering decades of martial law and suppression of free speech.",
-    image: "/whiteterror.png",
-    url: "https://www.britannica.com/event/White-Terror-Taiwan",
-    tags: ["History", "Research", "Editing"],
-    type: "Reporting & Writing",
-  },
-  {
-    title: "Min Jin Lee",
-    outlet: "Encyclopaedia Britannica",
-    description:
-      "Wrote a feature-style biography on novelist Min Jin Lee, exploring her literary career and themes.",
-    image: "/minjinlee.png",
-    url: "https://www.britannica.com/biography/Min-Jin-Lee",
-    tags: ["Profile Writing", "Interviewing", "Research"],
-    type: "Reporting & Writing",
-  },
-  {
-    title: "Trouble in Paradise",
-    outlet: "nuAZN Magazine",
-    description:
-      "Reported a longform feature on tensions between tourism and local communities in Hawai'i and Guam.",
-    image: "/nuazntourism.png",
-    url: "https://drive.google.com/file/d/1vK4wTHjW8tW71FnGgFgAMq6RO7ak7VQg/view?usp=share_link",
-    tags: ["Arts", "Tourism", "Feature Writing"],
-    type: "Reporting & Writing",
+      "Built a scrollytelling story about emergency migrant shelters in Chicago, using city data from 2024.",
+    image: "/migrantshelters.png",
+    url: "https://yongssh.github.io/chicago-emergency-shelters",
+    tags: ["Scrollytelling", "D3.js", "Open Data", "Public Policy"],
   },
 ];
 
-const groupedProjects: Record<string, typeof projects[number][]> = {};
-
-for (const project of projects) {
-  if (!groupedProjects[project.type]) {
-    groupedProjects[project.type] = [];
-  }
-  groupedProjects[project.type].push(project);
-}
-
-
 export default function ProjectsPage() {
-  const typeOrder = ["Web & Data", "Reporting & Writing"];
-
   return (
     <div className={styles.wrapper}>
       <header>
@@ -235,58 +144,53 @@ export default function ProjectsPage() {
         <header className={styles.header}>
           <h1 className={styles.title}>My Projects</h1>
           <p className={styles.subtitle}>
-            Selected work featuring data visualization, web development, reporting, and longform writing.
+            Selected data journalism, reporting, and interactive work.
           </p>
         </header>
 
-        {typeOrder.map((type) => (
-          <section key={type} className="mb-16">
-            <h2 className="text-2xl font-semibold mb-6 border-b pb-2">{type}</h2>
-            <div className={styles.grid}>
-              {groupedProjects[type]?.map((project, idx) => (
-                <article key={idx} className={styles.card}>
-                  <figure className={styles.figure}>
-                    <Link href={project.url} target="_blank" rel="noopener noreferrer">
-                      <Image
-                        src={project.image}
-                        alt={`Thumbnail for ${project.title}`}
-                      />
-                    </Link>
-                  </figure>
+        <div className={styles.grid}>
+          {projects.map((project) => (
+            <article key={project.url} className={styles.card}>
+              <figure className={styles.figure}>
+                <Link href={project.url} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={project.image}
+                    alt={`Thumbnail for ${project.title}`}
+                  />
+                </Link>
+              </figure>
 
-                  <div className={styles.cardBody}>
-                    <header>
-                      <h3 className={styles.cardTitle}>{project.title}</h3>
-                      <p className={styles.cardOutlet}>{project.outlet}</p>
-                    </header>
+              <div className={styles.cardBody}>
+                <header>
+                  <h3 className={styles.cardTitle}>{project.title}</h3>
+                  <p className={styles.cardOutlet}>{project.outlet}</p>
+                </header>
 
-                    <p className={styles.cardDescription}>{project.description}</p>
+                <p className={styles.cardDescription}>{project.description}</p>
 
-                    <ul className={styles.tags} aria-label="Tags">
-                      {project.tags.map((tag, tIdx) => (
-                        <li key={tIdx} className={styles.tag}>
-                          {tag}
-                        </li>
-                      ))}
-                    </ul>
+                {/* <ul className={styles.tags} aria-label="Tags">
+                  {project.tags.map((tag) => (
+                    <li key={tag} className={styles.tag}>
+                      {tag}
+                    </li>
+                  ))}
+                </ul> */}
 
-                    <footer>
-                      <Link
-                        href={project.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.button}
-                      >
-                        <span>See more</span>
-                        <span aria-hidden="true">→</span>
-                      </Link>
-                    </footer>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section>
-        ))}
+                <footer>
+                  <Link
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.button}
+                  >
+                    <span>See more</span>
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                </footer>
+              </div>
+            </article>
+          ))}
+        </div>
       </main>
       <Footer />
     </div>
