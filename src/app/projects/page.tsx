@@ -134,7 +134,7 @@ export default function ProjectsPage() {
                     <span className={styles.publicationName}>
                       {clip.publication}
                     </span>
-                    {clip.date && <> | {clip.date}</>}
+                    {/* {clip.date && <> | {clip.date}</>} */}
                   </div>
                 </div>
               </article>
