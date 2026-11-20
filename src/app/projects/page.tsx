@@ -77,12 +77,13 @@ const clips: Clip[] = [
     href: "https://apps.dailynorthwestern.com/f25poll/national-politics/",
     date: "Fall 2025",
   },
-  {title: "Former Spokane Zephyr players say club ‘cut corners,’ undercounted hours",
+  {
+    title: "Former Spokane Zephyr players say club ‘cut corners,’ undercounted hours",
     publication: "RANGE Media",
     href: "https://www.rangemedia.co/former-spokane-zephyr-players-say-club-cut-corners-undercounted-hours/",
     date: "August 2026"
-  }
-   {
+  },
+  {
     title:
       "'A shift going on': Fulbright scholars at NU and abroad discuss impact, program's future amid political uncertainty",
     publication: "The Daily Northwestern",
@@ -100,7 +101,7 @@ const clips: Clip[] = [
     href: "https://dailynorthwestern.com/2025/07/16/city/chicago-mayor-brandon-johnson-buffett-researchers-host-screening-and-discussion-on-1995-heat-wave/",
     date: "July 2025",
   },
- 
+
 ];
 
 export default function ProjectsPage() {
